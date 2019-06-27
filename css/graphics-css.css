@@ -1,0 +1,107 @@
+@charset "UTF-8";
+
+div#source {
+	font-family: 'Montserrat', sans-serif;
+	color: #94B8E0;
+	text-align: right;
+	padding-top: 10px;
+	font-size: 12px;
+}
+
+a{
+	color: inherit;
+  	text-decoration: inherit;
+}
+
+#chart{
+	margin-top:10px;
+}
+
+
+.highcharts-title {
+	font-family: 'Montserrat', sans-serif;
+	color: white;
+	font-weight:600;
+	font-size:24pt;
+	margin-top: 0px;
+	margin-bottom: 0px;
+
+}
+.highcharts-subtitle {
+	font-family: 'Montserrat', sans-serif;
+    color: #94B8E0;
+    font-weight: 300;
+    font-size: 8pt;
+}
+
+/*Styles the div that holds the highchart */
+div#graphic-container {
+	margin-top:20px;
+	margin-bottom:20px;
+	padding-left:20px;
+	padding-top:20px;
+	padding-right:30px;
+	padding-bottom:10px;
+	min-width: 310px;
+	max-width: 600px;
+	margin-left:auto;
+	margin-right:auto;
+	background-color: #181818;
+}
+
+#Label{
+	color: white;
+	font-size: 12px;
+	font-family: 'Montserrat', sans-serif;
+
+}
+
+
+/* y axis label size */
+.c3-axis-y-label {
+  font-size: 12px;//change the size of the fonts
+}
+
+/* x axis label size */
+.c3-axis-x-label  {
+  font-size: 12px; //change the size of the fonts
+}
+
+/* y axis tick size */
+.c3-axis-y g {
+  font-size: 12px; //change the size of the fonts
+}
+
+/* x axis tick size */
+.c3-axis-x g {
+  font-size: 12px; //change the size of the fonts
+}
+
+.c3-legend-item text{
+  font-size: 14px; //change the size of the fonts
+	font-family: 'Montserrat', sans-serif;
+   fill: #fff;
+}
+
+.c3-legend-item {
+	font-family: 'Montserrat', sans-serif;
+}
+
+.c3 .c3-axis path, .c3 .c3-axis line {
+	stroke:#fff;
+}
+
+.c3-axis-y text {
+   fill: #fff;
+	font-family: 'Montserrat', sans-serif;
+}
+.c3-axis-x text {
+   fill: #fff;
+	font-family: 'Montserrat', sans-serif;
+}
+
+
+.c3-tooltip {
+	color:#000;
+		font-family: 'Montserrat', sans-serif;
+}

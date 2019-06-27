@@ -1,0 +1,206 @@
+<!-- This is a simple template for progressing through a series of divs on click -->
+
+
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width" />
+
+  <title>How Cold Weather Affects Health</title>
+
+<script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+
+<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+
+	<style>
+
+	#slider-graphic-container {
+		margin-top:70px;
+		background: #181818;
+    font-family: 'Montserrat', sans-serif;
+		height: 400px;
+		text-align: left;
+		padding-top: 30px;
+
+	}
+
+#slider-graphic-container .title {
+  text-transform:uppercase;
+  font-weight:bold;
+  font-size:2em;
+  color: #94b8e0;
+}
+
+#slider-graphic-container .title-intro {
+  text-transform:uppercase;
+  font-size:2em;
+  color: #94b8e0;
+}
+
+#slider-graphic-container .white-bold {
+    color: #fff;
+    font-weight:bold;
+}
+
+	#slider-graphic-container .block {
+		width:90%;
+		max-width: 600px;
+		color:#fff;
+		margin:0 auto;
+	}
+
+  #slider-graphic-container .chatter {
+    line-height:140%;
+  }
+
+	#slider-graphic-container .next-div {display:none;}
+
+	#slider-graphic-container #block2 {
+		text-align: left;
+	}
+
+
+	#slider-graphic-container .button {
+		width:200px !important;
+		height:30px !important;
+		padding-top:10px !important;
+		background: #94b8e0;
+		cursor: pointer !important;
+		margin:0 auto !important;
+		text-align: center !important;
+	}
+
+
+	#slider-graphic-container .button:hover {
+    background:#fff !important;
+    color: #94b8e0 !important;
+  }
+
+	.child1, .child2, .child3, .child4, .child5 {display:none;}
+
+  #slider-graphic-container .icon {
+    width: 35px;
+    padding-right: 10px;
+  }
+
+	</style>
+
+
+
+
+</head>
+<body>
+
+	<div id="slider-graphic-container">
+
+
+<!-- BLOCK 0 -->
+
+		<div id="block1" class="block">
+			<p class="title-intro">HOW <span class="white-bold">COLD WEATHER</span> AFFECTS HEALTH</p>
+      <p class="chatter">Climate change is bringing hotter summers and an increase in global average temperatures.  But deep winter cold snaps are unlikely to vanish in Baltimore -- and could, in fact, become more common.  That will mean continued problems for people with chronic medical conditions affected by cold weather.
+</p>
+
+      <!-- use class next for progression animation, use class next 2 if no animation -->
+				<div class="button next">Next</div>
+		</div>
+
+
+
+<!-- BLOCK 1.1 -->
+
+		<div id="block1" class="block next-div">
+      <p class="title"><img src="Icons/lungs.svg" class="icon">Respiratory Disease</p>
+		<div id="parent">
+      <ul>
+        <li class="child1"><strong>Who's most at risk:</strong> children and seniors. </li><br>
+
+        <li class="child2"><strong>Conditions:</strong> Asthma, COPD, bronchitis. </li><br>
+        <li class="child3"><strong>Winter problems:</strong> Cold, dry air can trigger respiratory attacks. </li><br>
+
+      </ul>
+      </div>
+				<div class="button next2 next">Next</div>
+		</div>
+
+
+<!-- BLOCK 2 -->
+
+<div id="block1" class="block next-div">
+  <p class="title"><img src="Icons/heart.svg" class="icon">Heart Disease</p>
+<div id="parent">
+    <ul>
+      <li class="child1"><strong>Who's most at risk:</strong> Seniors.</li><br>
+      <li class="child2"><strong>Conditions:</strong> Heart-related chest pain, congestive artery disease, heart attacks.</li><br>
+      <li class="child3"><strong>Winter problems:</strong> Veins and arteries constrict at lower temperatures, stressing the cardiovascular system.</li><br>
+    </ul>
+  </div>
+    <div class="button next2 next">Next</div>
+</div>
+
+
+    <!-- BLOCK 3 -->
+
+    <div id="block1" class="block next-div">
+      <p class="title"><img src="Icons/Hypo.svg" class="icon">Hypothermia</p>
+    <div id="parent">
+        <ul>
+          <li class="child1"><strong>Who's most at risk:</strong> People who lack shelter.</li><br>
+          <li class="child2"><strong>Winter problems:</strong> With prolonged exposure to cold, body temperature drops dangerously low, affecting the heart, lungs and other organ systems.</li><br>
+        </ul>
+      </div>
+      <div class="button reload">Start over</div>
+    </div>
+
+
+
+
+
+
+
+
+
+	</div>
+
+
+
+	<script>
+		$('.next').click(function(){
+		   $(this).parent().hide().next().show();//hide parent and show next
+		   $(".child1").delay(800).fadeIn();
+		   $(".child2").delay(1600).fadeIn();
+		   $(".child3").delay(2400).fadeIn();
+		   $(".child4").delay(3200).fadeIn();
+		   $(".child5").delay(4000).fadeIn();
+
+		});
+
+
+		$('.next2').click(function(){
+		   $(this).parent().hide().next().show();//hide parent and show next
+		   $(".child1").hide();
+		   $(".child2").hide();
+		   $(".child3").hide();
+		   $(".child4").hide();
+		   $(".child5").hide();
+
+		});
+
+
+		$('.reload').click(function(){
+			location.reload();
+		});
+
+
+
+
+	</script>
+
+
+</body>
+</html>

@@ -1,0 +1,89 @@
+<!-- Bar chart including:
+  cutom title for tool tip,
+  comma and $ on tool tip and y-axis,
+  custom colors
+-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+
+    <title>
+    	Capital News Service
+    </title>
+
+    <link href="https://fonts.googleapis.com/css?family=Droid+Serif:400,400i,700,700i|Poppins:300,400,500,600,700&amp;subset=latin-ext" rel="stylesheet">
+
+    <!-- Load c3.css -->
+  <link href="../css/c3.css" rel="stylesheet">
+
+  <link href="../css/style.css" rel="stylesheet">
+
+  <!-- Load our css -->
+  <link href="../css/graphics-css.css" rel="stylesheet">
+
+	<!-- Load d3.js and c3.js -->
+	<script src="js/d3.min.js" charset="utf-8"></script>
+	<script src="js/c3.min.js"></script>
+
+  </head>
+
+  <body>
+   	<div id="container">
+   		<h1 class="highcharts-title">Cold Related Deaths in Baltimore City vs all of Maryland</h1>
+
+   		<text class="highcharts-subtitle" y="60">
+   			<tspan>By Aaron Wilson</tspan>
+   			<!-- ^^ PUT YOUR NAME HERE, TAKE CREDIT FOR YOUR COOL WORK ^^ -->
+   			<tspan onclick="location.href=&quot;http://cnsmaryland.org&quot;"> | CAPITAL NEWS SERVICE</tspan>
+   			<br>
+        <p>Over the past five years, over 30% of all cold-related deaths in Maryland have occurred in Baltimore City.</p>
+      </text>
+   		<div id="chart"></div>
+   		<div id="source"><text><a href="https://preparedness.health.maryland.gov/Pages/Home.aspx"><tspan>Source: Maryland Department of Health </tspan></a></text></div>
+   		<!-- ^^ PUT YOUR SOURCE HERE AND LINK IT^^ -->
+   	</div>
+   	<script type="text/javascript">
+
+
+
+        var chart = c3.generate({
+            data: {	x: 'x',
+                columns: [
+                	['x', 2014, 2015, 2016, 2017, 2018, 2019],
+                    ['data1', 3, 12, 3, 12, 21, 12],
+                    ['data2', 15, 36, 16, 34, 56, 51]
+                ],
+
+
+				names: {
+            data1: 'City of Baltimore',
+            data2: 'All of Maryland'
+
+        },
+
+
+
+                type: 'bar'
+            },
+            color: {
+                pattern: ['#94B8E0', '#6661AD','#E4A35E']
+            },
+            bar: {
+                width: {
+                    ratio: 0.65 // this makes bar width 50% of length between ticks
+                }
+                // or
+                //width: 100 // this makes bar width 100px
+            }
+        });
+
+
+
+
+ 	 </script>
+  </body>
+
+</html>

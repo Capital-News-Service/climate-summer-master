@@ -1,0 +1,81 @@
+.carousel-item {
+        height: 100vh;
+        min-height: 350px;
+        background: no-repeat center center scroll;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+      }
+      #cns-logo {
+        position: absolute;
+        top: 5px;
+        left:50%;
+        width:90px;
+        margin-left:-45px;
+        opacity:.7;
+      }
+
+
+      .headline-container-slide {
+        font-weight: 600;
+        text-align: center;
+        color: white;
+        font-size: 2em;
+        position: relative;
+        margin:0 auto;
+        background: rgba(0, 0, 0, 0.5);
+        padding-top: 5rem;
+        padding-bottom: 5rem;
+      }
+
+      .top-head {
+        font-size:3.5em;
+        font-family: 'PT Serif 400', serif;
+        margin:0 auto;
+        letter-spacing: 3px;
+        text-shadow: 1px 1px 1px #181818;
+        opacity: 1;
+        font-weight: 100;
+      }
+
+      .hero-text{
+        font-family: 'Montserrat', sans-serif;
+        font-size:.8em;
+        padding-bottom:10px;
+        width: 90%;
+        max-width:1100px;
+        margin: 0 auto;
+        //text-shadow: 3px 3px 10px black;
+      }
+
+      .fas fa-plus-circle{
+        margin-right:10px;
+        font-size:2.2em;
+        cursor: pointer;
+      }
+
+      .chapter-header{
+        font-family: 'Montserrat', sans-serif;
+        font-size: .75em;
+        text-decoration: underline #ff5f00;
+        color: #ff5f00;
+      }
+
+      .story-header{
+       font-size:3.5em;
+       padding-bottom:20px;
+       font-family: 'PT Serif 400', serif;
+       font-weight: 100;
+       letter-spacing: 3px;
+      }
+
+      .hero-text{
+        font-family: 'Montserrat', sans-serif;
+        font-size:.8em;
+        padding-bottom:10px;
+        width: 90%;
+        max-width:1100px;
+        margin: 0 auto;
+        //text-shadow: 3px 3px 10px black;
+      }
