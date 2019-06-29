@@ -20,7 +20,7 @@ a{
 
 .highcharts-title {
 	font-family: 'Montserrat', sans-serif;
-	color: white;
+	color: black;
 	font-weight:600;
 	font-size:24pt;
 	margin-top: 0px;
@@ -50,7 +50,7 @@ div#graphic-container {
 }
 
 #Label{
-	color: white;
+	color: black;
 	font-size: 12px;
 	font-family: 'Montserrat', sans-serif;
 
@@ -80,7 +80,7 @@ div#graphic-container {
 .c3-legend-item text{
   font-size: 14px; //change the size of the fonts
 	font-family: 'Montserrat', sans-serif;
-   fill: #fff;
+   fill: #000;;
 }
 
 .c3-legend-item {
@@ -88,15 +88,15 @@ div#graphic-container {
 }
 
 .c3 .c3-axis path, .c3 .c3-axis line {
-	stroke:#fff;
+	stroke:#000;
 }
 
 .c3-axis-y text {
-   fill: #fff;
+   fill: #000;;
 	font-family: 'Montserrat', sans-serif;
 }
 .c3-axis-x text {
-   fill: #fff;
+   fill: #000;;
 	font-family: 'Montserrat', sans-serif;
 }
 

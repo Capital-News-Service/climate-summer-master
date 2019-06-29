@@ -5,21 +5,62 @@ html {
 }
 
 body {
-  font-family: 'PT Serif', serif;
+  font-family: 'Playfair Display', serif;
   background-color: #FFFFFF	;
   color: black;
 }
+/* STICKY HEADER */
 
+header{
+  z-index: 1;
+  position:fixed;
+  margin: 0 auto;
+  width:100%;
+}
+
+header a{
+  text-align:center;
+}
+
+#social-bar{
+  display: block;
+  float: right;
+  margin-top:5px;
+  width: 15%;
+  font-size: 1.5rem;
+}
+
+#logo{
+  display: block;
+  float: left;
+  margin-top:5px;
+  width: 20%;
+  font-size: 1.5rem;
+}
+
+.img-logo{
+  width: 30%;
+}
+
+.opening-letter::first-letter {
+  font-family: 'Playfair Display', serif;
+	font-size: 4em;
+	float: left;
+  line-height: 0.8;
+  margin-top: 0.1em; /* for optical baseline alignment */
+  margin-left: -0.05em; /* for optical alignment to the left */
+  margin-right: 0.05em; /* for optical alignment to the right */
+  font-weight:400;
+  background: #ff5f00;
+  color: white;
+  padding:5px 10px 5px 10px;
+  margin-right: 10px;
+}
+.first-words{
+  text-transform: uppercase;
+}
 /* HERO ELEMENTS */
 
-#cns-logo {
-  position: absolute;
-  top: 5px;
-  left:50%;
-  width:90px;
-  margin-left:-45px;
-  opacity:.7;
-}
 
 .hero-container {
   height: 100vh;
@@ -49,11 +90,13 @@ body {
   background: rgba(0, 0, 0, 0.5);
   padding-top: 5rem;
   padding-bottom: 5rem;
+  max-height: 70vh;
 }
+
 
 .top-head {
   font-size:3.5em;
-  font-family: 'PT Serif 400', serif;
+  font-family: 'Playfair Display 400', serif;
   margin:0 auto;
   letter-spacing: 3px;
   text-shadow: 1px 1px 1px #181818;
@@ -90,7 +133,7 @@ p {
   text-align:left;
   line-height:210%;
   font-size: 20px;
-  font-family: 'PT Serif', serif;
+  font-family: 'Playfair Display', serif;
 }
 
 .caption {
@@ -101,11 +144,11 @@ p {
   font-family: 'Montserrat', sans-serif;
   font-size: 15px;
   color: black;
-  text-align: center;
+  text-align: left;
 }
 
 .initial-classical::first-letter {
-  font-family: 'PT Serif', serif;
+  font-family: 'Playfair Display', serif;
 	font-size: 7.2em;
 	float: left;
   line-height: 0.8;
@@ -130,94 +173,12 @@ p {
   margin-bottom: 15rem;
 }
 
-/* TABLE OF CONTENTS*/
-
-
-.overlay-container {
-  min-width: 200px;
-  max-width: 400px;
-  margin: .5%;
-  float: left;
-  text-align: center;
-  position: relative;
-  overflow: hidden;
-  line-height: 0; /* details! fix the weird
-                  pixel gap at the bottom of the image */
-}
-
-.overlay{
-  background-color: rgba(0, 0, 0, 0.7);
-  text-align: left;
-  padding: 5%;
-  box-sizing: border-box;
-  position: absolute;
-  width: 100%;
-  line-height: 1;
-
-  /* animation stuff */
-  transition: all 0.3s ease-in-out;
-
-  bottom: 0;
-  top:40%;
-}
-
-.overlay h2{
-  margin:0;
-}
-.overlay h4{
-  margin:0;
-}
-
-.overlay-container:hover .overlay {
-  opacity: 1;
-  top:0;
-  bottom: 0;
-  line-height: 1.5;
-}
-
-.hover-text {
-  color: white;
-  display: none;
-  font-size: 16px;
-  padding-top: 10px;
-  width: 80%;
-  line-height:150%;
-  font-family: 'PT Serif', serif;
-}
-
-.hover-paragraph:hover .hover-text {
-  display: block;
-}
-
-
-.plus-sign{
-  padding-top: 2px;
-  text-align: right;
-}
-
-img {
-  max-width: 100%;
-  height: auto;
-}
-
-h2{
-  font-family: 'Montserrat', sans-serif;
-  font-size:20px;
-  color: #ff5f00;
-}
-
-h4{
-  font-family: 'Montserrat', sans-serif;
-  font-size: 20px;
-  color: white;
-  padding-top: 5px;
-}
-
-
 /* ICONS ELEMENTS */
 
 #social-icons {
   padding-top: 10px;
+  text-align: right;
+  float: right;
 }
 
 span{
@@ -355,7 +316,7 @@ span{
 .story-header{
  font-size:3.5em;
  padding-bottom:20px;
- font-family: 'PT Serif 400', serif;
+ font-family: 'Playfair Display 400', serif;
  font-weight: 100;
  letter-spacing: 3px;
 }
@@ -379,6 +340,7 @@ span{
 .back-button{
   font-size: 2.5rem;
   text-align: left;
+  float: left;
 }
 
 .back-button-text{
@@ -388,7 +350,7 @@ span{
 }
 
 .text-title{
-  font-family: 'PT Serif', serif;
+  font-family: 'Playfair Display', serif;
   font-size:3em;
   letter-spacing: 2px;
   line-height:140%;
@@ -396,7 +358,7 @@ span{
 }
 
 .text-subtitle{
-  font-family: 'PT Serif', serif;
+  font-family: 'Playfair Display', serif;
   font-size:1.7em;
   line-height:140%;
   font-weight: 200;
@@ -471,20 +433,12 @@ span{
 }
 
 .story-title{
-  font-family: 'PT serif', serif;
+  font-family: 'Playfair Display', serif;
   font-size: 4em;
   font-weight: 100;
   color: black;
   text-align: center;
   margin: 0 auto;
-}
-
-.col-3{
-  background-color: #ff5f00;
-  border-width: 1px;
-  border-style: solid;
-  border-color: black;
-  padding: 20px 0px 20px 0px;
 }
 
 .chapter-title{
@@ -496,7 +450,105 @@ span{
 
 .chapter-subtitle{
   color: black;
-  font-family: 'PT Serif', sans-serif;
+  font-family: 'Playfair Display', serif;
   font-size: 17px;
   text-align: center;
 }
+
+
+
+.more-stories{
+  text-align:center;
+  width:90%;
+  margin: 0 auto;
+}
+
+.table-contents-box {
+  margin: 20px 0;
+}
+
+h2{
+  font-family: 'Montserrat', sans-serif;
+  font-size:20px;
+  color: #ff5f00;
+}
+
+h3{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+  color: white;
+  padding-top: 5px;
+  text-transform: uppercase;
+}
+.plus-sign{
+  float: right;
+  margin-top: -15px;
+}
+
+.hover-info p{
+  color: white;
+  display: none;
+  font-size: 14px;
+  padding-top: 10px;
+  width: 80%;
+  font-family: 'Playfair Display', serif;
+}
+
+.hover-box{
+            margin:0 0 10px 0;
+            overflow: hidden;
+
+        }
+        .hover-box .hover-img{
+            position: relative;
+            overflow: hidden;
+        }
+        .hover-box .hover-img img{
+            width:100%;
+            height:30vh;
+        }
+        .hover-box .hover-img .over-layer{
+          background-color: rgba(0, 0, 0, 0.7);
+          text-align: left;
+          padding: 5%;
+          box-sizing: border-box;
+          position: absolute;
+          width: 100%;
+          line-height: 1;
+
+          /* animation stuff */
+          transition: all 0.3s ease-in-out;
+
+          bottom: 0;
+          top:40%;
+
+
+        }
+        .hover-box:hover .over-layer{
+          opacity: 1;
+          top:0;
+          bottom: 0;
+          line-height: 1.5;
+        }
+        .hover-box .hover-img .over-layer h3{
+            color: white;
+            font-family: 'Montserrat', sans-serif;
+            font-size:18px;
+            padding-top: 2px;
+            text-transform: uppercase;
+            }
+        }
+        .hover-box .hover-img .over-layer .hover-info{
+            display:block;
+            padding:10px;
+            color:#fff;
+            margin:0 0 10px;
+        }
+
+        .hover-box .hover-img .over-layer .hover-info >p{
+            display: block;
+            font-size:16px;
+            color: white;
+            font-family: 'Playfair Display', serif;
+            line-height:150%;
+        }

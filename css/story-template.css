@@ -5,10 +5,43 @@ html {
 }
 
 body {
-  font-family: 'PT Serif', serif;
+  font-family: 'Playfair Display', serif;
   background-color: #FFFFFF	;
   color: black;
 }
+
+/* STICKY HEADER */
+
+header{
+  z-index: 1;
+  position:fixed;
+  width:100%;
+}
+
+header a{
+  text-align:center;
+}
+
+#social-bar{
+  display: block;
+  float: right;
+  margin-top:5px;
+  width: 15%;
+  font-size: 1.5rem;
+}
+
+#logo{
+  display: block;
+  float: left;
+  margin-top:5px;
+  width: 15%;
+  font-size: 1.5rem;
+}
+
+.img-logo{
+  width: 30%;
+}
+
 
 /* HERO ELEMENTS */
 
@@ -53,7 +86,7 @@ body {
 
 .top-head {
   font-size:3.5em;
-  font-family: 'PT Serif 400', serif;
+  font-family: 'Playfair Display', serif;;
   margin:0 auto;
   letter-spacing: 3px;
   text-shadow: 1px 1px 1px #181818;
@@ -69,6 +102,7 @@ body {
   max-width:1100px;
   margin: 0 auto;
   //text-shadow: 3px 3px 10px black;
+  
 }
 
 .fas fa-chevron-circle-down{
@@ -77,6 +111,25 @@ body {
   cursor: pointer;
 }
 
+
+.opening-letter::first-letter {
+  font-family: 'Playfair Display', serif;
+	font-size: 4em;
+	float: left;
+  line-height: 0.8;
+  margin-top: 0.1em; /* for optical baseline alignment */
+  margin-left: -0.05em; /* for optical alignment to the left */
+  margin-right: 0.05em; /* for optical alignment to the right */
+  font-weight:400;
+  background: #ff5f00;
+  color: white;
+  padding:5px 10px 5px 10px;
+  margin-right: 10px;
+}
+
+.first-words{
+  text-transform: uppercase;
+}
 
 /* MAIN STORY CONTAINER ELEMENTS */
 
@@ -90,7 +143,7 @@ p {
   text-align:left;
   line-height:210%;
   font-size: 20px;
-  font-family: 'PT Serif', serif;
+  font-family: 'Playfair Display', serif;
 }
 
 .caption {
@@ -105,7 +158,7 @@ p {
 }
 
 .initial-classical::first-letter {
-  font-family: 'PT Serif', serif;
+  font-family: 'Playfair Display', serif;
 	font-size: 7.2em;
 	float: left;
   line-height: 0.8;
@@ -126,7 +179,6 @@ p {
 
 .embed-container{
   margin: 0 auto;
-  margin-bottom: 15rem;
 }
 
 /* TABLE OF CONTENTS*/
@@ -181,7 +233,7 @@ p {
   padding-top: 10px;
   width: 80%;
   line-height:150%;
-  font-family: 'PT Serif', serif;
+  font-family: 'Playfair Display', serif;
 }
 
 .hover-paragraph:hover .hover-text {
@@ -196,7 +248,7 @@ p {
 
 img {
   max-width: 100%;
-  height: auto;
+
 }
 
 h2{
@@ -354,7 +406,7 @@ span{
 .story-header{
  font-size:3.5em;
  padding-bottom:20px;
- font-family: 'PT Serif 400', serif;
+ font-family: 'Playfair Display', serif;
  font-weight: 100;
  letter-spacing: 3px;
 }
@@ -387,7 +439,7 @@ span{
 }
 
 .text-title{
-  font-family: 'PT Serif', serif;
+  font-family: 'Playfair Display', serif;
   font-size:3em;
   letter-spacing: 2px;
   line-height:140%;
@@ -395,7 +447,7 @@ span{
 }
 
 .text-subtitle{
-  font-family: 'PT Serif', serif;
+  font-family: 'Playfair Display', serif;
   font-size:1.7em;
   line-height:140%;
   font-weight: 200;
@@ -421,20 +473,19 @@ span{
 
 .graphic-container{
   text-align:center;
-  width:90%;
-  max-width:900px;
+
 }
 
 .chart-title{
-  text-align: left;
+  text-align: center;
   font-family: 'Montserrat', sans-serif;
-  font-size: 25px;
-  padding-bottom: 10px;
+  font-size: 22px;
+  padding-bottom: 15px;
   text-transform: uppercase;
 }
 
 .chart-description{
-  text-align: left;
+  text-align: center;
   font-family: 'Montserrat', sans-serif;
   font-size: 18px;
 }
@@ -444,6 +495,7 @@ span{
   font-family: 'Montserrat', sans-serif;
   font-size: 13px;
   font-weight: 100px;
+  padding-bottom: 20px;
 }
 
 .chart-source{
@@ -454,48 +506,230 @@ span{
   font-style: italic;
 }
 
-#category{
-  margin:0 auto;
+
+@charset "UTF-8";
+
+div#source {
+	font-family: 'Montserrat', sans-serif;
+	color: #94B8E0;
+	text-align: right;
+	padding-top: 10px;
+	font-size: 12px;
+}
+
+a{
+	color: inherit;
+  	text-decoration: inherit;
+}
+
+#chart{
+	margin-top:10px;
 }
 
 
-/* FOR introduction-copy.html */
-.story-subtitle{
-  font-family: 'Montserrat', serif;
-  font-size: 1em;
-  font-weight: 100;
-  color: black;
-  text-align: center;
-  margin: 0 auto;
+.highcharts-title {
+	font-family: 'Montserrat', sans-serif;
+	color: black;
+	font-weight:600;
+	font-size:24pt;
+	margin-top: 0px;
+	margin-bottom: 0px;
+
+}
+.highcharts-subtitle {
+	font-family: 'Montserrat', sans-serif;
+    color: #94B8E0;
+    font-weight: 300;
+    font-size: 8pt;
 }
 
-.story-title{
-  font-family: 'PT serif', serif;
-  font-size: 4em;
-  font-weight: 100;
-  color: black;
-  text-align: center;
-  margin: 0 auto;
+/*Styles the div that holds the highchart */
+div#graphic-container {
+	margin-top:20px;
+	margin-bottom:20px;
+	padding-left:20px;
+	padding-top:20px;
+	padding-right:30px;
+	padding-bottom:10px;
+	min-width: 310px;
+	max-width: 600px;
+	margin-left:auto;
+	margin-right:auto;
+	background-color: #181818;
 }
 
-.col-3{
-  background-color: #ff5f00;
-  border-width: 1px;
-  border-style: solid;
-  border-color: black;
-  padding: 20px 0px 20px 0px;
+#Label{
+	color: black;
+	font-size: 12px;
+	font-family: 'Montserrat', sans-serif;
+
 }
 
-.chapter-title{
-  color: white;
+
+/* y axis label size */
+.c3-axis-y-label {
+  font-size: 12px;//change the size of the fonts
+}
+
+/* x axis label size */
+.c3-axis-x-label  {
+  font-size: 12px; //change the size of the fonts
+}
+
+/* y axis tick size */
+.c3-axis-y g {
+  font-size: 12px; //change the size of the fonts
+}
+
+/* x axis tick size */
+.c3-axis-x g {
+  font-size: 12px; //change the size of the fonts
+}
+
+.c3-legend-item text{
+  font-size: 14px; //change the size of the fonts
+	font-family: 'Montserrat', sans-serif;
+   fill: #000;;
+}
+
+.c3-legend-item {
+	font-family: 'Montserrat', sans-serif;
+}
+
+.c3 .c3-axis path, .c3 .c3-axis line {
+	stroke:#000;
+}
+
+.c3-axis-y text {
+   fill: #000;;
+	font-family: 'Montserrat', sans-serif;
+}
+.c3-axis-x text {
+   fill: #000;;
+	font-family: 'Montserrat', sans-serif;
+}
+
+
+.c3-tooltip {
+	color:#000;
+		font-family: 'Montserrat', sans-serif;
+}
+
+.pullquote{
+  border-bottom: solid #303030;
+  border-top: solid #303030;
+  border-width: 0.5px;
+}
+
+.pullquote-top{
+  padding-top:20px;
   font-family: 'Montserrat', sans-serif;
-  font-size: 15px;
-  text-align: center;
+  font-size:2.5em;
+  font-weight: bold;
+  text-align: left;
+  color: #ff5f00;
 }
 
-.chapter-subtitle{
-  color: black;
-  font-family: 'PT Serif', sans-serif;
-  font-size: 17px;
-  text-align: center;
+.pullquote-bottom{
+  text-align: left;
+  font-family: 'Montserrat', sans-serif;
+  font-size:1.5em;
+  padding-bottom: 20px;
+  padding-top:10px;
 }
+
+.more-stories{
+  text-align:center;
+  width:90%;
+  margin: 0 auto;
+}
+
+.table-contents-box {
+  margin: 20px 0;
+}
+
+h2{
+  font-family: 'Montserrat', sans-serif;
+  font-size:20px;
+  color: #ff5f00;
+}
+
+h3{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+  color: white;
+  padding-top: 5px;
+  text-transform: uppercase;
+}
+.plus-sign{
+  float: right;
+  margin-top: -15px;
+}
+
+.hover-info p{
+  color: white;
+  display: none;
+  font-size: 14px;
+  padding-top: 10px;
+  width: 80%;
+  font-family: 'Playfair Display', serif;
+}
+
+.hover-box{
+            margin:0 0 10px 0;
+            overflow: hidden;
+
+        }
+        .hover-box .hover-img{
+            position: relative;
+            overflow: hidden;
+        }
+        .hover-box .hover-img img{
+            width:100%;
+            height:30vh;
+        }
+        .hover-box .hover-img .over-layer{
+          background-color: rgba(0, 0, 0, 0.7);
+          text-align: left;
+          padding: 5%;
+          box-sizing: border-box;
+          position: absolute;
+          width: 100%;
+          line-height: 1;
+
+          /* animation stuff */
+          transition: all 0.3s ease-in-out;
+
+          bottom: 0;
+          top:40%;
+
+
+        }
+        .hover-box:hover .over-layer{
+          opacity: 1;
+          top:0;
+          bottom: 0;
+          line-height: 1.5;
+        }
+        .hover-box .hover-img .over-layer h3{
+            color: white;
+            font-family: 'Montserrat', sans-serif;
+            font-size:18px;
+            padding-top: 2px;
+            text-transform: uppercase;
+            }
+        }
+        .hover-box .hover-img .over-layer .hover-info{
+            display:block;
+            padding:10px;
+            color:#fff;
+            margin:0 0 10px;
+        }
+
+        .hover-box .hover-img .over-layer .hover-info >p{
+            display: block;
+            font-size:16px;
+            color: white;
+            font-family: 'Playfair Display', serif;
+            line-height:150%;
+        }
