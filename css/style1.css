@@ -109,6 +109,10 @@ header a{
   cursor: pointer;
 }
 
+.fa-stack{
+  font-size: 1.5em;
+}
+
 /* MAIN STORY CONTAINER ELEMENTS */
 
 .container {

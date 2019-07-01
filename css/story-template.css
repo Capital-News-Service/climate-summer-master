@@ -75,7 +75,7 @@ header a{
 }
 
 .chapter-header{
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Playfair Display', serif;
   font-size: .75em;
   text-decoration: underline #ff5f00;
   color: #ff5f00;
@@ -90,7 +90,7 @@ header a{
 }
 
 .hero-text{
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Playfair Display', serif;
   font-size:.8em;
   padding-bottom:10px;
   width: 90%;
@@ -101,6 +101,17 @@ header a{
 }
 
 .fas fa-chevron-circle-down{
+  margin-right:10px;
+  font-size:2.2em;
+  cursor: pointer;
+}
+
+.fa-stack{
+  font-size: 1.5em;
+}
+
+
+.fas fa-circle{
   margin-right:10px;
   font-size:2.2em;
   cursor: pointer;
@@ -150,7 +161,7 @@ p {
 }
 
 .text-author{
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Playfair Display', serif;
   font-size: 1em;
 }
 
@@ -182,7 +193,7 @@ p {
   max-width:900px;
   margin:0 auto;
   padding-bottom:30px;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Playfair Display', serif;
   font-size: 15px;
   color: black;
   text-align: center;
@@ -190,7 +201,7 @@ p {
 
 .small-head {
   font-size:1.5em;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Playfair Display', serif;
 }
 
 /* WIDER CONTAINER */
@@ -211,7 +222,7 @@ img {
 
 .chart-title{
   text-align: center;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Playfair Display', serif;
   font-size: 22px;
   padding-bottom: 15px;
   text-transform: uppercase;
@@ -219,13 +230,13 @@ img {
 
 .chart-description{
   text-align: center;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Playfair Display', serif;
   font-size: 18px;
 }
 
 .chart-author{
   text-align: left;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Playfair Display', serif;
   font-size: 13px;
   font-weight: 100px;
   padding-bottom: 20px;
@@ -233,7 +244,7 @@ img {
 
 .chart-source{
   text-align: left;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Playfair Display', serif;
   font-size: 13px;
   font-weight: 100px;
   font-style: italic;
@@ -249,7 +260,7 @@ img {
 
 .pullquote-top{
   padding-top:20px;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Playfair Display', serif;
   font-size:2.5em;
   font-weight: bold;
   text-align: left;
@@ -258,7 +269,7 @@ img {
 
 .pullquote-bottom{
   text-align: left;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Playfair Display', serif;
   font-size:1.5em;
   padding-bottom: 20px;
   padding-top:10px;
@@ -277,18 +288,19 @@ img {
 }
 
 h2{
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Playfair Display', serif;
   font-size:20px;
   color: #ff5f00;
 }
 
 h3{
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Playfair Display', serif;
   font-size: 18px;
   color: white;
   padding-top: 5px;
   text-transform: uppercase;
 }
+
 .plus-sign{
   float: right;
   margin-top: -15px;
@@ -342,7 +354,7 @@ h3{
 
 .hover-box .hover-img .over-layer h3{
   color: white;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Playfair Display', serif;
   font-size:18px;
   padding-top: 2px;
   text-transform: uppercase;
@@ -367,7 +379,7 @@ h3{
 
 #credit {
   text-align:left;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Playfair Display', serif;
   width:80%;
   margin:0 auto;
   padding-top:40px;
@@ -476,7 +488,7 @@ span{
 @charset "UTF-8";
 
 div#source {
-	font-family: 'Montserrat', sans-serif;
+	font-family: 'Playfair Display', serif;
 	color: #94B8E0;
 	text-align: right;
 	padding-top: 10px;
