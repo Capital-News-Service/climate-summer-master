@@ -272,7 +272,7 @@ p {
   padding-top:10px;
 }
 
-/* TABLE OF CONTENTS*/
+/* TABLE OF CONTENTS ELEMENTS */
 
 .more-stories{
   text-align:center;
@@ -282,42 +282,8 @@ p {
 
 .table-contents-box {
   margin: 20px 0;
-  float: left;
-  text-align: center;
-  position: relative;
-  overflow: hidden;
-  line-height: 0; /* details! fix the weird
-                  pixel gap at the bottom of the image */
 }
 
-h2{
-  font-family: 'Montserrat', sans-serif;
-  font-size:20px;
-  color: #ff5f00;
-}
-
-h3{
-  font-family: 'Montserrat', sans-serif;
-  font-size: 18px;
-  color: white;
-  padding-top: 5px;
-  text-transform: uppercase;
-}
-
-.plus-sign{
-  float: right;
-  margin-top: -15px;
-}
-
-.hover-info p{
-  color: white;
-  display: none;
-  font-size: 14px;
-  padding-top: 10px;
-  width: 80%;
-  font-family: 'Playfair Display', serif;
-  text-align: left;
-}
 
 .hover-box{
   margin:0 0 10px 0;
@@ -327,14 +293,6 @@ h3{
 .hover-box .hover-img{
   position: relative;
   overflow: hidden;
-}
-
-.over-layer h2{
-  margin:0;
-}
-
-.over-layer h3{
-  margin:0;
 }
 
 .hover-box .hover-img img{
@@ -353,8 +311,7 @@ h3{
 
   /* animation stuff */
   transition: all 0.3s ease-in-out;
-  bottom: 0;
-  top:40%;
+  top:55%;
 }
 
 .hover-box:hover .over-layer{
@@ -367,25 +324,40 @@ h3{
 .hover-box .hover-img .over-layer h3{
   color: white;
   font-family: 'Montserrat', sans-serif;
-  font-size:18px;
+  font-size:22px;
   padding-top: 2px;
   text-transform: uppercase;
 }
 
-.hover-box .hover-img .over-layer .hover-info{
-  display:block;
-  padding:10px;
-  color:#fff;
-  margin:0 0 10px;
+.hover-box .hover-img .over-layer h2{
+  color: #ff5f00;
+  font-family: 'Montserrat', sans-serif;
+  font-size:20px;
+  padding-top: 2px;
 }
 
-.hover-box .hover-img .over-layer .hover-info >p{
-  display: block;
-  font-size:16px;
+
+.hover-box .hover-img .over-layer .hover-info{
+  color:#fff;
+}
+
+
+.hover-box .hover-img .over-layer .hover-info p{
+  padding-top: 10px;
+  padding-bottom: 5px;
   color: white;
   font-family: 'Playfair Display', serif;
   line-height:150%;
+  text-align: left;
+  opacity: 0;
+  width:100%;
+  font-size: 18px;
 }
+
+.hover-box .hover-img .over-layer .hover-info p:hover{
+  opacity: 1;
+}
+
 
 
 /* SCROLLYTELLING */
@@ -607,3 +579,10 @@ a{
     }
 
     }
+
+
+
+media only screen and (max-width: 1100px) {
+
+
+  }
