@@ -13,6 +13,9 @@ header video {
   transform: translateX(-50%) translateY(-50%);
 }
 
+.carousel-caption {
+  top:50px;
+}
 
 .carousel-item {
   height: 100vh;
@@ -32,7 +35,7 @@ header video {
   font-size: 2em;
   margin:0 auto;
   background: rgba(0, 0, 0, 0.5);
-  padding-top: 5rem;
+  padding-top: 3rem;
   padding-bottom: 5rem;
 }
 
@@ -95,4 +98,64 @@ header video {
 
 .img-logo{
   width: 30%;
+}
+
+.carousel-control-prev-icon, .carousel-control-next-icon {
+  width:50px;
+  height:50px;
+}
+
+.carousel-indicators li {
+  height:5px;
+}
+
+.hide {
+  display:none;
+}
+
+
+@media(max-width:1300px){
+  .story-header {
+    font-size:2.5em;
+  }
+
+  .chapter-header {
+    font-size:.7em;
+  }
+
+  .hero-text {
+    font-size:.7em;
+  }
+
+}
+
+@media(max-width:1050px){
+  .story-header {
+    font-size:2em;
+  }
+
+  .chapter-header {
+    font-size:.5em;
+  }
+
+  .hero-text {
+    font-size:.5em;
+  }
+
+}
+
+@media(max-width:500px) {
+
+  .story-header {
+    font-size:1.5em;
+  }
+
+  .carousel-control-prev-icon, .carousel-control-next-icon {
+    width:20px;
+    height:20px;
+  }
+  .carousel-indicators li {
+    height:3px;
+  }
+
 }

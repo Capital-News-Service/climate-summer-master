@@ -238,6 +238,16 @@
 
   <p>“And the difficulties with this and trying to get people to care about this is … we had this massive cold snap this year,” Canty said. “But what about if next year it's 70 degrees all winter long and everyone's happy about that?"</p><br>
 
+  <div class="embed-container">
+    <p class="chart-title"><b>A video</b>
+    <p>A responsive video that scales nicely to the parent element with an 16:9 aspect ratio</p>
+    <div class="embed-responsive embed-responsive-16by9">
+      <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/tgbNymZ7vqY"></iframe>
+    </div>
+      <p class="caption">A video caption if needed.</p><br>
+  </div>
+
+
   <p>Cold snaps that occur in places that usually experience winter weather such as the Northeastern United States, northern Europe and East Asia are the result of polar vortex disruptions, according to Cohen. When winter extremes occur in other locations, experts consider these events unexplainable.</p><br>
 
   <p>This winter, snowfall hit Maui, Hawaii at its lowest elevation ever. Meanwhile, Seattle recorded record-breaking temperatures and Las Vegas had snowfall for the first time in over a decade.</p><br><br>
@@ -291,32 +301,32 @@
 <div class="more-stories">
   <div class="row">
 
-  <div class="col-xs-12 col-sm-6 col-md-3 table-contents-box">
-    <div class="hover-box">
+  <div class="col-xs-12 col-sm-6  col-md-6 col-lg-3 table-contents-box">
+    <div class="hover-box"  onclick="window.location='http://google.com';">
       <div class="hover-img">
         <img src="images/box-health.jpg">
         <div class="over-layer">
           <h2><b>CHAPTER ONE</b></h2>
           <h3>Health & Inequality</h3>
           <div class="hover-info">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
-            <a href="story-template.html"><div class="plus-sign">
-              <i class="fas fa-plus-circle fa-2x" style="color:#ff5f00"></i></div></a>
+            <p class="hover-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+            <div class="plus-sign">
+              <i class="fas fa-plus-circle fa-2x" style="color:#ff5f00"></i></div>
          </div>
         </div>
       </div>
     </div>
   </div>
 
-  <div class="col-xs-12 col-sm-6 col-md-3 table-contents-box">
-    <div class="hover-box">
+  <div class="col-xs-12 col-sm-6  col-md-6 col-lg-3  table-contents-box">
+    <div class="hover-box" onclick="window.location='http://google.com';">
       <div class="hover-img">
         <img src="images/box-people.jpg">
         <div class="over-layer">
           <h2><b>CHAPTER TWO</b></h2>
           <h3>Heat & Health</h3>
           <div class="hover-info">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+            <p class="hover-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
             <a href="story-template.html"><div class="plus-sign"><i class="fas fa-plus-circle fa-2x" style="color:#ff5f00"></i></div></a>
           </div>
        </div>
@@ -324,15 +334,15 @@
    </div>
   </div>
 
-  <div class="col-xs-12 col-sm-6 col-md-3 table-contents-box">
-    <div class="hover-box">
+  <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3  table-contents-box">
+    <div class="hover-box" onclick="window.location='http://google.com';">
       <div class="hover-img">
         <img src="images/box-trees.jpg">
         <div class="over-layer">
           <h2><b>CHAPTER THREE</b></h2>
           <h3>The Role of Trees</h3>
           <div class="hover-info">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+            <p class="hover-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
             <a href="story-template.html"><div class="plus-sign"><i class="fas fa-plus-circle fa-2x" style="color:#ff5f00"></i></div></a>
           </div>
         </div>
@@ -340,15 +350,15 @@
     </div>
   </div>
 
-  <div class="col-xs-12 col-sm-6 col-md-3 table-contents-box">
-    <div class="hover-box">
+  <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 table-contents-box">
+    <div class="hover-box" onclick="window.location='http://google.com';">
       <div class="hover-img">
         <img src="images/box-forward.jpg">
         <div class="over-layer">
           <h2><b>CHAPTER FOUR</b></h2>
           <h3>Looking Forward</h3>
           <div class="hover-info">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
+            <p class="hover-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
                 <a href="story-template.html"><div class="plus-sign"><i class="fas fa-plus-circle fa-2x" style="color:#ff5f00"></i></div></a>
               </p>
           </div>
@@ -389,6 +399,20 @@
     var url = "https://cnsmaryland.org/interactives/spring-2019/bitter-cold/"; //Interactive URL
 
   </script>
+
+
+  <!-- Jquery to make the text in the table of contents boxes appearon hover only -->
+    <script>
+
+      $(".hover-box").hover(function () {
+          $(".hover-text").addClass("display");
+      }, function () {
+          $(".hover-text").removeClass("display");
+      });
+
+
+    </script>
+
 
 
   <!--our c3 javascript-->

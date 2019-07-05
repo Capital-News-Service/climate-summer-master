@@ -70,25 +70,27 @@
 
 
       <header>
-        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" data-interval="false">
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" data-interval="5000">
           <ol class="carousel-indicators">
             <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
             <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
             <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
           </ol>
           <div class="carousel-inner" role="listbox">
             <!-- Slide One - Set the background image for this slide in the line below -->
             <div class="carousel-item active">
-              <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+              <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop" style="z-index:-1">
                 <source src="trees.mp4" type="video/mp4">
               </video>
-                <a href="http://www.cnsmaryland.org" id="logo"><img class ="img-logo" src="images/cns-logo.png"></a>
+                <a href="http://www.cnsmaryland.org" id="logo"><img class ="img-logo" src="images/cns-logo.png"  style="z-index:5"></a>
                 <div id="social-bar">
                 <a href="#" id="facebook"><i class="fab fa-facebook-f"></i></a>
                 <a href="#" id="twitter"><i class="fab fa-twitter"></i></a>
                 <a href="#" id="email"><i class="fas fa-envelope"></i></a>
                 </div>
-              <div class="carousel-caption d-none d-md-block">
+              <div class="carousel-caption">
                 <div class="headline-container-slide">
                   <div class="chapter-header">A CAPITAL NEWS SERVICE INVESTIGATION</div>
                   <div class="story-header">Summer Project</div>
@@ -109,7 +111,7 @@
                 <a href="#" id="twitter"><i class="fab fa-twitter"></i></a>
                 <a href="#" id="email"><i class="fas fa-envelope"></i></a>
                 </div>
-              <div class="carousel-caption d-none d-md-block">
+              <div class="carousel-caption">
                 <div class="headline-container-slide">
                   <div class="chapter-header"> CHAPTER ONE</div>
                   <div class="story-header">Health & Inequality</div>
@@ -129,7 +131,7 @@
                 <a href="#" id="twitter"><i class="fab fa-twitter"></i></a>
                 <a href="#" id="email"><i class="fas fa-envelope"></i></a>
                 </div>
-              <div class="carousel-caption d-none d-md-block">
+              <div class="carousel-caption">
                 <div class="headline-container-slide">
                   <div class="chapter-header"> CHAPTER TWO</div>
                   <div class="story-header"> Heat & Health</div>
@@ -143,6 +145,54 @@
               </div>
             </div>
 
+
+
+            <!-- Slide Four - Set the background image for this slide in the line below -->
+            <div class="carousel-item" style="background-image: url('https://source.unsplash.com/bF2vsubyHcQ/1920x1080')">
+                <a href="http://www.cnsmaryland.org" id="logo"><img class ="img-logo" src="images/cns-logo.png"></a>
+                <div id="social-bar">
+                <a href="#" id="facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" id="twitter"><i class="fab fa-twitter"></i></a>
+                <a href="#" id="email"><i class="fas fa-envelope"></i></a>
+                </div>
+              <div class="carousel-caption">
+                <div class="headline-container-slide">
+                  <div class="chapter-header"> CHAPTER THREE</div>
+                  <div class="story-header"> Heat & Health</div>
+                  <div class="hero-text">For people with diabetes, asthma, COPD, heart disease and kidney disease, heat and humidity is more than a summer nuisance.</div>
+                  <div class="fa-stack" style="vertical-align: top;">
+                    <i class="fas fa-circle fa-stack-1x"></i>
+                    <a href="introduction1.html"><i class="fas fa-plus-circle fa-stack-1x fa-inverse" style="color:#ff5f00"></i></a>
+                  </div>
+                  </div>  <!-- This slideUp when scrolling down -->
+
+              </div>
+            </div>
+
+
+            <!-- Slide Five - Set the background image for this slide in the line below -->
+            <div class="carousel-item" style="background-image: url('https://source.unsplash.com/szFUQoyvrxM/1920x1080')">
+                <a href="http://www.cnsmaryland.org" id="logo"><img class ="img-logo" src="images/cns-logo.png"></a>
+                <div id="social-bar">
+                <a href="#" id="facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" id="twitter"><i class="fab fa-twitter"></i></a>
+                <a href="#" id="email"><i class="fas fa-envelope"></i></a>
+                </div>
+              <div class="carousel-caption">
+                <div class="headline-container-slide">
+                  <div class="chapter-header"> CHAPTER THREE</div>
+                  <div class="story-header"> Heat & Health</div>
+                  <div class="hero-text">For people with diabetes, asthma, COPD, heart disease and kidney disease, heat and humidity is more than a summer nuisance.</div>
+                  <div class="fa-stack" style="vertical-align: top;">
+                    <i class="fas fa-circle fa-stack-1x"></i>
+                    <a href="introduction1.html"><i class="fas fa-plus-circle fa-stack-1x fa-inverse" style="color:#ff5f00"></i></a>
+                  </div>
+                  </div>  <!-- This slideUp when scrolling down -->
+
+              </div>
+            </div>
+
+
           </div>
           <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -153,9 +203,8 @@
                 <span class="sr-only">Next</span>
               </a>
         </div>
+
       </header>
-
-
 
 
 
@@ -165,5 +214,8 @@
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+
+
       </body>
     </html>

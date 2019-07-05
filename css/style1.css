@@ -83,7 +83,7 @@ header a{
   color: #ff5f00;
 }
 
-.top-head {
+.story-header {
   font-size:3.5em;
   font-family: 'Playfair Display 400', serif;
   margin:0 auto;
@@ -136,7 +136,7 @@ header a{
 p {
   text-align:left;
   line-height:210%;
-  font-size: 20px;
+  font-size: 1em;
   font-family: 'Playfair Display', serif;
 }
 
@@ -169,7 +169,7 @@ p {
   margin:0 auto;
   padding-bottom:30px;
   font-family: 'Montserrat', sans-serif;
-  font-size: 15px;
+  font-size: 1em;
   color: black;
   text-align: left;
 }
@@ -201,38 +201,13 @@ p {
   margin: 20px 0;
 }
 
-h2{
-  font-family: 'Montserrat', sans-serif;
-  font-size:20px;
-  color: #ff5f00;
-}
-
-h3{
-  font-family: 'Montserrat', sans-serif;
-  font-size: 18px;
-  color: white;
-  padding-top: 5px;
-  text-transform: uppercase;
-}
-
-.plus-sign{
-  float: right;
-  margin-top: -15px;
-}
-
-.hover-info p{
-  color: white;
-  display: none;
-  font-size: 14px;
-  padding-top: 10px;
-  width: 80%;
-  font-family: 'Playfair Display', serif;
-}
 
 .hover-box{
   margin:0 0 10px 0;
   overflow: hidden;
+  cursor:pointer;
 }
+
 
 .hover-box .hover-img{
   position: relative;
@@ -241,7 +216,7 @@ h3{
 
 .hover-box .hover-img img{
   width:100%;
-  height:30vh;
+  height:240px;
 }
 
 .hover-box .hover-img .over-layer{
@@ -255,8 +230,7 @@ h3{
 
   /* animation stuff */
   transition: all 0.3s ease-in-out;
-  bottom: 0;
-  top:40%;
+  top:55%;
 }
 
 .hover-box:hover .over-layer{
@@ -269,24 +243,50 @@ h3{
 .hover-box .hover-img .over-layer h3{
   color: white;
   font-family: 'Montserrat', sans-serif;
-  font-size:18px;
+  font-size:1.25em;
   padding-top: 2px;
   text-transform: uppercase;
 }
 
-.hover-box .hover-img .over-layer .hover-info{
-  display:block;
-  padding:10px;
-  color:#fff;
-  margin:0 0 10px;
+.hover-box .hover-img .over-layer h2{
+  color: #ff5f00;
+  font-family: 'Montserrat', sans-serif;
+  font-size:1em;
+  padding-top: 2px;
 }
 
-.hover-box .hover-img .over-layer .hover-info >p{
-  display: block;
-  font-size:16px;
+
+.hover-box .hover-img .over-layer .hover-info{
+  color:#fff;
+  height:300px;
+}
+
+
+.hover-box .hover-img .over-layer .hover-info p{
+  position:relative;
+  top:25px;
   color: white;
   font-family: 'Playfair Display', serif;
   line-height:150%;
+  text-align: left;
+  width:100%;
+  font-size: 1em;
+}
+
+.hover-text {
+  opacity: 0;
+  transition: opacity .6s;
+}
+
+.plus-sign {
+  position:relative;
+  top:15px;
+}
+
+
+.display{
+  opacity: 1;
+  transition: opacity .6s;
 }
 
 /* SPONSORS ELEMENTS */
@@ -389,6 +389,49 @@ span{
 }
 
 
+
+
+@media(max-width:1300px){
+  .story-header {
+    font-size:2.5em;
+  }
+
+  .chapter-header {
+    font-size:.7em;
+  }
+
+  .hero-text {
+    font-size:.7em;
+  }
+
+}
+
+@media(max-width:1050px){
+  .story-header {
+    font-size:2em;
+  }
+
+  .chapter-header {
+    font-size:.5em;
+  }
+
+  .hero-text {
+    font-size:.5em;
+  }
+
+}
+
+
+
+
+@media(max-width:500px) {
+
+  .story-header {
+    font-size:1.5em;
+  }
+
+}
+
 @media only screen and (max-width: 1100px) {
   #social-bar {
     display: none;
@@ -396,25 +439,5 @@ span{
   .img-logo{
     display: none;
   }
-.headline-container-slide{
-  font-size: 1.5em;
-  }
+
 }
-
-@media only screen and (max-width: 900px) {
-  .chapter-header{
-    font-size: 15px;
-}
-  .story-header{
-    font-size: 2.5em;
-  }
-
-    .hero-text{
-      display:none;
-    }
-
-    .fas fa-chevron-circle-down{
-      display: none;
-    }
-
-    }
