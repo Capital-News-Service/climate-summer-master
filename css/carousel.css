@@ -38,7 +38,7 @@
 .chapter-header{
   font-family: 'Montserrat', sans-serif;
   font-size: .75em;
-  text-decoration: underline #ff5f00;
+  text-decoration: underline;
   color: #ff5f00;
   font-weight: 600;
   max-height: 70vh;
