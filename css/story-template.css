@@ -69,6 +69,7 @@
   height: auto;
 }
 
+
 /* WIDER CONTAINER */
 
 .embed-container{
@@ -195,7 +196,6 @@ figure {
 }
 
 /* MEDIA QUERIES */
-
 
 @media screen and (min-width: 35rem) {
   figure {

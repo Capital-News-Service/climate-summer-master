@@ -110,18 +110,15 @@ body {
   cursor: pointer;
 }
 
-.fa-stack:hover{
-  font-size:2.5em;
-  transition: all 0.3s ease-in-out;
-}
-
-.fas fa-chevron-circle-down:hover{
-  color: white;
-}
-
 .fa-stack{
   font-size: 1.5em;
 }
+
+.fa-stack:hover{
+  font-size:1.8em;
+  transition: all 0.3s ease-in-out;
+}
+
 
 /* MAIN STORY CONTAINER ELEMENTS */
 

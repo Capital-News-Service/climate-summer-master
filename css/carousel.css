@@ -21,7 +21,8 @@
   font-size: 2em;
   margin:0 auto;
   background: rgba(0, 0, 0, 0.5);
-  padding-top: 3rem;
+  margin-top: 50px;
+  padding-top: 2rem;
   padding-bottom: 5rem;
 }
 
@@ -29,10 +30,38 @@
   font-size: 1.5em;
 }
 
+.fa-stack:hover{
+  font-size:1.8em;
+  transition: all 0.3s ease-in-out;
+}
+
 .fas fa-plus-circle{
   margin-right:10px;
   cursor: pointer;
   max-height: 70vh;
+}
+
+.read-more {
+    border-radius: 5px;
+    color: white;
+    display: block;
+    margin: 0 auto;
+    padding: 0.5em;
+    text-align: center;
+    text-decoration: none;
+    width: 7em;
+    margin-top:20px;
+    font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.read-more:focus,
+.read-more:hover {
+    color: black;
+}
+
+.no-context {
+    background-color: #ff5f00;
 }
 
 .chapter-header{
@@ -64,22 +93,21 @@
   max-height: 70vh;
 }
 
-#social-bar-white{
-  float: right;
-  margin-top:5px;
-  margin-right: 5%;
+#social-bar-carousel{
+  margin-bottom:20px;
   font-size: 1.5rem;
   color: white;
   letter-spacing: 5px;
-  text-shadow: 2px 2px 2px #000;
 }
 
-#logo{
-  float: left;
-  margin-top:5px;
-  width: 15%;
-  margin-left: 5%;
-  font-size: 1.5rem;
+
+#cns-logo {
+  position: absolute;
+  top: 5px;
+  left:50%;
+  width:90px;
+  margin-left:-45px;
+  bottom: 5px;
 }
 
 .img-logo{
@@ -97,6 +125,13 @@
 
 .hide {
   display:none;
+}
+
+@charset "UTF-8";
+
+a{
+ color: inherit;
+  text-decoration: inherit;
 }
 
 
