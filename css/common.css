@@ -371,12 +371,14 @@ p {
 
    .annotations {
      font-size: 18px;
-    position: -webkit-sticky;
+     position: -webkit-sticky;
+     position: sticky;
    }
 
    .annotations-1 {
      font-size: 18px;
-    position: -webkit-sticky;
+     position: -webkit-sticky;
+     position: sticky;
    }
 
    .image-scrolly{
@@ -405,12 +407,14 @@ p {
 
    .annotations {
      font-size: 15px;
-    position: -webkit-sticky;
+     position: -webkit-sticky;
+     position: sticky;
    }
 
    .annotations-1 {
      font-size: 15px;
-    position: -webkit-sticky;
+     position: -webkit-sticky;
+     position: sticky;
    }
 
    .image-scrolly{
@@ -442,11 +446,13 @@ p {
    .annotations {
      font-size: 15px;
      position: -webkit-sticky;
+     position: sticky;
    }
 
    .annotations-1 {
      font-size: 15px;
      position: -webkit-sticky;
+     position: sticky;
    }
 
    .image-scrolly{
