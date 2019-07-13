@@ -369,6 +369,21 @@ p {
      font-size:1.2em;
    }
 
+   .annotations {
+     font-size: 18px;
+    position: -webkit-sticky;
+   }
+
+   .annotations-1 {
+     font-size: 18px;
+    position: -webkit-sticky;
+   }
+
+   .image-scrolly{
+     width:100%;
+   }
+
+
  }
 
  @media(max-width:1050px){
@@ -389,9 +404,19 @@ p {
    }
 
    .annotations {
-     width: 30%;
      font-size: 15px;
+    position: -webkit-sticky;
    }
+
+   .annotations-1 {
+     font-size: 15px;
+    position: -webkit-sticky;
+   }
+
+   .image-scrolly{
+     width:100%;
+   }
+
  }
 
 
@@ -415,9 +440,17 @@ p {
    }
 
    .annotations {
-     width: 20%;
      font-size: 15px;
-     position: sticky;
+     position: -webkit-sticky;
+   }
+
+   .annotations-1 {
+     font-size: 15px;
+     position: -webkit-sticky;
+   }
+
+   .image-scrolly{
+     width:100%;
    }
 
  }
