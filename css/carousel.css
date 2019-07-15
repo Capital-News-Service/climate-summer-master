@@ -33,11 +33,12 @@
   margin-top: 50px;
   padding-top: 2rem;
   padding-bottom: 5rem;
+    min-height:70%;
 }
 
 .read-more {
     border-radius: 5px;
-    color: white;
+    color: #fff;
     display: block;
     margin: 0 auto;
     padding: 0.5em;
@@ -45,13 +46,17 @@
     text-decoration: none;
     width: 7em;
     margin-top:20px;
-    font-size: 18px;
+    font-size: .6em;
     font-family: 'Montserrat', sans-serif;
 }
 
 .read-more:focus,
 .read-more:hover {
-    color: black;
+  color:#fff;
+  text-decoration: none;
+  width: 7em;
+  font-size: .7em;
+  transition: all 0.3s ease-in-out;
 }
 
 .no-context {
@@ -113,7 +118,8 @@
 }
 
 .carousel-indicators li {
-  height:5px;
+  height:8px;
+  opacity:.7;
 }
 
 .hide {
@@ -161,7 +167,22 @@ a{
 @media(max-width:500px) {
 
   .story-header {
-    font-size:1.5em;
+    font-size:1em;
+  }
+
+  .hero-text, .chapter-header {
+    font-size:.4em;
+  }
+
+  #cns-logo {
+    width: 50px;
+    margin-left:-25px;
+  }
+
+  .carousel-caption {
+    top:0;
+    padding-top:0px;
+    padding-bottom:10px;
   }
 
   .carousel-control-prev-icon, .carousel-control-next-icon {
@@ -171,5 +192,22 @@ a{
   .carousel-indicators li {
     height:3px;
   }
+
+  #social-bar-carousel {
+    font-size:.5em;
+  }
+
+
+  .read-more {
+      width: 8em;
+      font-size: .4em;
+      margin-top:0px;
+  }
+
+  .read-more:hover {
+      width: 8em;
+      font-size: .4em;
+  }
+
 
 }
