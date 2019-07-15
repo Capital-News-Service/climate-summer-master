@@ -80,7 +80,7 @@
   <div class="cover-img relative-img" style="background-image: url('images/pills.jpg')"></div>
 
   <div class="headline-container-slide">
-    <div class="chapter-header"> CHAPTER TWO</div>
+    <div class="chapter-header"><u>CHAPTER TWO</u></div>
     <div class="story-header"> Heat & Inequality</div>
     <div class="hero-text">For people with diabetes, asthma, COPD, heart disease and kidney disease, heat and humidity is more than a summer nuisance.</div>
     <div class="fa-stack" style="vertical-align: top;">
@@ -138,18 +138,23 @@
 
 <!-- START Responsive Scrollytelling -->
 
-<div id="graphic">
-        <div class="sticky">
-          <div class="image-scrolly">
-            <img class="img-figure" src="images/fullscreen.jpg" width="100%" height="100%">
-          </div>
-        </div>
+  <!-- sticky container-->
+  <section class="image-scrolly-section">
 
-        <div class="annotations-1" id="first-ann">Lorem ipsum dolor sit amet, consectetur adipiscing elit. <b>Suspendisse lacinia nisl sit</b> amet sem lobortis porttitor.</div>
-        <div class="annotations-1" id="second-ann">Etiam ac libero metus. Donec id egestas nunc, eu pellentesque purus.</div>
-        <div class="annotations-1" id="third-ann">Duis vel molestie nunc, ac molestie nulla. Praesent in porttitor risus. </div>
-        <div id="dummy"></div>
-      </div>
+    <!-- sticky element-->
+    <figure>
+      <img src="images/fullscreen.jpg" class="sticky">
+    </figure>
+
+    <!-- floating child elements-->
+    <article>
+      <div  class="annotations-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec interdum tellus felis, at lobortis orci sollicitudin ac. Donec lobortis sapien ac posuere faucibus. Mauris lectus neque, pretium non volutpat eget, vestibulum at magna. In sollicitudin augue nunc, non bibendum augue ornare quis.</div>
+      <div class="annotations-1">Integer accumsan interdum justo eu pretium. Aliquam maximus mi sit amet dapibus efficitur.</div>
+      <div class="annotations-1">Sed condimentum lacus sit amet turpis aliquam varius nec a lacus. In facilisis convallis ante sit amet consequat. Aenean a lorem mollis, bibendum nibh nec, maximus orci. Nulla facilisi.</div>
+    </article>
+
+  <!-- /end sticky container-->
+  </section>
 
 <!-- END Responsive Scrollytelling -->
 
@@ -206,18 +211,24 @@
 
 <!-- START Responsive Scrollytelling -->
 
-<div id="graphic">
-        <div class="sticky">
-          <div class="image-scrolly">
-            <img class="img-figure" src="images/fullscreen2.jpg" width="100%">
-          </div>
-        </div>
+  <!-- sticky container-->
+  <section class="image-scrolly-section">
 
-        <div class="annotations" id="first-ann">"Lorem ipsum dolor sit amet, consectetur adipiscing elit." <br><br><b>- PERSON'S NAME, 56</b></div>
-        <div class="annotations" id="second-ann">Etiam ac libero metus. Donec id egestas nunc, eu pellentesque purus.</div>
-        <div class="annotations" id="third-ann">Duis vel molestie nunc, ac molestie nulla. Praesent in porttitor risus.</div>
-        <div id="dummy"></div>
-      </div>
+    <!-- sticky element-->
+    <figure>
+      <img src="images/fullscreen2.jpg" class="sticky">
+    </figure>
+
+    <!-- floating child elements-->
+    <article>
+      <div class="annotations">"Lorem ipsum dolor sit amet, consectetur adipiscing elit." <br><br><b>- PERSON'S NAME, 56</b></div>
+      <div class="annotations">Etiam ac libero metus. Donec id egestas nunc, eu pellentesque purus.</div>
+      <div class="annotations">Duis vel molestie nunc, ac molestie nulla. Praesent in porttitor risus.</div>
+
+    </article>
+
+  <!-- /end sticky container-->
+  </section>
 
 <!-- END Responsive Scrollytelling -->
 
@@ -301,8 +312,156 @@
 </div><!-- END 'Container' div-->
 </div><br><br><!-- END 'Story Container' div to open wider container -->
 
-
 <!-- START Table of Contents -->
+<div class="table-of-contents">
+
+<div class="more-stories">
+
+  <div class="container">
+  <!--Orange Line-->
+  <hr style="border: 1px solid #ff5f00;" width="100%" /><br>
+
+  <!--Table of Contents title-->
+  <div class="small-head">
+    <b>Summer Project</b> : Baltimore Health and Climate
+  </div><br>
+</div>
+
+  <div class="row">
+
+  <div class="col-xs-12 col-sm-6  col-md-6 col-lg-3 table-contents-box">
+    <div class="hover-box"  onclick="window.location='http://google.com';">
+      <div class="hover-img">
+        <img src="images/box-pills.jpg">
+        <div class="over-layer">
+          <h2><b>CHAPTER ONE</b></h2>
+          <h3>Health & Inequality</h3>
+          <div class="hover-info">
+            <p class="hover-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+            <div class="plus-sign">
+              <i class="fas fa-plus-circle fa-2x" style="color:#ff5f00"></i></div>
+         </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-xs-12 col-sm-6  col-md-6 col-lg-3  table-contents-box">
+    <div class="hover-box" onclick="window.location='http://google.com';">
+      <div class="hover-img">
+        <img src="images/box-people.jpg">
+        <div class="over-layer">
+          <h2><b>CHAPTER TWO</b></h2>
+          <h3>Heat & Health</h3>
+          <div class="hover-info">
+            <p class="hover-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+            <a href="story-template.html"><div class="plus-sign"><i class="fas fa-plus-circle fa-2x" style="color:#ff5f00"></i></div></a>
+          </div>
+       </div>
+     </div>
+   </div>
+  </div>
+
+  <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3  table-contents-box">
+    <div class="hover-box" onclick="window.location='http://google.com';">
+      <div class="hover-img">
+        <img src="images/box-trees.jpg">
+        <div class="over-layer">
+          <h2><b>CHAPTER THREE</b></h2>
+          <h3>The Role of Trees</h3>
+          <div class="hover-info">
+            <p class="hover-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+            <a href="story-template.html"><div class="plus-sign"><i class="fas fa-plus-circle fa-2x" style="color:#ff5f00"></i></div></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 table-contents-box">
+    <div class="hover-box" onclick="window.location='http://google.com';">
+      <div class="hover-img">
+        <img src="images/box-forward.jpg">
+        <div class="over-layer">
+          <h2><b>CHAPTER FOUR</b></h2>
+          <h3>Looking Forward</h3>
+          <div class="hover-info">
+            <p class="hover-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
+                <a href="story-template.html"><div class="plus-sign"><i class="fas fa-plus-circle fa-2x" style="color:#ff5f00"></i></div></a>
+              </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div><!-- END 'row' div-->
+</div><br><!-- END 'more-stories' div to open wider container -->
+<!--END Table of Contents-->
+
+<!-- START Table of Contents for Computer Screens -->
+<div class="more-stories-bottom">
+  <div class="row">
+
+  <div class="col-xs-12 col-sm-6  col-md-6 col-lg-3 table-contents-box">
+    <div class="hover-box"  onclick="window.location='http://google.com';">
+      <div class="hover-img">
+        <img src="images/box-bts.jpg">
+        <div class="over-layer">
+          <h2><b>ABOUT THE PROJECT</b></h2>
+          <h3>BEHIND THE SCENES</h3>
+          <div class="hover-info">
+            <p class="hover-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+            <div class="plus-sign">
+              <i class="fas fa-plus-circle fa-2x" style="color:#ff5f00"></i></div>
+         </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-xs-12 col-sm-6  col-md-6 col-lg-3  table-contents-box">
+    <div class="hover-box" onclick="window.location='http://google.com';">
+      <div class="hover-img">
+        <img src="images/box-npr.jpg">
+        <div class="over-layer">
+          <h2><b>NPR</b></h2>
+          <h3>ARTICLE TITLE</h3>
+          <div class="hover-info">
+            <p class="hover-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+            <a href="story-template.html"><div class="plus-sign"><i class="fas fa-plus-circle fa-2x" style="color:#ff5f00"></i></div></a>
+          </div>
+       </div>
+     </div>
+   </div>
+  </div>
+
+  <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3  table-contents-box">
+    <div class="hover-box" onclick="window.location='http://google.com';">
+      <div class="hover-img">
+        <img src="images/box-health.jpg">
+        <div class="over-layer">
+          <h2><b>NPR</b></h2>
+          <h3>ARTICLE TITLE</h3>
+          <div class="hover-info">
+            <p class="hover-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+            <a href="story-template.html"><div class="plus-sign"><i class="fas fa-plus-circle fa-2x" style="color:#ff5f00"></i></div></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div><!-- END 'row' div-->
+<div class="container">
+<hr style="border: 1px solid #ff5f00;" width="100%" /><br>
+</div>
+
+</div><br><br><!-- END 'more-stories' div to open wider container -->
+</div><!--END Table of Contents-->
+
+<!-- START Table of Contents for Tablet and Mobile -->
+<div class="tablet-mobile">
 
 <div class="container">
 <hr style="border: 1px solid #ff5f00;" width="100%" /><br>
@@ -389,8 +548,9 @@
   <div class="container">
     <br><div class="scroll-more"> Swipe to see more stories  <i class="fas fa-angle-double-right"></i></div>
   <hr style="border: 1px solid #ff5f00;" width="100%" /><br>
-</div><!--END Table of Contents-->
+</div>
 
+</div><!--END Table of Contents-->
 
 
 <!--START Partnership message-->
