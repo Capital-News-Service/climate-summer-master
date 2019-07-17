@@ -623,9 +623,14 @@ p {
 
  /* MEDIA QUERIES FOR TABLE OF CONTENTS */
  @media screen and (max-width: 500px) {
-   .annotations, .annotations-1 {
+   .annotations {
      width:80%;
      font-size:1em;
+   }
+
+   .annotations-1 {
+     width:30%;
+     font-size:.5em;
    }
  }
 
