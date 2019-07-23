@@ -1,70 +1,58 @@
-<!doctype html>
+<<!doctype html>
 
 <html lang="en">
 <head>
   <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-  <title>Bitter Cold: Climate change, public health and Baltimore | CNS Maryland</title>
-  <meta name="description" content="Bitter Cold: Climate change, public health and Baltimore">
+  <title>Code Red: Baltimore’s Climate Divide | CNS Maryland</title>
+  <meta name="description" content="Code Red: Baltimore’s Climate Divide">
   <meta name="author" content="Capital News Service at Merrill College of Journalism, University of Maryland">
 
   <!-- Favicon -->
   <link rel="icon" type="image/png" href="https://cnsmaryland.org/wp-content/uploads/2017/02/cns_favion-1.png">
 
     <!-- Twitter Card data -->
-    <meta name="twitter:title" content="Bitter Cold">
-    <meta name="twitter:description" content="Climate change, public health and Baltimore">
-    <meta name="twitter:image" content="https://cnsmaryland.org/interactives/spring-2019/bitter-cold/images/twitter-thumb-splash.png">
+    <meta name="twitter:title" content="Code Red">
+    <meta name="twitter:description" content="Baltimore’s Climate Divide">
+    <meta name="twitter:image" content="Insert image here">
     <meta name="twitter:card" content="summary_large_image">
 
     <!-- Open Graph data for Facebook -->
-    <meta property="og:title" content="Bitter Cold: Climate change, public health and Baltimore" />
+    <meta property="og:title" content="Code Red: Baltimore’s Climate Divide" />
     <meta property="og:type" content="article" />
-    <meta property="og:url" content="https://cnsmaryland.org/interactives/spring-2019/bitter-cold/" />
-    <meta property="og:image" content="https://cnsmaryland.org/interactives/spring-2019/bitter-cold/images/fb-thumb-splash.png" />
+    <meta property="og:url" content="https://cnsmaryland.org/interactives/summer-2019/code-red/index.html" />
+    <meta property="og:image" content="Insert image here" />
     <meta property="og:description" content="Extreme temperatures pose a serious, long-term health threat for people with chronic medical conditions — and climate change is making the problem worse." />
 
 
-  <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
-  <!-- c3.css -->
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/c3/0.6.13/c3.min.css" rel="stylesheet">
+    <!-- c3.css -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/c3/0.6.13/c3.min.css" rel="stylesheet">
 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
 
-  <!-- d3.js and c3.js -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.9.1/d3.min.js" charset="utf-8"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/c3/0.6.13/c3.min.js"></script>
+    <!-- d3.js and c3.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.9.1/d3.min.js" charset="utf-8"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/c3/0.6.13/c3.min.js"></script>
 
+    <!-- our CSS  -->
+    <link rel="stylesheet" href="css/style1.css">
+    <link rel="stylesheet" href="css/common.css">
 
-  <!-- our CSS  -->
-  <link rel="stylesheet" href="css/style1.css">
-  <link rel="stylesheet" href="css/common.css">
+    <!-- graphics CSS  -->
+    <link rel="stylesheet" href="css/graphics-css.css">
 
-  <!-- graphics CSS  -->
-  <link rel="stylesheet" href="css/graphics-css.css">
+    <!-- Fontawesome  -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
 
-  <!-- Fontawesome  -->
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <!-- google fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700,900&display=swap" rel="stylesheet">
 
-  <!-- google fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600,700" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=PT+Serif:400,700" rel="stylesheet">
-
-  <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700,900&display=swap" rel="stylesheet">
-
-
-  <!-- METRICS -->
-  <meta name="parsely-title" content="Bitter Cold Story Template" />
-  <meta name="parsely-link" content="https://cnsmaryland.org/interactives/spring-2019/bitter-cold/climate.html" />
-  <meta name="parsely-type" content="post" />
-  <meta name="parsely-image-url" content="https://cnsmaryland.org/interactives/spring-2019/bitter-cold/images/fb-thumb-climate.png" />
-  <meta name="parsely-pub-date" content="2019-04-15T13:00:00Z" />
-  <meta name="parsely-section" content="Climate" />
-  <meta name="parsely-author" content="CNS Maryland" />
-  <meta name="parsely-tags" content="climate, health, baltimore, journalism, interactives" />
 
 </head>
 
@@ -388,66 +376,64 @@
   </div>
 </div> <!--END Sponsor Content-->
 
-<!-- JavaScript calls -->
-<!-- jQuery first, then Popper.js, then Bootstrap JS -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+
+
+  <!-- JavaScript calls -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    <!-- Stickyfill.js - Required for sidescroll-->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/stickyfill/2.1.0/stickyfill.min.js'></script>
+
+    <!-- Scrollama and intersection observer js files - Required for sidescroll-->
+    <script src="https://unpkg.com/intersection-observer@0.5.1/intersection-observer.js"></script>
+    <script src="https://unpkg.com/scrollama"></script>
+
+    <!-- app js file - Required for sidescroll-->
+    <script src="js/scroll-app.js"></script>
+
+    <!-- Our custom Javascript -->
+    <script src="js/javascript.js"></script>
+
 
 
 <!-- Variables for social media icon popups -->
-<script type="text/javascript">
-  //Twitter variables
-  var tweet = "Bitter Cold: Climate change, public health and Baltimore. Extreme temperatures pose a serious, long-term health threat for people with chronic medical conditions — and climate change is making the problem worse."; //Tweet text
-  var url = "https://cnsmaryland.org/interactives/spring-2019/bitter-cold/index.html"; //Interactive URL
+  <script type="text/javascript">
+    //Twitter variables
+    var tweet = "Code Red: Baltimore’s Climate Divide"; //Tweet text
+    var url = "https://cnsmaryland.org/interactives/summer-2019/code-red/index.html"; //Interactive URL
 
-  //Facebook variables
-  var picture = "https://cnsmaryland.org/interactives/spring-2019/bitter-cold/images/fb-thumb-splash.png"; //Picture URL
-  var title = "Bitter Cold: Climate change, public health and Baltimore"; //Post title
-  var description = "Extreme temperatures pose a serious, long-term health threat for people with chronic medical conditions — and climate change is making the problem worse."; //Post description
-  var url = "https://cnsmaryland.org/interactives/spring-2019/bitter-cold/index.html"; //Interactive URL
+    //Facebook variables
+    var picture = "Insert facebook image"; //Picture URL
+    var title = "Code Red: Baltimore’s Climate Dividee"; //Post title
+    var description = "Insert facebook desc"; //Post description
+    var url = "https://cnsmaryland.org/interactives/summer-2019/code-red/index.html"; //Interactive URL
 
-
-</script>
-
-<!-- Our custom Javascript -->
-<script src="js/javascript.js"></script>
+  </script>
 
 
+      <!-- METRICS -->
+        <!-- START Parse.ly Include: Standard -->
+        <div id="parsely-root" style="display: none">
+          <span id="parsely-cfg" data-parsely-site="cnsmaryland.org"></span>
+        </div>
+        <script>
+            (function(s, p, d) {
+              var h=d.location.protocol, i=p+"-"+s,
+                  e=d.getElementById(i), r=d.getElementById(p+"-root"),
+                  u=h==="https:"?"d1z2jf7jlzjs58.cloudfront.net"
+                  :"static."+p+".com";
+              if (e) return;
+              e = d.createElement(s); e.id = i; e.async = true;
+              e.src = h+"//"+u+"/p.js"; r.appendChild(e);
+            })("script", "parsely", document);
+        </script>
+        <!-- END Parse.ly Include: Standard -->
 
-  <!-- Jquery to make the text in the table of contents boxes appearon hover only -->
-    <script>
 
-      $(".hover-box").hover(function () {
-          $(".hover-text").addClass("display");
-      }, function () {
-          $(".hover-text").removeClass("display");
-      });
-
-
-    </script>
-
-<!--our c3 javascript-->
-<script src="js/c3-charts.js"></script>
-
-
-    <!-- METRICS -->
-      <!-- START Parse.ly Include: Standard -->
-      <div id="parsely-root" style="display: none">
-        <span id="parsely-cfg" data-parsely-site="cnsmaryland.org"></span>
-      </div>
-      <script>
-          (function(s, p, d) {
-            var h=d.location.protocol, i=p+"-"+s,
-                e=d.getElementById(i), r=d.getElementById(p+"-root"),
-                u=h==="https:"?"d1z2jf7jlzjs58.cloudfront.net"
-                :"static."+p+".com";
-            if (e) return;
-            e = d.createElement(s); e.id = i; e.async = true;
-            e.src = h+"//"+u+"/p.js"; r.appendChild(e);
-          })("script", "parsely", document);
-      </script>
-      <!-- END Parse.ly Include: Standard -->
 
 
 </body>
