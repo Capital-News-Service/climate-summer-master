@@ -27,8 +27,9 @@
     <meta property="og:description" content="Extreme temperatures pose a serious, long-term health threat for people with chronic medical conditions — and climate change is making the problem worse." />
 
 
-    <!-- Bootstrap CSS -->
+    <!-- Bootstrap CSS-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
 
     <!-- c3.css -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/c3/0.6.13/c3.min.css" rel="stylesheet">
@@ -39,9 +40,11 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.9.1/d3.min.js" charset="utf-8"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/c3/0.6.13/c3.min.js"></script>
 
+    <!-- D3-->
+    <script src="https://d3js.org/d3.v3.min.js"></script>
 
     <!-- our CSS  -->
-    <link rel="stylesheet" href="css/story-template.css">
+    <link rel="stylesheet" href="css/neighborhood-heat-inequality.css">
     <link rel="stylesheet" href="css/common.css">
 
     <!-- Required for sidescroll -->
@@ -113,13 +116,69 @@
   <p>There’s extensive evidence that sustained exposure to extreme cold can cause harm by lowering body temperature, weakening the immune system and aggravating asthma, cardiovascular and lung disease, arthritis, diabetes and mental illness, among other problems.</p><br>
 
   <p>Every winter, health officials warn of outdoor dangers for the homeless, who can freeze to death from hypothermia and snow shovelers who suffer heart attacks. Yet many more people are at risk indoors if their power has been shut off or they can’t afford to raise the thermostat. Research shows that for those with chronic disease a cold interior may be a dangerous environment.</p><br>
-  
-  <!-- Image and caption --> <!-- Can be repeated -->
-  <img src="images/couple.png" class="image">
-  <p class="caption">Caption: Insert caption here</p>
+
+  <!-- START Graphic container-->
+  <div class="embed-container">
+    <div class="chart-title"><b>High temps correlate with high poverty, lower life expectancy and more.</b></div><br>
+      <div class="chart-description">Temperatures across Baltimore can vary up to 10 degrees on a hot summer afternoon, according to a federally-funded study from 2018. This "urban heat island effect" is illustrated by neighborhood in the large map below. A CNS analysis of neighborhood demographics found a correlation between the temperature of a neighborhood and certain quality-of-life factors. Neighborhoods with a higher ambient temperature tend to have more families living below the poverty live, lower life expectancy, higher violent crime rates and a higher rate of employment then lower-temperature neighborhoods, as seen in the smaller maps below.</div><br>
+        <div class="chart-author">BY ADAM MARTON</div>
+        <div class="row">
+          <div class="col-12 center">
+            <img src="graphics-output/temperature-map-expanded.png" class="temp-demo-map demo-maps">
+
+            <div class="temp-demo-map-small">
+              <p class="demo-title">Temperature</p>
+              <img src="graphics-output/temperature-map.png" class="demo-maps">
+            </div>
+
+          </div>
+        </div>
+
+
+
+        <div class="row">
+
+          <div class="col-6 col-md-3 center">
+            <p class="demo-title">Poverty</p>
+            <p class="small-label">Percent of families living below the poverty line.</p>
+            <img src="graphics-output/poverty-map.png" class="demo-maps">
+          </div>
+
+          <div class="col-6 col-md-3 center">
+            <p class="demo-title">Life expectancy</p>
+            <p class="small-label">Average life expectancy of neighborhood residents.</p>
+            <img src="graphics-output/life-expectancy-map.png"  class="demo-maps">
+          </div>
+
+          <div class="col-6 col-md-3 center">
+            <p class="demo-title">Crime</p>
+            <p class="small-label">Rates of violent crime per 1,000 residents.</p>
+            <img src="graphics-output/crime-map.png" class="demo-maps">
+          </div>
+
+          <div class="col-6 col-md-3 center">
+            <p class="demo-title">Unemployment</p>
+            <p class="small-label">Unemployment rates among residents.</p>
+            <img src="graphics-output/unemployment-map.png" class="demo-maps">
+          </div>
+
+
+        </div>
+
+        <div class="row">
+          <div class="col-12"><em>Source: Baltimore Neighborhood Indicators Alliance, NOAA Urban Heat Islands study (VERIFY)</em></div>
+        </div>
+
+  </div><br><br><!-- END Graphic container-->
 
 
   <p>Nulla facilisi. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nunc ac leo nunc. Proin eu porttitor quam, nec eleifend lacus. Maecenas vel nibh at lectus tristique pellentesque. </p><br>
+
+  <p>Pellentesque ut posuere nunc.</p><br>
+
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum aliquam erat sit amet odio dapibus, pellentesque varius libero eleifend. Maecenas vel nibh at lectus tristique pellentesque. </p><br>
+
+  <p>A venenatis nulla dolor nec magna. Nulla facilisi. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nunc ac leo nunc. Proin eu porttitor quam, nec eleifend lacus. Maecenas vel nibh at lectus tristique pellentesque.</p><br>
 
   <p>Pellentesque ut posuere nunc.</p><br>
 
@@ -142,7 +201,7 @@
 
     <!-- floating child elements-->
     <article>
-      <div  class="annotations-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec interdum tellus felis, at lobortis orci sollicitudin ac. Donec lobortis sapien ac posuere faucibus. Mauris lectus neque, pretium non volutpat eget, vestibulum at magna. In sollicitudin augue nunc, non bibendum augue ornare quis.</div>
+      <div  class="annotations-1">"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec interdum tellus felis, at lobortis orci sollicitudin ac. Donec lobortis sapien ac posuere faucibus. Mauris lectus neque, pretium non volutpat eget, vestibulum at magna. In sollicitudin augue nunc, non bibendum augue ornare quis." <br><br> <b>- TAMMY WILSON JACKSON</b></div>
       <div class="annotations-1">Integer accumsan interdum justo eu pretium. Aliquam maximus mi sit amet dapibus efficitur.</div>
       <div class="annotations-1">Sed condimentum lacus sit amet turpis aliquam varius nec a lacus. In facilisis convallis ante sit amet consequat. Aenean a lorem mollis, bibendum nibh nec, maximus orci. Nulla facilisi.</div>
     </article>
@@ -160,26 +219,70 @@
 
   <br><br><p>“There is this generalized warming of the planet that would decrease extreme winter weather,” Cohen said. </p> <br>
 
-  <p>“But also on the other hand, there are more frequent disruptions of the polar vortex which would increase [it], so it's kind of a tug-of-war between the two.”</p><br><br>
+  <p>“But also on the other hand, there are more frequent disruptions of the polar vortex which would increase [it], so it's kind of a tug-of-war between the two.”</p><br>
 
-
-  <hr style="border: 2px solid #ff5f00;" width="50%" /><br>
-
-  <p class="chapter-title"><b>CHAPTER TITLE: GOES HERE</b></p><br>
-
-  <p class="opening-letter"><b class="first-words">The number of extremely hot days</b> in Baltimore have stayed relatively constant, even as average summer temperatures rise. Days that increased above 90 degrees and 100 degrees do appear to be occurring at a more frequent rate. </p><br>
+  <p>The number of extremely hot days</b> in Baltimore have stayed relatively constant, even as average summer temperatures rise. Days that increased above 90 degrees and 100 degrees do appear to be occurring at a more frequent rate. </p><br>
 
   <p>Freezing days haven’t gone away because of the climate change effects on the polar vortex. The polar vortex consists of air masses located above the North and South Pole that contain trapped cold air. </p><br>
 
-  <p>Due to the warming of the stratosphere — the layer of the atmosphere that lies above the one we live in — the polar vortex weakens and can break into multiple sections. This allows the cold air that was once contained in the vortex to escape the poles and move extreme cold temperatures to lower latitudes, such as the continental United States. </p><br><br><br>
+  <div class="embed-container">
+    <p class="chart-title"><b>Miracle Garden</b></p>
+    <div class="chart-description">Lewis Sharpe, the man in charge of the Duncan Street Miracle Garden in Baltimore City, began the project 1988. He grows a variety of vegetables ad flowers that he gives to members of the community.</div><br>
+    <div class="embed-responsive embed-responsive-16by9">
+      <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/tgbNymZ7vqY"></iframe>
+    </div>
+      <p class="caption"> Amina Lampkin, Capital News Service</p><br>
+  </div>
+
+
+  <p>Due to the warming of the stratosphere — the layer of the atmosphere that lies above the one we live in — the polar vortex weakens and can break into multiple sections. This allows the cold air that was once contained in the vortex to escape the poles and move extreme cold temperatures to lower latitudes, such as the continental United States. </p><br>
+
+  <p>The impact from these disruptions could last anywhere from 4-to-8 weeks, according to Cohen, a wide range that makes it difficult to predict how long future cold snaps will be.</p><br>
+
+  <p>“You may get a cold snap like we had with that polar vortex event in late January in the upper Midwest, where they had that historic cold then it moderating quickly, so that's more typical,” Cohen said. “We think of it as more episodic, but there are cases where it's been continuous when the pattern gets locked and it doesn't change."</p><br>
+
+  <p>In Baltimore, there isn’t an indication that cold snap longevity is changing. The occurrence of three-day-long cold snaps with a minimum temperature below 32 degrees are just as sporadic as previous years. </p><br>
 
   <!-- START Graphic container-->
-  <div class="graphic-container">
-    <div class="chart-title"><b>Number of extreme hot days in Baltimore</b></div>
-      <div class="chart-description">Baltimore saw spikes in days that recorded over 100 degrees, but the city has relatively consistent patterns from year to year.</div><br>
-        <div class="chart-author">BY AUTHOR NAME</div>
-        <div id="category"></div>
-        <div class="chart-source">Source: BWI Airport Sensor Data</em><br><br></div>
+    <div class="embed-container">
+      <p class="chart-title"><b>How temperature correlates with demographic features in Baltimore by neighborhood</b></p>
+      <div class="chart-description">Hotter neighborhoods tend to have higher rates of poverty, crime and unemployment and lower life expectancy.</div><br>
+      <p class="chart-author">BY ADAM MARTON</p>
+
+    <div class="row">
+
+      <div class="col-12 col-md-6">
+        <p class="scatterplot-title">Temperature and poverty</p>
+        <div id="poverty-scatterplot" class="scatterplot"></div>
+      </div>
+
+      <div class="col-12 col-md-6">
+        <p class="scatterplot-title">Temperature and crime</p>
+        <div id="crime-scatterplot" class="scatterplot"></div>
+      </div>
+
+    </div>
+
+    <div class="row">
+
+      <div class="col-12 col-md-6">
+        <p class="scatterplot-title">Temperature and life expectancy</p>
+        <div id="life_expectancy-scatterplot" class="scatterplot"></div>
+      </div>
+
+      <div class="col-12 col-md-6">
+        <p class="scatterplot-title">Temperature and unemployment rate</p>
+        <div id="unemployment_rate-scatterplot" class="scatterplot"></div>
+      </div>
+
+    </div>
+
+    <div class="row">
+      <div class="col-12">
+        <br><em style="float:right;">Source: Baltimore Neighborhood Indicators Alliance, NOAA Urban Heat Islands study</em>
+      </div>
+    </div>
+
   </div><br><!-- END Graphic container-->
 
   <p>The impact from these disruptions could last anywhere from 4-to-8 weeks, according to Cohen, a wide range that makes it difficult to predict how long future cold snaps will be.</p><br>
@@ -203,29 +306,59 @@
 </div><!-- END 'Container' div-->
 </div><!-- END 'Story Container' div to open wider container -->
 
-<!-- START Responsive Scrollytelling -->
+<!-- START Responsive SIDE SCROLL Scrollytelling -->
 
-  <!-- sticky container-->
-  <section class="image-scrolly-section">
+  <div class="container-fluid" id="scroll">
+    <div class="row">
+      <div class="col-lg-4">
+        <div class='scroll-text'>
+          <div class='step'>
+            <h2>Title 1</h2>
+            <p>Description step 1. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          </div>
+          <div class='step'>
+            <p>Description step 2. sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          </div>
+          <div class='step'>
+            <p>Description step 3. Lorem ipsum dolor sit amet sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          </div>
+          <div class='step'>
+            <p>Description step 4. Lorem ipsum dolor sit amet sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          </div>
+          <div class='step'>
+            <p>Description step 5. Lorem ipsum dolor sit amet sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-8 col-graphic">
+        <div class='scroll-graphic'>
 
-    <!-- sticky element-->
-    <figure>
-      <img src="images/fullscreen2.jpg" class="sticky">
-    </figure>
+          <div data-step='1' class="scroll-graphic-tab d-block">
+            <img class="img-fluid" src="images/space2.jpg"/>
+          </div>
 
-    <!-- floating child elements-->
-    <article>
-      <div class="annotations">"Lorem ipsum dolor sit amet, consectetur adipiscing elit." <br><br><b>- PERSON'S NAME, 56</b></div>
-      <div class="annotations">Etiam ac libero metus. Donec id egestas nunc, eu pellentesque purus.</div>
-      <div class="annotations">Duis vel molestie nunc, ac molestie nulla. Praesent in porttitor risus.</div>
+          <div data-step='2' class="scroll-graphic-tab d-none">
+            <img class="img-fluid" src="images/space4.jpg"/>
+          </div>
 
-    </article>
+          <div data-step='3' class="scroll-graphic-tab d-none">
+            <img class="img-fluid" src="images/space5.jpg"/>
+          </div>
 
-  <!-- /end sticky container-->
-  </section>
+          <div data-step='4' class="scroll-graphic-tab d-none">
+            <img class="img-fluid" src="images/space6.jpg"/>
+          </div>
 
-<!-- END Responsive Scrollytelling -->
+          <div data-step='5' class="scroll-graphic-tab d-none">
+            <img class="img-fluid" src="images/space2.jpg"/>
+          </div>
 
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!-- END Responsive SIDESCROLL Scrollytelling -->
 
 
 <!-- START 'Container' div again -->
@@ -234,74 +367,13 @@
 
   <br><br><p>Scientists find it even more difficult to assess what’s a random weather event and what’s a direct result of global warming, such as <a class ="underline-effect" href="#" style="color: #ff5f00;"><b>the cold snap in January that reached the lowest temperatures in the Midwest in the past 25 years.</b></a></p><br>
 
-  <p>“How do you determine if that's an indication of a changing climate and not just the weather event?” said Tim Canty, an oceanic and atmospheric professor at the University of Maryland. “That's the trick and that's a question among climate communities.”</p><br><br>
+  <p>“How do you determine if that's an indication of a changing climate and not just the weather event?” said Tim Canty, an oceanic and atmospheric professor at the University of Maryland. “That's the trick and that's a question among climate communities.”</p><br>
 
-  <hr align="left" style="border: 2px solid #ff5f00;" width="50%" /><br>
-
-  <!-- NEW CHAPTER -->
-  <p class="chapter-title-alt"><b>Struggling to Pay the Bills</b></p><br>
-  <p class="chapter-author">STORY BY: IAN ROUND</p><br><br>
-
-  <p class="opening-letter">What experts do know is that sporadic winter weather will continue, including in the city of Baltimore. Over the past 30 years, there’s been a consistent appearance of cold snaps in the Northeastern U.S. In the years to come, the pattern is not expected to change, according to Cohen.</p><br>
+  <p>What experts do know is that sporadic winter weather will continue, including in the city of Baltimore. Over the past 30 years, there’s been a consistent appearance of cold snaps in the Northeastern U.S. In the years to come, the pattern is not expected to change, according to Cohen.</p><br>
 
   <p>Even as the atmosphere’s temperature continues to gradually increase, residents must not dismiss cold snaps when experiencing warmer winters. Extreme cold weather events have always happened, are still happening and show no signs of completely disappearing, despite a decrease in extremely cold days. </p><br>
 
-
-  <!-- GRAPH -->
-  <p class="chart-title"><b>Warming Centers in Baltimore</b></p>
-  <iframe width="100%" height="520" frameborder="0" src="https://amarton.carto.com/builder/0d059c9b-525b-4dd8-a2f6-0a36203d6300/embed" allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
-  <p class="caption">During periods of extremely cold weather, the Baltimore Health Commissioner declares a Code Blue Extreme Cold Alert and the city opens warming centers, which are community locations like libraries and senior centers where residents can go to warm up. However, many of the warming centers have limited hours or aren’t open daily.</p><br>
-
-  <p>Even as the atmosphere’s temperature continues to gradually increase, residents must not dismiss cold snaps when experiencing warmer winters. Extreme cold weather events have always happened, are still happening and show no signs of completely disappearing, despite a decrease in extremely cold days. </p><br>
-
-  <p>“And the difficulties with this and trying to get people to care about this is … we had this massive cold snap this year,” Canty said. “But what about if next year it's 70 degrees all winter long and everyone's happy about that?"</p><br>
-
-  <!-- START Pullquote div -->
-  <div class="pullquote">
-    <div class="pullquote-top">"I can’t afford to keep compiling that water bill. It just scares me to death.”</div>
-    <div class="pullquote-bottom"> - DELORES BUCHANAN, 72</div>
-  </div><br><br><!-- END Pullquote div -->
-
-  <p>Cold snaps that occur in places that usually experience winter weather such as the Northeastern United States, northern Europe and East Asia are the result of polar vortex disruptions, according to Cohen. When winter extremes occur in other locations, experts consider these events unexplainable.</p><br>
-
-  <p>This winter, snowfall hit Maui, Hawaii at its lowest elevation ever. Meanwhile, Seattle recorded record-breaking temperatures and Las Vegas had snowfall for the first time in over a decade.</p><br>
-
-  <div class="embed-container">
-    <p class="chart-title"><b>A video</b>
-    <div class="chart-description">A responsive video that scales nicely to the parent element with an 16:9 aspect ratio</div><br>
-    <div class="embed-responsive embed-responsive-16by9">
-      <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/tgbNymZ7vqY"></iframe>
-    </div>
-      <p class="caption">A video caption if needed.</p><br>
-  </div>
-
-  <p>Even as the atmosphere’s temperature continues to gradually increase, residents must not dismiss cold snaps when experiencing warmer winters. Extreme cold weather events have always happened, are still happening and show no signs of completely disappearing, despite a decrease in extremely cold days. </p><br>
-
-  <p>“And the difficulties with this and trying to get people to care about this is … we had this massive cold snap this year,” Canty said. “But what about if next year it's 70 degrees all winter long and everyone's happy about that?"</p><br>
-
-  <p>Cold snaps that occur in places that usually experience winter weather such as the Northeastern United States, northern Europe and East Asia are the result of polar vortex disruptions, according to Cohen. When winter extremes occur in other locations, experts consider these events unexplainable.</p><br>
-
-  <div class="embed-container">
-    <img src="images/faces-places.jpg" class="image">
-      <div class="align">
-        <div class="table-images">
-          <img src="images/lee-lewis.jpg"  class="image">
-        </div>
-        <div class="table-images">
-         <img src="images/shoe-repair.jpg" class="image">
-       </div>
-     </div>
-  </div>
-    <p class="caption">Top: Justin Marine, left, and Makayla Jefferson, of Wide Angle Youth Media, install batteries and memory cards to complete the sensors in January 2019. Left: CNS data journalists Jake Gluck, left, and Noah Johnson solder sensor components. Right: A completed sensor. Capital News Service photos.</p>
-
-
-  <p>This winter, snowfall hit Maui, Hawaii at its lowest elevation ever. Meanwhile, Seattle recorded record-breaking temperatures and Las Vegas had snowfall for the first time in over a decade.</p><br>
-
-  <p>Nulla facilisi. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nunc ac leo nunc. Proin eu porttitor quam, nec eleifend lacus. Maecenas vel nibh at lectus tristique pellentesque. </p><br>
-
-  <p>Pellentesque ut posuere nunc.</p><br>
-
-  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum aliquam erat sit amet odio dapibus, pellentesque varius libero eleifend. Maecenas vel nibh at lectus tristique pellentesque. </p><br>
+  <p>During periods of extremely cold weather, the Baltimore Health Commissioner declares a Code Blue Extreme Cold Alert and the city opens warming centers, which are community locations like libraries and senior centers where residents can go to warm up. However, many of the warming centers have limited hours or aren’t open daily.</p><br>
 
 </div><!-- END 'Container' div-->
 </div><br><br><!-- END 'Story Container' div to open wider container -->
@@ -562,10 +634,16 @@
 
 
     <!-- JavaScript calls -->
-      <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- scripts for charts-->
+    <script src="js/scatterplot-script.js"></script>
+
+      <!-- Bootstrap js-->
+      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
       <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+
 
       <!-- Stickyfill.js - Required for sidescroll-->
       <script src='https://cdnjs.cloudflare.com/ajax/libs/stickyfill/2.1.0/stickyfill.min.js'></script>
