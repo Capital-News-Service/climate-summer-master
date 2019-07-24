@@ -658,10 +658,6 @@ p {
 
  /* METRICS */
 
- span{
-     font-size: 4em;
-     color: rgba(51,34,68,0.3)
- }
 
  @font-face {
    font-family: 'icons';
