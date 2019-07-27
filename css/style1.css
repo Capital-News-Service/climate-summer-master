@@ -1,5 +1,11 @@
 
 /* MAIN STORY CONTAINER ELEMENTS */
+.background{
+  background-color: black;
+  margin-bottom: 1em;
+  margin: 0 auto;
+  width: 80%;
+}
 
 .main-header{
   font-family: 'Montserrat', sans-serif;
@@ -16,9 +22,6 @@
   font-weight: 100;
   letter-spacing: 3px;
   max-height: 70vh;
-  background: black;
-  width: 60%;
-  margin: 0 auto;
 }
 
 .main-hero-text{
@@ -45,8 +48,57 @@
 }
 
 .red{
-  color:#FF1F0D;
+  color:#fc4b2c;
 }
+/* OVERRIDING  COMMON CSS ELEMENTS FOR COLOR RED */
+.opening-letter::first-letter {
+  font-family: 'Playfair Display', serif;
+	font-size: 4em;
+	float: left;
+  line-height: 0.8;
+  margin-top: 0.1em; /* for optical baseline alignment */
+  margin-left: -0.05em; /* for optical alignment to the left */
+  margin-right: 0.05em; /* for optical alignment to the right */
+  font-weight:400;
+  background:#fc4b2c !important;
+  color: white;
+  padding:5px 10px 5px 10px;
+  margin-right: 10px;
+}
+
+.icon-twitter, .icon-facebook {
+    margin-right: 10px;
+    font-size: 2em;
+    color: #fc4b2c !important;
+    cursor: pointer;
+}
+
+.hover-box .hover-img .over-layer h2{
+  color: #fc4b2c !important;
+  font-family: 'Montserrat', sans-serif;
+  font-size:1em;
+  padding-top: 2px;
+}
+
+.card-title{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 17px;
+  color:#fc4b2c !important;
+  font-weight: 500;
+  padding-bottom: 5px;
+}
+
+.btn{
+  background-color:#fc4b2c !important;
+  border-color: #fc4b2c !important;
+}
+
+.btn:hover{
+  background-color: #FE811E!important;
+  border-color: #FE811E !important;
+}
+
+
 /* SPONSORS ELEMENTS */
 
 #cns {

@@ -1,0 +1,398 @@
+/* MAIN STORY CONTAINER ELEMENTS */
+
+.story-container {
+  background: white;
+  width: 100%;
+  margin: 0;
+  position: relative;
+  top: 0vh;
+  background-color: white;
+}
+
+.text-title{
+  font-family: 'Playfair Display', serif;
+  font-size:3em;
+  letter-spacing: 2px;
+  line-height:140%;
+  font-weight: 200;
+}
+
+.text-author{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1em;
+}
+
+.caption {
+  width:100%;
+  max-width:900px;
+  margin:0 auto;
+  padding-bottom:30px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: .8em;
+  color: black;
+  text-align: center;
+}
+
+.chapter-title{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2em;
+  text-align: center;
+}
+
+.chapter-title-alt{
+  font-family: 'Playfair Display', serif;
+  font-size:3em;
+  letter-spacing: 2px;
+  line-height:140%;
+  font-weight: 200;
+  text-align: left;
+}
+
+.chapter-author{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1em;
+  text-align: left;
+}
+
+.image {
+  width:100%;
+  padding-top:20px;
+  padding-bottom:20px;
+}
+
+.table-images {
+  float: left;
+  width: 50%;
+  padding: 8px;
+  padding-top: 15px;
+  max-width: 100%
+  height: auto;
+}
+
+.btn{
+  background-color: #fc4b2c !important;
+  border-color: #fc4b2c!important;
+}
+
+.btn:hover{
+  background-color: #FE811E !important;
+  border-color: #FE811E !important;
+}
+
+.card-title{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 17px;
+  color:#fc4b2c !important;
+  font-weight: 500;
+  padding-bottom: 5px;
+}
+
+.hover-box .hover-img .over-layer h2{
+  color: #fc4b2c !important;
+  font-family: 'Montserrat', sans-serif;
+  font-size:1em;
+  padding-top: 2px;
+}
+
+.icon-twitter, .icon-facebook {
+    margin-right: 10px;
+    font-size: 2em;
+    color: #fc4b2c !important;
+    cursor: pointer;
+}
+
+.opening-letter::first-letter {
+  font-family: 'Playfair Display', serif;
+	font-size: 4em;
+	float: left;
+  line-height: 0.8;
+  margin-top: 0.1em; /* for optical baseline alignment */
+  margin-left: -0.05em; /* for optical alignment to the left */
+  margin-right: 0.05em; /* for optical alignment to the right */
+  font-weight:400;
+  background: #fc4b2c !important;
+  color: white;
+  padding:5px 10px 5px 10px;
+  margin-right: 10px;
+}
+
+/* WIDER CONTAINER */
+
+.embed-container{
+  margin: 0 auto;
+}
+
+.img-logo {
+  max-width: 100%;
+}
+
+/* GRAPHICS ELEMENTS */
+
+.demo-maps {
+  width:100%;
+  padding-bottom:20px;
+}
+
+.center {
+  text-align:center;
+}
+
+.demo-title {
+  font-weight:700;
+  font-size:1.25em;
+}
+
+.small-label {
+  font-size:.8em;
+  margin-top:-5px;
+}
+
+.scatterplot-title{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.3em;
+}
+
+      .axis path,
+      .axis line {
+        fill: none;
+        stroke: #000;
+        shape-rendering: crispEdges;
+      }
+
+      .dot {
+        stroke: #000;
+      }
+
+      .tooltip {
+        position: absolute;
+        width: 200px;
+        height: 28px;
+        pointer-events: none;
+      }
+
+      .d3-box {
+        background:#fff;
+        line-height:150%;
+      }
+
+      .scatterplot {
+        width:100%;
+        max-width:500px;
+        font: 11px sans-serif;
+      }
+
+
+.graphic-container{
+  text-align:center;
+}
+
+.chart-title{
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.5em;
+  text-transform: uppercase;
+}
+
+.chart-description{
+  text-align: left;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1em;
+}
+
+.chart-author{
+  text-align: left;
+  font-family: 'Montserrat', sans-serif;
+  font-size: .7em;
+  font-weight: 100px;
+  padding-bottom: 20px;
+}
+
+.chart-source{
+  text-align: left;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 13px;
+  font-weight: 100px;
+  font-style: italic;
+}
+
+/* PULLQUOTE ELEMENTS */
+
+.pullquote{
+  border-bottom: solid #303030;
+  border-top: solid #303030;
+  border-width: 0.5px;
+}
+
+.pullquote-top{
+  padding-top:20px;
+  font-family: 'Montserrat', sans-serif;
+  font-size:2.5em;
+  font-weight: bold;
+  text-align: left;
+}
+
+.pullquote-bottom{
+  text-align: left;
+  font-family: 'Montserrat', sans-serif;
+  font-size:1.5em;
+  padding-bottom: 20px;
+  padding-top:10px;
+  color: #fc4b2c;
+  font-weight: bold;
+}
+
+/* SCROLLYTELLING */
+
+
+  /* sticky section */
+  .image-scrolly-section {
+    margin: 0;
+    padding: 0;
+  }
+
+  /* sticky item */
+  figure {
+    align-items: center;
+    align-self: flex-start;
+    display: flex;
+    height: 100vh;
+    margin: 0;
+    width: 100%;
+    justify-content: center;
+    top: 0;
+    z-index: -1;
+    position: -webkit-sticky;
+    position: sticky;
+  }
+
+  .sticky {
+    display: block;
+    -o-object-fit: cover;
+       object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+
+  /* floating child items */
+  article {
+    padding: 0 1rem 60vh;
+    margin: 0 auto;
+  }
+
+  .annotations {
+    width: 50%;
+    padding: 20px;
+    text-align: left;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5em;
+    margin:0 auto;
+    opacity: .8;
+    box-shadow: 0px 0px 10px #888888;
+    border-left: 5px solid #fc4b2c !important;
+    background-color: rgba(0, 0, 0, 0.7);
+    color:white;
+  }
+
+  .annotations-1{
+    background-color: rgba(255, 255, 255, 0.75);
+    width: 50%;
+    padding: 1.5em;
+    margin: 0 auto;
+    text-align: left;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.1em;
+    opacity: .9;
+    box-shadow: 0px 0px 10px #888888;
+    border-left: 5px solid #fc4b2c !important;
+  }
+
+  .annotations:not(:last-of-type), .annotations-1:not(:last-of-type) {
+    margin-bottom: 60vh;
+  }
+
+  @media (max-width:575px) {
+    .demo-maps {
+      width:90%;
+    }
+
+    .temp-demo-map {
+        display:none;
+    }
+
+    .temp-demo-map-small {
+        display:all;
+    }
+
+    .demo-title {
+      font-size:1em;
+    }
+
+  }
+
+
+  @media (min-width:575px) {
+
+    .temp-demo-map {
+        display:all;
+    }
+
+    .temp-demo-map-small {
+        display:none;
+    }
+
+  }
+
+  /* scrollama */
+
+  .scroll-graphic {
+    position: -webkit-sticky;
+    position: sticky;
+    top:0;
+    height: 50vh;
+  }
+
+  .step {
+    padding: 2rem;
+    height: 50vh;
+  }
+
+  .scroll-graphic-tab{
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+
+
+  .col-graphic{
+    position: -webkit-sticky;
+    position: sticky;
+    bottom: 0;
+    background-color: white;
+  }
+
+
+
+
+
+  /* Large devices (desktops, 992px and up) */
+  @media (min-width: 992px) {
+
+    .scroll-graphic {
+      position: -webkit-sticky;
+      position: sticky;
+      top:0;
+      height: 100vh;
+    }
+
+    .step {
+      height: 100vh;
+    }
+
+    .col-graphic{
+      position: relative;
+    }
+
+    .scroll-text{
+      /* height: 100vh;
+      overflow: hidden; */
+    }
+  }

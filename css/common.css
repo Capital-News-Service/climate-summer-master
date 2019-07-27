@@ -22,6 +22,9 @@ body {
   opacity: .8;
 }
 
+.red{
+  color:#fc4b2c;
+}
 
 .img-logo{
   width: 30%;
@@ -121,7 +124,10 @@ i.far{
 .chapter-header{
   font-family: 'Montserrat', sans-serif;
   font-size: .75em;
-  color: #ff5f00;
+  width:35%;
+  background-color: black;
+  margin: 0 auto;
+  letter-spacing: 3px;
 }
 
 .story-header{

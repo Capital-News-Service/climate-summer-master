@@ -60,22 +60,22 @@
 }
 
 .no-context {
-    background-color: #ff5f00;
+    background-color: #F23030;
     font-size: .5em;
 }
 
-.no-context-main {
-    background-color: #FF1F0D;;
-    font-size: .5em;
-}
 
 
 .chapter-header{
   font-family: 'Montserrat', sans-serif;
   font-size: .75em;
-  color: #ff5f00;
+  color: white;
   font-weight: 600;
   max-height: 70vh;
+  letter-spacing: 3px;
+  width:35%;
+  background-color: black;
+  margin: 0 auto;
 }
 
 .chapter-header-main{
@@ -84,6 +84,7 @@
   color: white;
   font-weight: 600;
   max-height: 70vh;
+  text-transform: uppercase;
 }
 
 
@@ -98,13 +99,12 @@
 
 .story-header-main{
   font-size:3.5em;
-  margin:.1em .9em .1em .9em;
+  margin-top:.1em;
   padding-bottom:10px;
   font-family: 'Montserrat', sans-serif;
   font-weight: 100;
   letter-spacing: 3px;
   max-height: 70vh;
-  background: black;
 }
 
 .hero-text{
@@ -120,13 +120,19 @@
 
 .hero-text-main{
   font-family: 'Montserrat', sans-serif;
-  font-size:1em;
+  font-size:1.2em;
   padding-bottom:10px;
   width: 90%;
   max-width:1100px;
   margin: 0 auto;
   //text-shadow: 3px 3px 10px black;
   max-height: 70vh;
+
+}
+
+.background{
+  background-color: black;
+  margin-bottom: 1em;
 }
 
 #social-bar-carousel{
@@ -165,7 +171,7 @@
 }
 
 .red{
-  color:#FF1F0D;
+  color:#F23030;
 }
 
 @charset "UTF-8";
