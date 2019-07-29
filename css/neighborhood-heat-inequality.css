@@ -138,11 +138,13 @@
 }
 
 .demo-title {
+    font-family: 'Montserrat', sans-serif;
   font-weight:700;
   font-size:1.25em;
 }
 
 .small-label {
+  font-family: 'Montserrat', sans-serif;
   font-size:.8em;
   margin-top:-5px;
 }

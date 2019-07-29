@@ -182,6 +182,10 @@ a{
 }
 
 
+.icon-twitter:hover, .icon-facebook:hover {
+  color:#F23030;
+}
+
 @media(max-width:1300px){
   .story-header {
     font-size:2.5em;
