@@ -127,6 +127,43 @@
 }
 
 /* GRAPHICS ELEMENTS */
+#byline, #source{
+  font-size: 12px;}
+
+  button {
+    margin:5px;
+  }
+
+  .embed-container {
+    width:100%;
+    max-width:900px;
+  }
+
+  .tick {
+font-family: 'PT Serif', serif;
+font-size: 8.5px;
+text-align: left;}
+
+      #mapid1, #mapid2 {
+        height: 450px;
+            }
+
+      .legend {
+          line-height: 18px;
+          color: #555;
+          padding:15px;
+          background:#fff;
+
+      }
+      .legend i {
+          width: 18px;
+          height: 18px;
+          float: left;
+          margin-right: 8px;
+          opacity: 0.7;
+      }
+
+
 
 .demo-maps {
   width:100%;
@@ -199,12 +236,18 @@
   font-size: 1em;
 }
 
+.chart-subtitle{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1em;
+}
+
 .chart-author{
   text-align: left;
   font-family: 'Montserrat', sans-serif;
-  font-size: .7em;
+  font-size: .8em;
   font-weight: 100px;
   padding-bottom: 20px;
+  text-transform: uppercase;
 }
 
 .chart-source{

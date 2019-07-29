@@ -30,6 +30,27 @@
     <!-- Bootstrap CSS-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
+    <!-- Leaflet's CSS-->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css"
+     integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+     crossorigin=""/>
+
+     <!-- Leaflet's JS - Make sure you put this AFTER Leaflet's CSS -->
+     <script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js"
+       integrity="sha512-GffPMF3RvMeYyc1LWMHtK8EbPv0iNZ8/oTtHPx9/cc2ILxQ+u905qIwdpULaqDkyBKgOaB57QTMg7ztg8Jm2Og=="
+       crossorigin=""></script>
+
+
+       <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+       			  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+       			  crossorigin="anonymous"></script>
+
+       <!-- Data source 1: geometry data for zip codes-->
+       <script type="text/javascript" src="js/baltimoreZips.js"></script>
+
+       <!-- Data source 2: health data by zip-->
+       <script type="text/javascript" src="js/health-data.js"></script>
+
 
     <!-- c3.css -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/c3/0.6.13/c3.min.css" rel="stylesheet">
@@ -42,6 +63,9 @@
 
     <!-- D3-->
     <script src="https://d3js.org/d3.v3.min.js"></script>
+
+    <!-- Load d3.js -->
+    <script src="https://d3js.org/d3.v4.js"></script>
 
     <!-- our CSS  -->
     <link rel="stylesheet" href="css/heat-health.css">
@@ -59,6 +83,10 @@
     <!-- google fonts -->
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700,900&display=swap" rel="stylesheet">
+
+    <!--Load Google API fonts-->
+    <link rel = "stylesheet"
+          href = "https://fonts.googleapis.com/css?family=Montserrat|PT+Serif&display=swap">
 
 
 </head>
@@ -118,56 +146,48 @@
   <p>Every winter, health officials warn of outdoor dangers for the homeless, who can freeze to death from hypothermia and snow shovelers who suffer heart attacks. Yet many more people are at risk indoors if their power has been shut off or they can’t afford to raise the thermostat. Research shows that for those with chronic disease a cold interior may be a dangerous environment.</p><br>
 
   <!-- START Graphic container-->
+
   <div class="embed-container">
-    <div class="chart-title"><b>High temps correlate with high poverty, lower life expectancy and more.</b></div><br>
-      <div class="chart-description">Temperatures across Baltimore can vary up to 10 degrees on a hot summer afternoon, according to a federally-funded study from 2018. This "urban heat island effect" is illustrated by neighborhood in the large map below. A CNS analysis of neighborhood demographics found a correlation between the temperature of a neighborhood and certain quality-of-life factors. Neighborhoods with a higher ambient temperature tend to have more families living below the poverty live, lower life expectancy, higher violent crime rates and a higher rate of employment then lower-temperature neighborhoods, as seen in the smaller maps below.</div><br>
-        <div class="chart-author">BY ADAM MARTON</div>
-        <div class="row">
-          <div class="col-12 center">
-            <img src="graphics-output/temperature-map-expanded.png" class="temp-demo-map demo-maps">
 
-            <div class="temp-demo-map-small">
-              <p class="demo-title">Temperature</p>
-              <img src="graphics-output/temperature-map.png" class="demo-maps">
-            </div>
+      <div class="row">
+        <div class="col-12">
+          <p class="chart-title"><b>Increases in temperature correlate with higher prevalence of certain health conditions in Baltimore</b></p>
+          <p class="chart-description">Due to the urban heat island effect, temperatures across Baltimore on a summer afternoon in 2018 varied from around 86 degrees in leafy northwest to as high as 91.5 degrees downtown (as measured by NOAA researchers). A CNS analysis of inpatient hospital records shows a high degree of correlation between the prevalence of some chronic health conditions and temperature.<br><br>
+          The left map shows temperature and the right map allows you to explore the prevalence of certain health conditions by changing the drop down menu. Explore the graphic and you will find that zip codes with a higher temperature tend to also have a higher prevalence of asthma, COPD and heart disease.</p><br>
+            <p class="chart-author">BY ADAM MARTON</p>
+        </div>
+      </div>
 
-          </div>
+      <div class="row">
+
+        <div class="col-12 col-md-6">
+          <p class="chart-subtitle"><strong>Temperature by zip code</strong><br>
+          <em>Click an area for average temp on a summer afternoon</em></p>
+          <!-- temperature map-->
+          <div id="mapid1"></div>
+        </div>
+
+        <div class="col-12 col-md-6">
+          <p class="chart-subtitle"><strong>Health conditions by zip code</strong><br>
+          <em>Select a health condition from dropdown to change the map</em></p>
+          <!-- health map-->
+          <div id="mapid2"></div>
         </div>
 
 
+      </div>
 
-        <div class="row">
 
-          <div class="col-6 col-md-3 center">
-            <p class="demo-title">Poverty</p>
-            <p class="small-label">Percent of families living below the poverty line.</p>
-            <img src="graphics-output/poverty-map.png" class="demo-maps">
-          </div>
+      <div class="row">
+        <div class="col-12">
 
-          <div class="col-6 col-md-3 center">
-            <p class="demo-title">Life expectancy</p>
-            <p class="small-label">Average life expectancy of neighborhood residents.</p>
-            <img src="graphics-output/life-expectancy-map.png"  class="demo-maps">
-          </div>
-
-          <div class="col-6 col-md-3 center">
-            <p class="demo-title">Crime</p>
-            <p class="small-label">Rates of violent crime per 1,000 residents.</p>
-            <img src="graphics-output/crime-map.png" class="demo-maps">
-          </div>
-
-          <div class="col-6 col-md-3 center">
-            <p class="demo-title">Unemployment</p>
-            <p class="small-label">Unemployment rates among residents.</p>
-            <img src="graphics-output/unemployment-map.png" class="demo-maps">
-          </div>
-
+          <br><em style="float:right;">Source: NOAA Urban Heat Islands Study, Maryland inpatient hospital records from the state Health Services Cost Review Commission.</em>
 
         </div>
+      </div>
 
-        <div class="row">
-          <div class="col-12"><em>Source: Baltimore Neighborhood Indicators Alliance, NOAA Urban Heat Islands study</em></div>
-        </div>
+
+
 
   </div><br><br><br><!-- END Graphic container-->
 
@@ -190,12 +210,12 @@
   <p>“But also on the other hand, there are more frequent disruptions of the polar vortex which would increase [it], so it's kind of a tug-of-war between the two.”</p><br>
 
   <div class="embed-container">
-    <p class="chart-title"><b>Miracle Garden</b></p>
+    <p class="chart-title"><b>HEALTH CONDITIONS MOTION GRAPHIC</b></p>
     <div class="chart-description">Lewis Sharpe, the man in charge of the Duncan Street Miracle Garden in Baltimore City, began the project 1988. He grows a variety of vegetables ad flowers that he gives to members of the community.</div><br>
     <div class="embed-responsive embed-responsive-16by9">
       <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/tgbNymZ7vqY"></iframe>
     </div>
-      <p class="caption"> Amina Lampkin, Capital News Service</p><br>
+      <p class="caption"> BY CAMILA VELLOSO</p><br>
   </div>
 
 
@@ -209,45 +229,30 @@
 
   <!-- START Graphic container-->
     <div class="embed-container">
-      <p class="chart-title"><b>How temperature correlates with demographic features in Baltimore by neighborhood</b></p>
-      <div class="chart-description">Hotter neighborhoods tend to have higher rates of poverty, crime and unemployment and lower life expectancy.</div><br>
-      <p class="chart-author">BY ADAM MARTON</p>
 
-    <div class="row">
 
-      <div class="col-12 col-md-6">
-        <p class="scatterplot-title">Temperature and poverty</p>
-        <div id="poverty-scatterplot" class="scatterplot"></div>
-      </div>
+      <!--Graph title-->
+      <p class="chart-title"><b>As the temperatures increases, EMS calls for many heat-related illnesses rise</b></p>
 
-      <div class="col-12 col-md-6">
-        <p class="scatterplot-title">Temperature and crime</p>
-        <div id="crime-scatterplot" class="scatterplot"></div>
-      </div>
+      <!--Graph information-->
+      <p class="chart-description">Hot temperatures are grouped into four categories: "not safe" for temps above 80 degrees, "cation" for temps ranging from 80 - 89 degrees, "extreme caution" for temps from 90 - 102 degrees and "danger" for temps over 103 degrees. This chart shows the rise and fall of emergency medical calls for certain health conditions in Baltimore in 2018 in each of these four categories. Each bar represents the number of hours between calls for a particular health condition in each category. For example, calls for hyperthermia, dehydration and asthma all increase dramatically when temps raise from "not safe" to "danger." Select the button for each category to explore how hours between EMS calls changed at different temperatures.</p>
 
-    </div>
+      <p class = "chart-author"> By Amina Lampkin and Sean Mussenden</p>
 
-    <div class="row">
+      <!-- Add 2 buttons -->
+      <button onclick="update(data1)">Not safe<br/><80&#176 F</button>
+      <button onclick="update(data2)">Caution<br/>80-89&#176 F</button>
 
-      <div class="col-12 col-md-6">
-        <p class="scatterplot-title">Temperature and life expectancy</p>
-        <div id="life_expectancy-scatterplot" class="scatterplot"></div>
-      </div>
+      <button onclick="update(data3)">Extreme caution<br/> 90-102&#176 F</button>
+      <button onclick="update(data4)">Danger<br/>103-124&#176 F </button>
 
-      <div class="col-12 col-md-6">
-        <p class="scatterplot-title">Temperature and unemployment rate</p>
-        <div id="unemployment_rate-scatterplot" class="scatterplot"></div>
-      </div>
+      <!-- Create a div where the graph will take place -->
+      <div id="my_dataviz"></div>
 
-    </div>
+      <!--Source-->
+      <p class= "chart-source">Source: Baltimore EMS calls 2014-2018, data obtained from Baltimore City Fire Department</p>
 
-    <div class="row">
-      <div class="col-12">
-        <br><em style="float:right;">Source: Baltimore Neighborhood Indicators Alliance, NOAA Urban Heat Islands study</em>
-      </div>
-    </div>
-
-  </div><br><!-- END Graphic container-->
+    </div><br><!-- END Graphic container-->
 
   <p>The impact from these disruptions could last anywhere from 4-to-8 weeks, according to Cohen, a wide range that makes it difficult to predict how long future cold snaps will be.</p><br>
 
@@ -262,7 +267,7 @@
 
       <!-- sticky element-->
       <figure>
-        <img src="images/tammyjackson2.jpg" class="sticky">
+        <img src="images/couple.png" class="sticky">
       </figure>
 
       <!-- floating child elements-->
@@ -281,91 +286,50 @@
   <div class="story-container">
     <div class="container">
 
-  <p>In Baltimore, there isn’t an indication that cold snap longevity is changing. The occurrence of three-day-long cold snaps with a minimum temperature below 32 degrees are just as sporadic as previous years. </p><br>
-
-  <!-- START Pullquote div -->
-  <div class="pullquote">
-    <div class="pullquote-top">106.0°F</div>
-    <div class="pullquote-bottom">"The hottest day in Baltimore, Maryland on record was July 23, 2011.”</div>
-  </div><br><br><!-- END Pullquote div -->
-
-  <p>Cold snaps that occur in places that usually experience winter weather such as the Northeastern United States, northern Europe and East Asia are the result of polar vortex disruptions, according to Cohen. When winter extremes occur in other locations, experts consider these events unexplainable.</p><br>
-
-  <p>This winter, snowfall hit Maui, Hawaii at its lowest elevation ever. Meanwhile, Seattle recorded record-breaking temperatures and Las Vegas had snowfall for the first time in over a decade.</p><br>
-
-  <p>“They [disruptions] could maybe bring a rare event, but it is much harder to attribute something like one snowfall in Vegas to something on a climate scale,” Cohen said. “Things randomly do happen from time to time."</p><br><br>
-
-</div><!-- END 'Container' div-->
-</div><!-- END 'Story Container' div to open wider container -->
-
-<!-- START Responsive SIDE SCROLL Scrollytelling -->
-
-  <div class="container-fluid" id="scroll">
-    <div class="row">
-      <div class="col-lg-4">
-        <div class='scroll-text'>
-          <div class='step'>
-            <h2><span class="red">Sensor Data Graphic</span></h2><br>
-            <p>Description step 1. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-          </div>
-          <div class='step'>
-            <p>Description step 2. sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-          </div>
-          <div class='step'>
-            <p>Description step 3. Lorem ipsum dolor sit amet sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-          </div>
-          <div class='step'>
-            <p>Description step 4. Lorem ipsum dolor sit amet sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-          </div>
-          <div class='step'>
-            <p>Description step 5. Lorem ipsum dolor sit amet sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-8 col-graphic">
-        <div class='scroll-graphic'>
-
-          <div data-step='1' class="scroll-graphic-tab d-block">
-            <img class="img-fluid" src="images/space2.jpg"/>
-          </div>
-
-          <div data-step='2' class="scroll-graphic-tab d-none">
-            <img class="img-fluid" src="images/space4.jpg"/>
-          </div>
-
-          <div data-step='3' class="scroll-graphic-tab d-none">
-            <img class="img-fluid" src="images/space5.jpg"/>
-          </div>
-
-          <div data-step='4' class="scroll-graphic-tab d-none">
-            <img class="img-fluid" src="images/space6.jpg"/>
-          </div>
-
-          <div data-step='5' class="scroll-graphic-tab d-none">
-            <img class="img-fluid" src="images/space2.jpg"/>
-          </div>
-
-        </div>
-      </div>
-    </div>
-  </div>
-
-<!-- END Responsive SIDESCROLL Scrollytelling -->
-
-
-<!-- START 'Container' div again -->
-<div class="story-container">
-  <div class="container">
-
-  <br><br><p>Scientists find it even more difficult to assess what’s a random weather event and what’s a direct result of global warming, such as <a class ="underline-effect" href="#" style="color: #fc4b2c;"><b>the cold snap in January that reached the lowest temperatures in the Midwest in the past 25 years.</b></a></p><br>
-
-  <p>“How do you determine if that's an indication of a changing climate and not just the weather event?” said Tim Canty, an oceanic and atmospheric professor at the University of Maryland. “That's the trick and that's a question among climate communities.”</p><br>
-
   <p>What experts do know is that sporadic winter weather will continue, including in the city of Baltimore. Over the past 30 years, there’s been a consistent appearance of cold snaps in the Northeastern U.S. In the years to come, the pattern is not expected to change, according to Cohen.</p><br>
 
   <p>Even as the atmosphere’s temperature continues to gradually increase, residents must not dismiss cold snaps when experiencing warmer winters. Extreme cold weather events have always happened, are still happening and show no signs of completely disappearing, despite a decrease in extremely cold days. </p><br>
 
+  <!-- START Graphic container-->
+
+  <div class="embed-container">
+    <p class = "chart-title"><b>Heat-related deaths in the city of Baltimore and Maryland</b></p>
+
+      <p class="chart-description">There have been 128 heat related deaths recorded in Maryland since 2012. Thirty seven of those deaths (nearly 30%) have occurred in Baltimore City. Maryland recorded 47 heat related deaths in 2012, when the United States was hit with one of the most severe heat waves in modern American history. There were 28 heat-related deaths in Maryland in 2018, 13 of which occurred in Baltimore. Many of those deaths were the result of a heat wave that hit Maryland in July of that year.</p>
+
+    <p class = "chart-author">
+        By Amina Lampkin and Ian Round | <a href = "https://cnsmaryland.org/home"><i>Capital News Service</i></a></p>
+        <br><br>
+
+
+
+
+    <div id='chart'></div>
+
+    <div class="chart-source">
+        <text><a href ="https://preparedness.health.maryland.gov/Pages/Home.aspx"><tspan><i>Source: Maryland Department of Health</i></tspan></a></text>
+    </div>
+
+  </div>
+
   <p>During periods of extremely cold weather, the Baltimore Health Commissioner declares a Code Blue Extreme Cold Alert and the city opens warming centers, which are community locations like libraries and senior centers where residents can go to warm up. However, many of the warming centers have limited hours or aren’t open daily.</p><br>
+
+  <p>“You may get a cold snap like we had with that polar vortex event in late January in the upper Midwest, where they had that historic cold then it moderating quickly, so that's more typical,” Cohen said. “We think of it as more episodic, but there are cases where it's been continuous when the pattern gets locked and it doesn't change."</p><br>
+
+  <p>In Baltimore, there isn’t an indication that cold snap longevity is changing. The occurrence of three-day-long cold snaps with a minimum temperature below 32 degrees are just as sporadic as previous years. </p><br>
+
+  <div class="embed-container">
+    <p class="chart-title"><b>HUMIDITY MOTION GRAPHIC</b></p>
+    <div class="chart-description">Lewis Sharpe, the man in charge of the Duncan Street Miracle Garden in Baltimore City, began the project 1988. He grows a variety of vegetables ad flowers that he gives to members of the community.</div><br>
+    <div class="embed-responsive embed-responsive-16by9">
+      <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/tgbNymZ7vqY"></iframe>
+    </div>
+      <p class="caption"> BY AMINA LAMPKIN</p><br>
+  </div>
+
+  <p>“You may get a cold snap like we had with that polar vortex event in late January in the upper Midwest, where they had that historic cold then it moderating quickly, so that's more typical,” Cohen said. “We think of it as more episodic, but there are cases where it's been continuous when the pattern gets locked and it doesn't change."</p><br>
+
+  <p>In Baltimore, there isn’t an indication that cold snap longevity is changing. The occurrence of three-day-long cold snaps with a minimum temperature below 32 degrees are just as sporadic as previous years. </p><br>
 
 </div><!-- END 'Container' div-->
 </div><br><br><!-- END 'Story Container' div to open wider container -->
@@ -392,7 +356,7 @@
       <div class="hover-img">
         <img src="images/box-pills.jpg">
         <div class="over-layer">
-          <h2><b>CHAPTER ONE</b></h2>
+          <h2><b>PART ONE</b></h2>
           <h3>Health & Inequality</h3>
           <div class="hover-info">
             <p class="hover-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
@@ -409,7 +373,7 @@
       <div class="hover-img">
         <img src="images/box-people.jpg">
         <div class="over-layer">
-          <h2><b>CHAPTER TWO</b></h2>
+          <h2><b>PART TWO</b></h2>
           <h3>Heat & Health</h3>
           <div class="hover-info">
             <p class="hover-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
@@ -425,7 +389,7 @@
       <div class="hover-img">
         <img src="images/box-trees.jpg">
         <div class="over-layer">
-          <h2><b>CHAPTER THREE</b></h2>
+          <h2><b>PART THREE</b></h2>
           <h3>The Role of Trees</h3>
           <div class="hover-info">
             <p class="hover-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
@@ -441,7 +405,7 @@
       <div class="hover-img">
         <img src="images/box-forward.jpg">
         <div class="over-layer">
-          <h2><b>CHAPTER FOUR</b></h2>
+          <h2><b>PART FOUR</b></h2>
           <h3>Looking Forward</h3>
           <div class="hover-info">
             <p class="hover-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
@@ -535,7 +499,7 @@
   <div class="card" style="width: 18rem;">
     <img class="card-img-top" src="images/boxpills.jpg" alt="Card image cap">
     <div class="card-body">
-      <h5 class="card-title"><b>CHAPTER ONE</b></h5>
+      <h5 class="card-title"><b>PART ONE</b></h5>
       <h6 class="card-subtitle">HEALTH & HEAT</h6>
       <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
       <a href="#" class="btn btn-primary">Read more</a>
@@ -547,7 +511,7 @@
   <div class="card" style="width: 18rem;">
   <img class="card-img-top" src="images/boxpeople.jpg" alt="Card image cap">
   <div class="card-body">
-    <h5 class="card-title"><b>CHAPTER TWO</b></h5>
+    <h5 class="card-title"><b>PART TWO</b></h5>
     <h6 class="card-subtitle">HEALTH & INEQUALITY</h6>
     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
     <a href="#" class="btn btn-primary">Read more</a>
@@ -559,7 +523,7 @@
 <div class="card" style="width: 18rem;">
   <img class="card-img-top" src="images/boxtrees.jpg" alt="Card image cap">
   <div class="card-body">
-    <h5 class="card-title"><b>CHAPTER THREE</b></h5>
+    <h5 class="card-title"><b>PART THREE</b></h5>
     <h6 class="card-subtitle">THE ROLE OF TREES</h6>
     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
     <a href="#" class="btn btn-primary">Read more</a>
@@ -571,7 +535,7 @@
 <div class="card" style="width: 18rem;">
   <img class="card-img-top" src="images/boxforward.jpg" alt="Card image cap">
   <div class="card-body">
-    <h5 class="card-title"><b>CHAPTER FOUR</b></h5>
+    <h5 class="card-title"><b>PART FOUR</b></h5>
     <h6 class="card-subtitle">LOOKING FORWARD</h6>
     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
     <a href="#" class="btn btn-primary">Read more</a>
@@ -628,7 +592,14 @@
     <!-- JavaScript calls -->
 
     <!-- scripts for charts-->
+
+    <!-- Custom js for graphic-->
+    <script src="js/health-leaflet-map.js"></script>
+
+
     <script src="js/scatterplot-script.js"></script>
+
+    <script src="js/ems-calls.js"></script>
 
       <!-- Bootstrap js-->
       <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
@@ -650,6 +621,36 @@
       <!-- Our custom Javascript -->
       <script src="js/javascript.js"></script>
 
+      <script type = "text/javascript">
+          var chart = c3.generate(
+              {
+                  data: { x: 'x',
+                  columns: [
+                      ['x', 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019],
+                      ['data1', 13, 2, 3, 1, 5, 0, 13],
+                      ['data2', 47, 18, 8, 6, 17, 5, 28]
+                  ],
+
+                  names: {
+                      data1: 'City of Baltimore',
+                      data2: 'Maryland'
+                  },
+
+                  type: 'bar'
+                  },
+
+               color: {
+                   pattern: ['#F5A831', '#D9412F']
+               },
+
+               bar: {
+                   width: {
+                       ratio: 0.75
+                   }
+               }
+              });
+
+      </script>
 
 
 
