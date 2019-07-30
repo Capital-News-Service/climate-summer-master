@@ -464,6 +464,12 @@ p {
  }
 
 
+.humdity-graphic {
+  width:100%;
+  max-width: 917px;
+}
+
+
 /* MEDIA QUERIES */
 
  @media(max-width:1300px){
