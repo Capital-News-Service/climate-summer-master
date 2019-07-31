@@ -140,7 +140,7 @@
         .attr("y", function(d) { return y(d.value); })
         .attr("width", x.bandwidth())
         .attr("height", function(d) { return height - y(d.value); })
-        .attr("fill", "#EF6309")
+        .attr("fill", "#Fc4b2c")
 
     // If less group in the new dataset, I delete the ones not in use anymore
     u

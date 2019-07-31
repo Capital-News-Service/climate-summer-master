@@ -4,10 +4,12 @@
 
 // initialize the scrollama
 var scroller = scrollama();
+var scroller2 = scrollama();
 
 // generic window resize listener event
 function handleResize() {
   scroller.resize();
+  scroller2.resize();
 }
 
 // scrollama event handlers
@@ -55,6 +57,22 @@ function init() {
   )
   .onContainerEnter(handleContainerEnter)
   .onContainerExit(handleContainerExit);
+
+  scroller2.setup({
+    container: '#scroll2',
+    graphic: '#scroll2 .scroll-graphic',
+    step: '#scroll2 .scroll-text .step',
+    debug: false,
+    offset: 0.50,
+  })
+  .onStepEnter(function(response){
+      return handleStepEnter(response,'#scroll2')
+    }
+  )
+    .onContainerEnter(handleContainerEnter)
+    .onContainerExit(handleContainerExit);
+
+
 
 
   // setup resize event

@@ -103,7 +103,12 @@
 
 #cns {
   display: block;
-  width: 30%;
+  width: 50%;
+}
+
+#howard {
+  display: block;
+  width: 50%;
 }
 
 #park {

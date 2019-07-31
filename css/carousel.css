@@ -1,3 +1,16 @@
+#tophat {
+  width:100%;
+  color:#fff;
+  background:#000;
+  font-family: 'Montserrat', sans-serif;
+  padding:3px;
+  text-align:center;
+  font-size:.75em;
+  text-transform:uppercase;
+  z-index:10;
+  font-weight:700;
+  opacity:.8;
+}
 
 .carousel-caption {
   top:50px;
@@ -241,6 +254,10 @@ a{
 }
 
 @media(max-width:500px) {
+
+  #tophat {
+    font-size:.5em;
+    }
 
   .story-header {
     font-size:1em;

@@ -10,7 +10,27 @@ body {
   color: black;
 }
 
+a:hover {
+    color: inherit;
+    text-decoration: inherit;
+  }
+
 /* LOGO AND SOCIAL ICONS NAV BAR */
+
+#tophat {
+  width:100%;
+  color:#fff;
+  background:#000;
+  font-family: 'Montserrat', sans-serif;
+  padding:3px;
+  text-align:center;
+  font-size:.75em;
+  text-transform:uppercase;
+  position:fixed;
+  z-index:10;
+  font-weight:700;
+  opacity:.8;
+}
 
 #cns-logo {
   position: absolute;
@@ -86,6 +106,38 @@ i.far{
     cursor: pointer;
 }
 
+/* CHART ELEMENTS */
+
+
+.chart-title{
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.5em;
+  text-transform: uppercase;
+}
+
+.chart-description{
+  text-align: left;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1em;
+}
+
+.chart-author{
+  text-align: left;
+  font-family: 'Montserrat', sans-serif;
+  font-size: .7em;
+  font-weight: 100px;
+  padding-bottom: 20px;
+  text-transform:uppercase;
+}
+
+.chart-source{
+  text-align: left;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 13px;
+  font-weight: 100px;
+  font-style: italic;
+}
 
 /* HERO ELEMENTS */
 
@@ -542,6 +594,12 @@ p {
 
 
  @media(max-width:500px) {
+
+
+   #tophat {
+     position:relative;
+     font-size:.5em;
+     }
 
    .text-title{
      font-size:1.75em;
