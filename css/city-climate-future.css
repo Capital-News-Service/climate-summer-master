@@ -137,7 +137,7 @@
   font-size:1.5em;
   padding-bottom: 20px;
   padding-top:10px;
-  color: #ff5f00;
+  color: #F23030;
   font-weight: bold;
 }
 
@@ -188,7 +188,7 @@
     margin:0 auto;
     opacity: .8;
     box-shadow: 0px 0px 10px #888888;
-    border-left: 5px solid #ff5f00;
+    border-left: 5px solid #F23030;
     background-color: rgba(0, 0, 0, 0.7);
     color:white;
   }
@@ -203,7 +203,7 @@
     font-size: 20px;
     opacity: .9;
     box-shadow: 0px 0px 10px #888888;
-    border-left: 5px solid #ff5f00;
+    border-left: 5px solid #F23030;
   }
 
   .annotations:not(:last-of-type), .annotations-1:not(:last-of-type) {

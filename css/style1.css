@@ -48,7 +48,7 @@
 }
 
 .red{
-  color:#fc4b2c;
+  color:#F23030;
 }
 /* OVERRIDING  COMMON CSS ELEMENTS FOR COLOR RED */
 .opening-letter::first-letter {
@@ -60,7 +60,7 @@
   margin-left: -0.05em; /* for optical alignment to the left */
   margin-right: 0.05em; /* for optical alignment to the right */
   font-weight:400;
-  background:#fc4b2c !important;
+  background:#F23030 !important;
   color: white;
   padding:5px 10px 5px 10px;
   margin-right: 10px;
@@ -69,12 +69,12 @@
 .icon-twitter, .icon-facebook {
     margin-right: 10px;
     font-size: 2em;
-    color: #fc4b2c !important;
+    color: #F23030 !important;
     cursor: pointer;
 }
 
 .hover-box .hover-img .over-layer h2{
-  color: #fc4b2c !important;
+  color: #F23030 !important;
   font-family: 'Montserrat', sans-serif;
   font-size:1em;
   padding-top: 2px;
@@ -83,14 +83,14 @@
 .card-title{
   font-family: 'Montserrat', sans-serif;
   font-size: 17px;
-  color:#fc4b2c !important;
+  color:#F23030 !important;
   font-weight: 500;
   padding-bottom: 5px;
 }
 
 .btn{
-  background-color:#fc4b2c !important;
-  border-color: #fc4b2c !important;
+  background-color:#F23030 !important;
+  border-color: #F23030 !important;
 }
 
 .btn:hover{

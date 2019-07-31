@@ -23,7 +23,7 @@ body {
 }
 
 .red{
-  color:#fc4b2c;
+  color:#F23030;
 }
 
 .img-logo{
@@ -82,7 +82,7 @@ i.far{
 .icon-twitter, .icon-facebook {
     margin-right: 10px;
     font-size: 2em;
-    color: #ff5f00;
+    color: #F23030;
     cursor: pointer;
 }
 
@@ -178,9 +178,6 @@ i.far{
   text-align: left;
 }
 
-.orange {
-  color:#ff5f00;
-}
 
 
 /* TEXT ELEMENTS*/
@@ -201,7 +198,7 @@ p {
   margin-left: -0.05em; /* for optical alignment to the left */
   margin-right: 0.05em; /* for optical alignment to the right */
   font-weight:400;
-  background: #ff5f00;
+  background: #F23030;
   color: white;
   padding:5px 10px 5px 10px;
   margin-right: 10px;
@@ -280,7 +277,7 @@ p {
 }
 
 .hover-box .hover-img .over-layer h2{
-  color: #ff5f00;
+  color: #F23030;
   font-family: 'Montserrat', sans-serif;
   font-size:1em;
   padding-top: 2px;
@@ -390,7 +387,7 @@ p {
 .card-title{
   font-family: 'Montserrat', sans-serif;
   font-size: 17px;
-  color:#ff5f00;
+  color:#F23030;
   font-weight: 500;
   padding-bottom: 5px;
 }
@@ -410,8 +407,8 @@ p {
 }
 
 .btn{
-  background-color: #ff5f00;
-  border-color: #ff5f00;
+  background-color: #F23030;
+  border-color: #F23030;
 }
 
 .btn:hover{
