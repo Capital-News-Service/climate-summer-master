@@ -47,9 +47,6 @@
     <!-- Required for sidescroll -->
     <link rel="stylesheet" href="css/scroll-style.css">
 
-    <!-- graphics CSS  -->
-    <link rel="stylesheet" href="css/graphics-css.css">
-
     <!-- Fontawesome  -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
 
@@ -264,6 +261,68 @@
 
 </div><!-- END 'Container' div-->
 </div><!-- END 'Story Container' div to open wider container -->
+
+
+
+
+
+<!-- START Responsive SIDE SCROLL Scrollytelling -->
+
+  <div class="container-fluid" id="scroll2">
+    <div class="row">
+      <div class="col-lg-4">
+        <div class='scroll-text'>
+          <div class='step'>
+            <p class="scrolling-text"><span class="red">SCROLLING GRAPHIC</span></p><br>
+            <p class="scrolling-text">Description step 1. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          </div>
+          <div class='step'>
+            <p class="scrolling-text">Description step 2. sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          </div>
+          <div class='step'>
+            <p class="scrolling-text">Description step 3. Lorem ipsum dolor sit amet sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          </div>
+          <div class='step'>
+            <p class="scrolling-text">Description step 4. Lorem ipsum dolor sit amet sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          </div>
+          <div class='step'>
+            <p class="scrolling-text">Description step 5. Lorem ipsum dolor sit amet sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-8 col-graphic">
+        <div class='scroll-graphic'>
+
+          <div data-step='1' class="scroll-graphic-tab d-block">
+            <img class="img-fluid" src="images/space2.jpg"/>
+          </div>
+
+          <div data-step='2' class="scroll-graphic-tab d-none">
+            <img class="img-fluid" src="images/space4.jpg"/>
+          </div>
+
+          <div data-step='3' class="scroll-graphic-tab d-none">
+            <img class="img-fluid" src="images/space5.jpg"/>
+          </div>
+
+          <div data-step='4' class="scroll-graphic-tab d-none">
+            <img class="img-fluid" src="images/space6.jpg"/>
+          </div>
+
+          <div data-step='5' class="scroll-graphic-tab d-none">
+            <img class="img-fluid" src="images/space2.jpg"/>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!-- END Responsive SIDESCROLL Scrollytelling -->
+
+
+
+
 
 
 
@@ -599,28 +658,22 @@
 
 
 
-    <!-- JavaScript calls -->
-      <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+      <!-- JavaScript calls -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
-      <!-- scripts for charts-->
-      <script src="js/scatterplot-script.js"></script>
-
-      <!-- Stickyfill.js - Required for sidescroll-->
-      <script src='https://cdnjs.cloudflare.com/ajax/libs/stickyfill/2.1.0/stickyfill.min.js'></script>
-
-      <!-- Scrollama and intersection observer js files - Required for sidescroll-->
-      <script src="https://unpkg.com/intersection-observer@0.5.1/intersection-observer.js"></script>
-      <script src="https://unpkg.com/scrollama"></script>
+        <!-- required for scrollama side scroll -->
+        <script src='lib/stickyfill.min.js'></script>
+      	<script src='lib/intersection-observer.js'></script>
+      	<script src='lib/scrollama.min.js'></script>
 
       <!-- app js file - Required for sidescroll-->
       <script src="js/scroll-app.js"></script>
 
       <!-- Our custom Javascript -->
       <script src="js/javascript.js"></script>
-
 
 
 
