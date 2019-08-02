@@ -141,6 +141,10 @@
     margin:5px;
   }
 
+.chart-button {
+  min-height:41px;
+}
+
   .embed-container {
     width:100%;
     max-width:900px;

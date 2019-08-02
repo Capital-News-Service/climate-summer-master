@@ -264,12 +264,16 @@ a{
   }
 
   .story-header-main{
-    font-size:2em;
+    font-size:1.5em;
   }
 
   .hero-text, .chapter-header {
     font-size:.4em;
   }
+
+.chapter-header {
+  width:50%;
+}
 
   .chapter-header-main {
     font-size:.35em;

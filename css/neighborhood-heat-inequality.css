@@ -126,10 +126,7 @@
   max-width: 100%;
 }
 
-.scrolling-text{
-  font-family: 'Montserrat', sans-serif;
-  font-size: 1.25em;
-}
+
 
 
 /* GRAPHICS ELEMENTS */
@@ -290,6 +287,19 @@
     margin-bottom: 60vh;
   }
 
+
+  @media (max-width:800px) {
+
+  .demo-title {
+    font-size:1em;
+  }
+
+  .small-label {
+    font-size:.6em;
+  }
+
+}
+
   @media (max-width:575px) {
     .demo-maps {
       width:90%;
@@ -303,9 +313,7 @@
         display:all;
     }
 
-    .demo-title {
-      font-size:1em;
-    }
+
 
   }
 

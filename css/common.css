@@ -260,6 +260,13 @@ p {
   text-transform: uppercase;
 }
 
+
+.scrolling-text{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.25em;
+}
+
+
 /* TABLE OF CONTENTS ELEMENTS */
 
 .more-stories{
@@ -595,6 +602,13 @@ p {
 
  @media(max-width:500px) {
 
+   .chart-title{
+     font-size: 1em;
+     }
+
+   .chart-description{
+     font-size: .7em;
+   }
 
    #tophat {
      position:relative;
@@ -684,6 +698,14 @@ p {
    .image-scrolly{
      width:100%;
    }
+
+
+   .scrolling-text{
+     font-family: 'Montserrat', sans-serif;
+     font-size: .8em;
+   }
+
+
 
  }
 
