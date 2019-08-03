@@ -111,6 +111,11 @@
   width: 50%;
 }
 
+#umd {
+  display: block;
+  width: 40%;
+}
+
 #park {
   display: block;
   width: 50%;
@@ -123,7 +128,7 @@
 
 #merrill {
   display: block;
-  width: 70%;
+  width: 100%;
   padding-top:20px;
 }
 
