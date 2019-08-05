@@ -33,6 +33,17 @@
   text-align: center;
 }
 
+.photo-credit {
+  width:100%;
+  max-width:900px;
+  margin:0 auto;
+  padding-bottom:30px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 15px;
+  color: black;
+  text-align: left;
+}
+
 .chapter-title{
   font-family: 'Montserrat', sans-serif;
   font-size: 2em;
