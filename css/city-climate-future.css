@@ -45,7 +45,7 @@
   letter-spacing: 2px;
   line-height:140%;
   font-weight: 200;
-  text-align: left;
+  text-align: center;
 }
 
 .chapter-author{
@@ -70,17 +70,16 @@
 }
 
 .text-box{
-  background-color: #BF2626;
+  background-color: rgba(191, 38, 38, 0.8);
   width: 80%;
   margin: 0 auto;
-  border: 3px solid black;
+  border-top: 3px solid black;
 }
 
 .text-box-title{
   font-family: 'Montserrat', sans-serif;
   font-size: 1.25em;
   text-align: center;
-  text-decoration: underline;
   color:white;
 }
 
