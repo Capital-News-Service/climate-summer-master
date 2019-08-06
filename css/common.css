@@ -139,6 +139,17 @@ i.far{
   font-style: italic;
 }
 
+/* IMAGE ELEMENTS */
+.right-inline-img {
+  float: right;
+  max-width: 400px;
+  margin: 20px ;
+}
+
+.right-inline-img img {
+  max-width: 400px;
+}
+
 /* HERO ELEMENTS */
 
 .hero-container {
