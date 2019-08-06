@@ -26,8 +26,9 @@
 }
 
 
-
-
+.img-fluid-trees {
+    max-height:50vh !important;
+  }
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
@@ -38,6 +39,11 @@
     top:0;
     height: 100vh;
   }
+
+
+  .img-fluid-trees {
+      max-height:100vh !important;
+    }
 
   .step {
     height: 100vh;
