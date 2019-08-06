@@ -299,6 +299,11 @@ p {
     border: 0;
 }
 
+.center {
+  margin: 0 auto;
+  text-align:center;
+}
+
 /* TABLE OF CONTENTS ELEMENTS */
 
 .more-stories{
