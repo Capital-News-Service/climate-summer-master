@@ -157,6 +157,7 @@ text-align: left;}
 
       #mapid1, #mapid2 {
         height: 450px;
+        z-index:0;
             }
 
       .legend {

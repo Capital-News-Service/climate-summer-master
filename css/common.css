@@ -287,7 +287,6 @@ p {
 .resp-container {
     position: relative;
     overflow: hidden;
-    padding-top: 120%;
 }
 
 .resp-iframe {
