@@ -137,6 +137,52 @@
   text-align: left;
 }
 
+
+.text-box{
+  background-color: #DCDCDC;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.text-box-title{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.25em;
+  text-align: center;
+  color:	white;
+  background: rgba(0, 0, 0, 0.8);
+}
+
+.text-box-text{
+  padding-left: 3em;
+  padding-right: 3em;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1em;
+  text-align: left;
+  color:#303030;
+}
+
+.text-box-text li{
+  line-height: 2;
+}
+
+
+#byline, #source{
+  font-size: 12px;}
+
+  button {
+    margin:5px;
+  }
+
+.chart-button {
+  min-height:41px;
+}
+
+
+  .tick {
+font-family: 'Montserrat', sans-serif;
+font-size: 8.5px;
+text-align: left;}
+
 /* WIDER CONTAINER */
 
 .embed-container{

@@ -143,11 +143,17 @@ i.far{
 .right-inline-img {
   float: right;
   max-width: 400px;
-  margin: 10px ;
+  margin: 20px ;
 }
 
 .right-inline-img img {
   max-width: 400px;
+}
+
+.right-inline-imgage {
+  float: right;
+  max-width: 400px;
+  margin-left: 20px ;
 }
 
 .left-inline-img{
