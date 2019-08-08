@@ -70,17 +70,17 @@
 }
 
 .text-box{
-  background-color: rgba(191, 38, 38, 0.8);
+  background-color: #DCDCDC;
   width: 80%;
   margin: 0 auto;
-  border-top: 3px solid black;
 }
 
 .text-box-title{
   font-family: 'Montserrat', sans-serif;
   font-size: 1.25em;
   text-align: center;
-  color:white;
+  color:	white;
+  background: rgba(0, 0, 0, 0.8);
 }
 
 .text-box-text{
@@ -89,7 +89,7 @@
   font-family: 'Montserrat', sans-serif;
   font-size: 1em;
   text-align: left;
-  color:white;
+  color:#303030;
 }
 
 .text-box-text li{
