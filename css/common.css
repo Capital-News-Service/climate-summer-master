@@ -741,7 +741,17 @@ p {
      font-size: .8em;
    }
 
+   .text-box{
+      width: 100%;
+   }
 
+   .text-box-title{
+     font-size: 1em;
+   }
+
+   .text-box-text{
+     font-size: 0.8em;
+   }
 
  }
 

@@ -236,8 +236,20 @@
     }
 
 
+    @media only screen and (min-width: 768px){
+      .text-box{
+         width: 80%;
+      }
 
+      .text-box-title{
+        font-size: 1.25em;
+      }
 
+      .text-box-text{
+        font-size: 1em;
+      }
+
+    }
 
     /* Large devices (desktops, 992px and up) */
     @media (min-width: 992px) {
