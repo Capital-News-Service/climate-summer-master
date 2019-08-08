@@ -143,12 +143,23 @@ i.far{
 .right-inline-img {
   float: right;
   max-width: 400px;
-  margin: 20px ;
+  margin: 10px ;
 }
 
 .right-inline-img img {
   max-width: 400px;
 }
+
+.left-inline-img{
+  float: left;
+  max-width: 400px;
+  margin-right: 20px;
+}
+
+.left-inline-img img {
+  max-width: 400px;
+}
+
 
 /* HERO ELEMENTS */
 
