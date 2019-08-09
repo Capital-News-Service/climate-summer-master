@@ -258,7 +258,24 @@ text-align: left;}
   text-align:center;
 }
 
+#chartTitle {
+    font-family: 'Montserrat', sans-serif;
+}
 
+#chartSubtitle {
+    font-family: 'PT Serif', serif;
+    font-size: 15px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+#source {
+    text-align: right;
+    font-size: 12px;
+}
 /* PULLQUOTE ELEMENTS */
 
 .pullquote{
