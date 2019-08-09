@@ -88,6 +88,11 @@
   height: auto;
 }
 
+.additional-credit{
+  font-family: 'Playfair Display', serif;
+  font-size: 0.8em;
+  text-align: left;
+}
 
 /* WIDER CONTAINER */
 
