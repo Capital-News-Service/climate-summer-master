@@ -295,6 +295,11 @@ p {
 }
 
 
+.resp-container-container-scatterplot {
+  width:100%;
+    margin:0 auto;
+}
+
 .resp-container-container {
   width:100%;
   max-width:500px;
@@ -304,6 +309,12 @@ p {
 .resp-container {
     position: relative;
     overflow: hidden;
+}
+
+.resp-container-scatterplot {
+    position: relative;
+    overflow: hidden;
+    padding-top: 90%;
 }
 
 .resp-iframe {
@@ -653,7 +664,25 @@ p {
  }
 
 
+@media(max-width:680px) {
+  .resp-container-scatterplot {
+      position: relative;
+      overflow: hidden;
+      padding-top: 300%;
+  }
+
+}
+
+
+
  @media(max-width:500px) {
+
+
+   .resp-container-scatterplot {
+       position: relative;
+       overflow: hidden;
+       padding-top: 350%;
+   }
 
    .chart-title{
      font-size: 1em;
