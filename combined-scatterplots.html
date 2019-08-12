@@ -1,0 +1,142 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <title>Temperature and demographic scatterplots</title>
+  <meta name="author" content="Adam Marton">
+
+    <!-- Bootstrap CSS-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!-- D3-->
+    <script src="https://d3js.org/d3.v3.min.js"></script>
+
+
+
+    <style>
+
+      .embed-container {
+          width: 100%;
+          padding: 25px;
+          overflow: hidden;
+          max-width: 1000px;
+          height: auto;
+          font: sans-serif;
+        }
+
+      .axis path,
+      .axis line {
+        fill: none;
+        stroke: #000;
+        shape-rendering: crispEdges;
+      }
+
+      .dot {
+        stroke: #000;
+      }
+
+      .tooltip {
+        position: absolute;
+        width: 200px;
+        height: 28px;
+        pointer-events: none;
+      }
+
+      .d3-box {
+        background:#fff;
+        line-height:150%;
+      }
+
+      .scatterplot {
+        width:100%;
+        max-width:500px;
+        font: 11px sans-serif;
+      }
+
+    </style>
+
+
+</head>
+
+<body>
+
+
+  <div class="embed-container">
+
+      <div class="row">
+        <div class="col-12">
+          <h2>How temperature correlates with demographic features in Baltimore by neighborhood</h2>
+          <p>by Adam Marton</p>
+          <p>Hotter neighborhoods tend to have higher rates of poverty, crime and unemployment and lower life expectancy. This doesn't mean, necessarily, that high temperatures cause these issues. McElderry Park is included in the data under the "Madison/East End" community statistical area. Click on a dot in the scatterplot to see the associated community and statistics.
+
+
+
+          </p>
+        </div>
+      </div>
+
+      <div class="row">
+
+        <div class="col-12 col-md-6">
+          <h4>Temperature and poverty</h4>
+          <div id="poverty-scatterplot" class="scatterplot"></div>
+        </div>
+
+        <div class="col-12 col-md-6">
+          <h4>Temperature and crime</h4>
+          <div id="crime-scatterplot" class="scatterplot"></div>
+        </div>
+
+      </div>
+
+      <div class="row">
+
+        <div class="col-12 col-md-6">
+          <h4>Temperature and life expectancy</h4>
+          <div id="life_expectancy-scatterplot" class="scatterplot"></div>
+        </div>
+
+        <div class="col-12 col-md-6">
+          <h4>Temperature and unemployment rate</h4>
+          <div id="unemployment_rate-scatterplot" class="scatterplot"></div>
+        </div>
+
+      </div>
+
+      <div class="row">
+        <div class="col-12">
+          <br><em style="float:right;">Source: Baltimore Neighborhood Indicators Alliance, NOAA Urban Heat Islands study</em>
+        </div>
+      </div>
+
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- scripts for charts-->
+  <script src="js/scatterplot-script.js"></script>
+
+
+<!-- Bootstrap js-->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+</body>
+</html>

@@ -84,6 +84,7 @@
             color = d3.scale.category10()
             	.range(['#ffc966']);
 
+
     // add the graph canvas to the body of the webpage
     var svg = d3.select("#unemployment_rate-scatterplot").append("svg")
         .attr("width", width + margin.left + margin.right)
