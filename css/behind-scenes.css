@@ -180,6 +180,20 @@
 }
 
 
+.carousel-caption p{
+	font-size: .8em;
+  line-height: normal;
+	color: white;
+	background-color: rgba(0,0,0,0.5);
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+  padding:5px;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  opacity: 1;
+}
 
 /* SCROLLYTELLING */
 
