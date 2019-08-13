@@ -142,6 +142,7 @@
   background-color: #DCDCDC;
   width: 80%;
   margin: 0 auto;
+  border: solid #202020 1px;
 }
 
 .text-box-title{
@@ -157,6 +158,23 @@
   padding-right: 3em;
   font-family: 'Montserrat', sans-serif;
   font-size: 1em;
+  text-align: left;
+  color:#303030;
+}
+
+.text-box-intro-text{
+  padding-left: 1em;
+  padding-right: 1em;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1em;
+  text-align: left;
+}
+
+.text-box-source-text{
+  padding-left: 1em;
+  padding-right: 1em;
+  font-family: 'Montserrat', sans-serif;
+  font-size: .8em;
   text-align: left;
   color:#303030;
 }
