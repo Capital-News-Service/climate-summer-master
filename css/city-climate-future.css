@@ -126,6 +126,12 @@
     margin-top: 0.2em !important; /* for optical baseline alignment */
 }
 
+.chapter-title-new{
+  font-family: 'Playfair Display', serif;
+  font-size: 1.7em;
+  text-align: left;
+}
+
 /* WIDER CONTAINER */
 
 .embed-container{

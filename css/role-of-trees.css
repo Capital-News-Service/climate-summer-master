@@ -94,6 +94,12 @@
   text-align: left;
 }
 
+.chapter-title-new{
+  font-family: 'Playfair Display', serif;
+  font-size: 1.7em;
+  text-align: left;
+}
+
 /* WIDER CONTAINER */
 
 .embed-container{
