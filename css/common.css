@@ -270,7 +270,7 @@ p {
 }
 
 .opening-letter::first-letter {
-  font-family: 'Playfair Display', serif;
+  font-family: 'Playfair Display', serif !important;
 	font-size: 4em;
 	float: left;
   line-height: 0.8;
@@ -861,6 +861,10 @@ p {
      width:80%;
      font-size:1em;
    }
+
+   .carousel-caption p{
+   	font-size: .5em;
+   }
  }
 
  @media screen and (min-width: 800px) {
@@ -881,6 +885,10 @@ p {
 
    .table-of-contents{
      display: none;
+   }
+
+   .carousel-caption p{
+   	font-size: .65em;
    }
 
  }
