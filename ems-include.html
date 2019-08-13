@@ -1,0 +1,41 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <title>Adam Marton</title>
+  <meta name="description" content="Merrill College of Journalism, UMD">
+  <meta name="author" content="Adam Marton">
+
+
+
+
+      <!-- Load d3.js -->
+      <script src="https://d3js.org/d3.v4.js"></script>
+
+
+
+</head>
+
+<body>
+
+
+
+<!-- Add 2 buttons -->
+<button class="chart-button" onclick="update(data1)">Not safe<br/>< 80&#8457;</button>
+<button class="chart-button"  onclick="update(data2)">Caution<br/>80-89&#8457;</button>
+
+<button class="chart-button"  onclick="update(data3)">Extreme caution<br/> 90-102&#8457;</button>
+<button class="chart-button"  onclick="update(data4)">Danger<br/>103-124&#8457;</button>
+
+<!-- Create a div where the graph will take place -->
+<div id="my_dataviz"></div>
+
+
+<!-- scripts for charts-->
+<script src="js/ems-calls.js"></script>
+
+</body>
+</html>

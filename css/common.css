@@ -139,6 +139,12 @@ i.far{
   font-style: italic;
 }
 
+h4 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1em;
+
+}
+
 /* IMAGE ELEMENTS */
 .right-inline-img {
   float: right;
@@ -306,6 +312,11 @@ p {
     margin:0 auto;
 }
 
+.resp-container-container-full {
+  width:100%;
+    margin:0 auto;
+}
+
 .resp-container {
     position: relative;
     overflow: hidden;
@@ -325,6 +336,45 @@ p {
     height: 100%;
     border: 0;
 }
+
+
+.heat-deaths-include {
+  padding-top:45%;
+}
+
+@media(max-width:850px) {
+
+  .heat-deaths-include {
+    padding-top:60%;
+  }
+
+}
+
+
+@media(max-width:650px) {
+
+  .heat-deaths-include {
+    padding-top:80%;
+  }
+
+}
+
+@media(max-width:500px) {
+
+  .heat-deaths-include {
+    padding-top:100%;
+  }
+
+}
+
+@media(max-width:400px) {
+
+  .heat-deaths-include {
+    padding-top:125%;
+  }
+
+}
+
 
 .center {
   margin: 0 auto;
@@ -726,6 +776,10 @@ p {
  @media(max-width:500px) {
 
 
+   #ems-graphic {
+     display:none;
+   }
+
    .resp-container-scatterplot {
        position: relative;
        overflow: hidden;
@@ -893,15 +947,6 @@ p {
 
  }
 
-
-
-@media screen and (max-width: 400px) {
-#scatterplot-graphics{
-  display:none;
-}
-
-
-}
 
 
  /* METRICS */

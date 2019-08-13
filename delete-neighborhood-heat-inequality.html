@@ -33,11 +33,18 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
 
+    <!-- c3.css -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/c3/0.6.13/c3.min.css" rel="stylesheet">
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+
+    <!-- d3.js and c3.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/c3/0.6.13/c3.min.js"></script>
+
 
 
     <!-- Load d3.js -->
-    <script src="https://d3js.org/d3.v3.min.js"></script>
+    <script src="https://d3js.org/d3.v4.js"></script>
 
 
     <!-- our CSS  -->
@@ -200,9 +207,9 @@
 
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum aliquam erat sit amet odio dapibus, pellentesque varius libero eleifend. Maecenas vel nibh at lectus tristique pellentesque. </p><br>
 
-
+      <hr>
       <!-- START Graphic container-->
-        <div class="embed-container" id="ems-graphic"><hr>
+        <div class="embed-container">
 
 
           <!--Graph title-->
@@ -213,18 +220,20 @@
 
           <p class = "chart-author"> By Amina Lampkin and Sean Mussenden</p>
 
-          <div class="resp-container-container-full">
-            <div class="resp-container ems-include" style="padding-top:60%;">
+          <!-- Add 2 buttons -->
+          <button class="chart-button" onclick="update(data1)">Not safe<br/>< 80&#8457;</button>
+          <button class="chart-button"  onclick="update(data2)">Caution<br/>80-89&#8457;</button>
 
-              <iframe frameborder="0" class="resp-iframe" src="ems-include.html" scrolling="no"></iframe>
+          <button class="chart-button"  onclick="update(data3)">Extreme caution<br/> 90-102&#8457;</button>
+          <button class="chart-button"  onclick="update(data4)">Danger<br/>103-124&#8457;</button>
 
-            </div>
-          </div>
+          <!-- Create a div where the graph will take place -->
+          <div id="my_dataviz"></div>
 
           <!--Source-->
           <p class= "chart-source">Source: Baltimore EMS calls 2014-2018, data obtained from Baltimore City Fire Department</p>
 
-        <hr><br></div><!-- END Graphic container-->
+        </div><hr><br><!-- END Graphic container-->
 
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum aliquam erat sit amet odio dapibus, pellentesque varius libero eleifend. Maecenas vel nibh at lectus tristique pellentesque. </p><br>
 
@@ -516,15 +525,9 @@
 
           <p class = "chart-author">
               By Amina Lampkin</p>
+              <br><br>
 
-
-              <div class="resp-container-container-full">
-                <div class="resp-container heat-deaths-include">
-
-                  <iframe frameborder="0" class="resp-iframe" src="heat-related-deaths-include.html" scrolling="no"></iframe>
-
-                </div>
-              </div>
+          <div id='chart'></div>
 
           <div class="chart-source">
               <text><a href ="https://preparedness.health.maryland.gov/Pages/Home.aspx"><tspan><p class="chart-source">Source: Maryland Department of Health</p></tspan></a></text>
@@ -573,34 +576,14 @@
             <div class="chart-description">Hotter neighborhoods tend to have higher rates of poverty, crime and unemployment and lower life expectancy. This doesn't mean, necessarily, that high temperatures cause these issues. McElderry Park is included in the data under the "Madison/East End" community statistical area. Hover on a dot in the scatterplot to see the associated community and statistics.</div><br>
             <p class="chart-author">BY ADAM MARTON</p>
 
-                  <div class="row">
 
-                    <div class="col-12 col-sm-6">
-                      <h4>Temperature and poverty</h4>
-                      <div id="poverty-scatterplot" class="scatterplot"></div>
-                    </div>
+            <div class="resp-container-container-scatterplot">
+            <div class="resp-container-scatterplot">
 
-                    <div class="col-12 col-sm-6">
-                      <h4>Temperature and crime</h4>
-                      <div id="crime-scatterplot" class="scatterplot"></div>
-                    </div>
-
-                  </div>
-
-                  <div class="row">
-
-                    <div class="col-12 col-sm-6" style="padding-top:20px;">
-                      <h4>Temperature and life expectancy</h4>
-                      <div id="life_expectancy-scatterplot" class="scatterplot"></div>
-                    </div>
-
-                    <div class="col-12 col-sm-6" style="padding-top:20px;">
-                      <h4>Temperature and unemployment rate</h4>
-                      <div id="unemployment_rate-scatterplot" class="scatterplot"></div>
-                    </div>
-
-                  </div>
-
+              <iframe frameborder="0" class="resp-iframe juxtapose" src="combined-scatterplots.html" scrolling="no"></iframe>
+              <p class="chart-source">Source: Source</p>
+            </div>
+          </div>
 
           <div class="row">
             <div class="col-12">
@@ -1004,11 +987,8 @@
     <!-- Our custom Javascript -->
     <script src="js/javascript.js"></script>
 
-
-
-      <!-- scripts for charts-->
-      <script src="js/scatterplot-script.js"></script>
-
+    <!-- scripts for charts-->
+    <script src="js/ems-calls.js"></script>
 
     <script type = "text/javascript">
         var chart = c3.generate(
