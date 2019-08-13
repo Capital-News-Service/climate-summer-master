@@ -106,6 +106,26 @@
   text-align: left;
 }
 
+
+.opening-letter::first-letter {
+  font-family: 'Playfair Display', serif;
+	font-size: 4em;
+	float: left;
+  line-height: 0.8;
+  margin-top: 0.2em !important; /* for optical baseline alignment */
+  margin-left: -0.05em; /* for optical alignment to the left */
+  margin-right: 0.05em; /* for optical alignment to the right */
+  font-weight:400;
+  background: #F23030;
+  color: white;
+  padding:5px 10px 5px 10px;
+  margin-right: 10px;
+}
+
+.opening-letter{
+    margin-top: 0.2em !important; /* for optical baseline alignment */
+}
+
 /* WIDER CONTAINER */
 
 .embed-container{
