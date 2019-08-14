@@ -165,7 +165,8 @@
 .pullquote-top{
   padding-top:20px;
   font-family: 'Montserrat', sans-serif;
-  font-size:2.5em;
+  font-size:2em;
+  color: #F23030;
   font-weight: bold;
   text-align: left;
 }
@@ -176,8 +177,6 @@
   font-size:1.5em;
   padding-bottom: 20px;
   padding-top:10px;
-  color: #F23030;
-  font-weight: bold;
 }
 
 /* SCROLLYTELLING */

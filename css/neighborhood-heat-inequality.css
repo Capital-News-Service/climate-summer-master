@@ -271,10 +271,10 @@ a {
 .pullquote-top{
   padding-top:20px;
   font-family: 'Montserrat', sans-serif;
-  font-size:2.5em;
+  font-size:2em;
+  color: #F23030;
   font-weight: bold;
   text-align: left;
-    color: #F23030;
 }
 
 .pullquote-bottom{
@@ -283,8 +283,8 @@ a {
   font-size:1.5em;
   padding-bottom: 20px;
   padding-top:10px;
-  font-weight: bold;
 }
+
 
 /* SCROLLYTELLING */
 
