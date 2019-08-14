@@ -1,254 +1,213 @@
 var data2 =
 {
    "21201": {
-      "temp": 90.63347015,
-      "Kidney disease": 0.225433526,
-      "COPD": 0.29103698,
-      "Asthma": 0.155860436,
-      "Heart disease": 0.580472178,
-      "Diabetes": 0.259140609
+      "temp": 95.90000687,
+      "Kidney disease": 0.123485737,
+      "COPD": 0.300898789,
+      "Asthma": 0.201250488,
+      "Heart disease": 0.444118796,
+      "Diabetes": 0.181320828
    },
    "21202": {
-      "temp": 91.06913643,
-      "Kidney disease": 0.218647074,
-      "COPD": 0.267291614,
-      "Asthma": 0.151950849,
-      "Heart disease": 0.568153028,
-      "Diabetes": 0.24746643
+      "temp": 97.10995865,
+      "Kidney disease": 0.137583893,
+      "COPD": 0.273729626,
+      "Asthma": 0.186800895,
+      "Heart disease": 0.433844679,
+      "Diabetes": 0.172579099
    },
    "21205": {
-      "temp": 90.15022278,
-      "Kidney disease": 0.226654741,
-      "COPD": 0.31234347,
-      "Asthma": 0.168276685,
-      "Heart disease": 0.569707812,
-      "Diabetes": 0.248002385
+      "temp": 95.74159775,
+      "Kidney disease": 0.115533444,
+      "COPD": 0.307490326,
+      "Asthma": 0.210751797,
+      "Heart disease": 0.388474295,
+      "Diabetes": 0.143311222
    },
    "21206": {
-      "temp": 88.07957287,
-      "Kidney disease": 0.234083635,
-      "COPD": 0.254450234,
-      "Asthma": 0.132118391,
-      "Heart disease": 0.584362684,
-      "Diabetes": 0.262543973
+      "temp": 94.12236748,
+      "Kidney disease": 0.082010825,
+      "COPD": 0.217594716,
+      "Asthma": 0.163471241,
+      "Heart disease": 0.306485644,
+      "Diabetes": 0.138244198
    },
    "21207": {
-      "temp": 87.22650681,
-      "Kidney disease": 0.252243498,
-      "COPD": 0.223120892,
-      "Asthma": 0.122349243,
-      "Heart disease": 0.6225493,
-      "Diabetes": 0.290911689
-   },
-   "21208": {
-      "temp": 86.70249329,
-      "Kidney disease": 0.24346896,
-      "COPD": 0.176780351,
-      "Asthma": 0.086518287,
-      "Heart disease": 0.66869626,
-      "Diabetes": 0.26050109
+      "temp": 93.49630814,
+      "Kidney disease": 0.099526066,
+      "COPD": 0.195406489,
+      "Asthma": 0.15688419,
+      "Heart disease": 0.308907522,
+      "Diabetes": 0.129663386
    },
    "21209": {
-      "temp": 86.47423687,
-      "Kidney disease": 0.168483713,
-      "COPD": 0.147883085,
-      "Asthma": 0.080730386,
-      "Heart disease": 0.496689185,
-      "Diabetes": 0.172296167
+      "temp": 93.10016174,
+      "Kidney disease": 0.063552417,
+      "COPD": 0.119500272,
+      "Asthma": 0.101032048,
+      "Heart disease": 0.228136882,
+      "Diabetes": 0.082020641
    },
    "21210": {
-      "temp": 86.69803524,
-      "Kidney disease": 0.166774402,
-      "COPD": 0.14221073,
-      "Asthma": 0.058608059,
-      "Heart disease": 0.564318035,
-      "Diabetes": 0.140271493
+      "temp": 93.20989456,
+      "Kidney disease": 0.089005236,
+      "COPD": 0.193717277,
+      "Asthma": 0.146596859,
+      "Heart disease": 0.314136126,
+      "Diabetes": 0.146596859
    },
    "21211": {
-      "temp": 89.28852043,
-      "Kidney disease": 0.198243867,
-      "COPD": 0.263057844,
-      "Asthma": 0.092242238,
-      "Heart disease": 0.586222504,
-      "Diabetes": 0.235720105
+      "temp": 94.77475281,
+      "Kidney disease": 0.089241448,
+      "COPD": 0.254833912,
+      "Asthma": 0.143282102,
+      "Heart disease": 0.375309866,
+      "Diabetes": 0.1328706
    },
    "21212": {
-      "temp": 87.4928566,
-      "Kidney disease": 0.220388027,
-      "COPD": 0.222522651,
-      "Asthma": 0.122527394,
-      "Heart disease": 0.585361226,
-      "Diabetes": 0.251600968
+      "temp": 93.50357628,
+      "Kidney disease": 0.119334355,
+      "COPD": 0.257061528,
+      "Asthma": 0.187869499,
+      "Heart disease": 0.393037005,
+      "Diabetes": 0.168162908
    },
    "21213": {
-      "temp": 89.82233582,
-      "Kidney disease": 0.257541935,
-      "COPD": 0.298902991,
-      "Asthma": 0.178742267,
-      "Heart disease": 0.611933159,
-      "Diabetes": 0.272849034
+      "temp": 95.43202019,
+      "Kidney disease": 0.124531312,
+      "COPD": 0.292062226,
+      "Asthma": 0.223932988,
+      "Heart disease": 0.395293179,
+      "Diabetes": 0.153091344
    },
    "21214": {
-      "temp": 88.09810715,
-      "Kidney disease": 0.23565773,
-      "COPD": 0.233226837,
-      "Asthma": 0.104042228,
-      "Heart disease": 0.607098208,
-      "Diabetes": 0.277260731
+      "temp": 93.76628342,
+      "Kidney disease": 0.091549296,
+      "COPD": 0.234231476,
+      "Asthma": 0.157991427,
+      "Heart disease": 0.350581751,
+      "Diabetes": 0.155848132
    },
    "21215": {
-      "temp": 88.60010338,
-      "Kidney disease": 0.254222883,
-      "COPD": 0.250008853,
-      "Asthma": 0.143099968,
-      "Heart disease": 0.636725805,
-      "Diabetes": 0.291122207
+      "temp": 94.6279068,
+      "Kidney disease": 0.10044181,
+      "COPD": 0.248140484,
+      "Asthma": 0.191544097,
+      "Heart disease": 0.380403781,
+      "Diabetes": 0.155528214
    },
    "21216": {
-      "temp": 88.02322674,
-      "Kidney disease": 0.258175133,
-      "COPD": 0.273235055,
-      "Asthma": 0.158906918,
-      "Heart disease": 0.618269877,
-      "Diabetes": 0.281860926
+      "temp": 93.98787079,
+      "Kidney disease": 0.130726771,
+      "COPD": 0.268077277,
+      "Asthma": 0.201471941,
+      "Heart disease": 0.397056118,
+      "Diabetes": 0.165225391
    },
    "21217": {
-      "temp": 90.00984497,
-      "Kidney disease": 0.238335552,
-      "COPD": 0.284528933,
-      "Asthma": 0.16245085,
-      "Heart disease": 0.590327874,
-      "Diabetes": 0.242050837
+      "temp": 95.76754608,
+      "Kidney disease": 0.137904735,
+      "COPD": 0.274838799,
+      "Asthma": 0.198710393,
+      "Heart disease": 0.413991541,
+      "Diabetes": 0.163696873
    },
    "21218": {
-      "temp": 89.25742569,
-      "Kidney disease": 0.253384288,
-      "COPD": 0.275022203,
-      "Asthma": 0.145221627,
-      "Heart disease": 0.633581828,
-      "Diabetes": 0.278574697
+      "temp": 95.23146133,
+      "Kidney disease": 0.12209205,
+      "COPD": 0.280585774,
+      "Asthma": 0.20167364,
+      "Heart disease": 0.432887029,
+      "Diabetes": 0.165774059
    },
    "21222": {
-      "temp": 88.63657112,
-      "Kidney disease": 0.214265983,
-      "COPD": 0.296724546,
-      "Asthma": 0.10023678,
-      "Heart disease": 0.604972376,
-      "Diabetes": 0.260536701
+      "temp": 95.05787048,
+      "Kidney disease": 0.084120425,
+      "COPD": 0.242325856,
+      "Asthma": 0.146472845,
+      "Heart disease": 0.324601535,
+      "Diabetes": 0.127287485
    },
    "21223": {
-      "temp": 90.05882339,
-      "Kidney disease": 0.225978648,
-      "COPD": 0.303437571,
-      "Asthma": 0.166351177,
-      "Heart disease": 0.562845461,
-      "Diabetes": 0.245324449
+      "temp": 95.44959488,
+      "Kidney disease": 0.12299733,
+      "COPD": 0.291638852,
+      "Asthma": 0.211365154,
+      "Heart disease": 0.390353805,
+      "Diabetes": 0.14861482
    },
    "21224": {
-      "temp": 89.87279053,
-      "Kidney disease": 0.181156406,
-      "COPD": 0.247062188,
-      "Asthma": 0.106931156,
-      "Heart disease": 0.488144759,
-      "Diabetes": 0.204866889
+      "temp": 95.27554398,
+      "Kidney disease": 0.087726239,
+      "COPD": 0.279299773,
+      "Asthma": 0.183661359,
+      "Heart disease": 0.351003857,
+      "Diabetes": 0.133517951
    },
    "21225": {
-      "temp": 88.27784004,
-      "Kidney disease": 0.194651332,
-      "COPD": 0.287802681,
-      "Asthma": 0.1260609,
-      "Heart disease": 0.548654173,
-      "Diabetes": 0.237710881
+      "temp": 94.4600975,
+      "Kidney disease": 0.102943882,
+      "COPD": 0.241306348,
+      "Asthma": 0.166145354,
+      "Heart disease": 0.328886845,
+      "Diabetes": 0.133486661
    },
    "21226": {
-      "temp": 88.83554039,
-      "Kidney disease": 0.173477109,
-      "COPD": 0.278282255,
-      "Asthma": 0.106507756,
-      "Heart disease": 0.516647749,
-      "Diabetes": 0.230419977
+      "temp": 95.06192169,
+      "Kidney disease": 0.104563836,
+      "COPD": 0.251299827,
+      "Asthma": 0.137492779,
+      "Heart disease": 0.355863663,
+      "Diabetes": 0.154823801
    },
    "21227": {
-      "temp": 88.19574986,
-      "Kidney disease": 0.192418804,
-      "COPD": 0.235621115,
-      "Asthma": 0.089950101,
-      "Heart disease": 0.529283025,
-      "Diabetes": 0.226998162
-   },
-   "21228": {
-      "temp": 87.22889977,
-      "Kidney disease": 0.248155828,
-      "COPD": 0.191249958,
-      "Asthma": 0.076996295,
-      "Heart disease": 0.609579495,
-      "Diabetes": 0.224767991
+      "temp": 94.19586945,
+      "Kidney disease": 0.077791498,
+      "COPD": 0.195801729,
+      "Asthma": 0.128064914,
+      "Heart disease": 0.249073911,
+      "Diabetes": 0.10601517
    },
    "21229": {
-      "temp": 87.97043571,
-      "Kidney disease": 0.269760837,
-      "COPD": 0.255951221,
-      "Asthma": 0.136063702,
-      "Heart disease": 0.599632486,
-      "Diabetes": 0.281036835
+      "temp": 93.86475525,
+      "Kidney disease": 0.118154377,
+      "COPD": 0.244415696,
+      "Asthma": 0.185252264,
+      "Heart disease": 0.340664079,
+      "Diabetes": 0.154721863
    },
    "21230": {
-      "temp": 89.70082703,
-      "Kidney disease": 0.164851412,
-      "COPD": 0.241979203,
-      "Asthma": 0.105317629,
-      "Heart disease": 0.486964664,
-      "Diabetes": 0.202749988
+      "temp": 95.26861229,
+      "Kidney disease": 0.099141016,
+      "COPD": 0.25841088,
+      "Asthma": 0.162312097,
+      "Heart disease": 0.356836077,
+      "Diabetes": 0.14781675
    },
    "21231": {
-      "temp": 90.70003014,
-      "Kidney disease": 0.17721519,
-      "COPD": 0.241508059,
-      "Asthma": 0.130771332,
-      "Heart disease": 0.489390766,
-      "Diabetes": 0.200801384
-   },
-   "21234": {
-      "temp": 87.4507103,
-      "Kidney disease": 0.217967728,
-      "COPD": 0.224640209,
-      "Asthma": 0.089075447,
-      "Heart disease": 0.603205408,
-      "Diabetes": 0.230178805
-   },
-   "21236": {
-      "temp": 87.60416527,
-      "Kidney disease": 0.179587482,
-      "COPD": 0.203769559,
-      "Asthma": 0.085081792,
-      "Heart disease": 0.559166074,
-      "Diabetes": 0.205325391
+      "temp": 95.91853256,
+      "Kidney disease": 0.126572117,
+      "COPD": 0.297564892,
+      "Asthma": 0.201766123,
+      "Heart disease": 0.432432432,
+      "Diabetes": 0.166176077
    },
    "21237": {
-      "temp": 88.31286411,
-      "Kidney disease": 0.226378588,
-      "COPD": 0.237204588,
-      "Asthma": 0.087022619,
-      "Heart disease": 0.592573824,
-      "Diabetes": 0.246095729
+      "temp": 94.13182602,
+      "Kidney disease": 0.091715286,
+      "COPD": 0.181563594,
+      "Asthma": 0.122053676,
+      "Heart disease": 0.294982497,
+      "Diabetes": 0.122053676
    },
    "21239": {
-      "temp": 88.11083755,
-      "Kidney disease": 0.259015455,
-      "COPD": 0.241795459,
-      "Asthma": 0.127265789,
-      "Heart disease": 0.638189277,
-      "Diabetes": 0.296889907
-   },
-   "21251": {
-      "temp": 88.92525063,
-      "Kidney disease": 0.15,
-      "COPD": 0.1,
-      "Asthma": 0,
-      "Heart disease": 0.35,
-      "Diabetes": 0.55
+      "temp": 93.83539429,
+      "Kidney disease": 0.095665172,
+      "COPD": 0.237454623,
+      "Asthma": 0.190903267,
+      "Heart disease": 0.319026265,
+      "Diabetes": 0.131112535
    }
 }
-
 // All conditions are by prevalence
 //Temp is median afternoon temperature by neighborhood in the urban heat islands study

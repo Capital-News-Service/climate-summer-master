@@ -26,13 +26,13 @@
 
   //select the color ramp
   function getColorTemp(d) {
-      return d > 92 ? '#800026' :
-             d > 91  ? '#BD0026' :
-             d > 90  ? '#E31A1C' :
-             d > 89  ? '#FC4E2A' :
-             d > 88   ? '#FD8D3C' :
-             d > 87   ? '#FEB24C' :
-             d > 86   ? '#FED976' :
+      return d > 97 ? '#800026' :
+             d > 96  ? '#BD0026' :
+             d > 95  ? '#E31A1C' :
+             d > 94  ? '#FC4E2A' :
+             d > 93   ? '#FD8D3C' :
+             d > 92   ? '#FEB24C' :
+             d > 91   ? '#FED976' :
                         '#FFEDA0';
   }
 
@@ -58,6 +58,20 @@
         layer.bindPopup("<p style = \"text-align:center;\"> " + "Zip Code: " + feature.properties.ZIPCODE1 + "<br>  Morgan State University <br> No data</p>");
     }else if (feature.properties.ZIPCODE1 == 21287){
         layer.bindPopup("<p style = \"text-align:center;\"> " + " Zip Code: " + feature.properties.ZIPCODE1 + "<br>  Johns Hopkins University <br> No data</p>");
+
+    }else if (feature.properties.ZIPCODE1 == 21234){
+        layer.bindPopup("<p style = \"text-align:center;\"> " + " Zip Code: " + feature.properties.ZIPCODE1 + "<br> No data</p>");
+
+    }else if (feature.properties.ZIPCODE1 == 21208){
+        layer.bindPopup("<p style = \"text-align:center;\"> " + " Zip Code: " + feature.properties.ZIPCODE1 + "<br> No data</p>");
+
+    }else if (feature.properties.ZIPCODE1 == 21228){
+        layer.bindPopup("<p style = \"text-align:center;\"> " + " Zip Code: " + feature.properties.ZIPCODE1 + "<br> No data</p>");
+
+    }else if (feature.properties.ZIPCODE1 == 21236){
+        layer.bindPopup("<p style = \"text-align:center;\"> " + " Zip Code: " + feature.properties.ZIPCODE1 + "<br> No data</p>");
+
+
     } else
           // Create default pop up. Some math functions here turn the decimals into percents and show up to one decimal in the number
           layer.bindPopup("<p style = \"text-align:center;\">" + "Zip code: " + feature.properties.ZIPCODE1 + "<br> Median temp: "  + parseFloat((feature.properties.temp)).toFixed(1) + "&#8457;</p>");
@@ -78,7 +92,7 @@
   legendTemp.onAdd = function (map) {
 
       var div = L.DomUtil.create('div', 'info legend'),
-          grades = [86, 87, 88, 89, 90, 91, 92],
+          grades = [91, 92, 93, 94, 95, 96, 97],
           labels = [];
 
       // loop through our density intervals and generate a label with a colored square for each interval
@@ -120,26 +134,26 @@ L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={
 
 //select the color ramp for asthma
 function getColor(d) {
-    return d > 16 ? '#800026' :
-           d > 14  ? '#BD0026' :
-           d > 12  ? '#E31A1C' :
-           d > 10  ? '#FC4E2A' :
-           d > 8   ? '#FD8D3C' :
-           d > 6   ? '#FEB24C' :
-           d > 4   ? '#FED976' :
+    return d > 22 ? '#800026' :
+           d > 20  ? '#BD0026' :
+           d > 18  ? '#E31A1C' :
+           d > 18  ? '#FC4E2A' :
+           d > 14   ? '#FD8D3C' :
+           d > 12   ? '#FEB24C' :
+           d > 10   ? '#FED976' :
                       '#FFEDA0';
 }
 
 
 //select the color ramp for copd
 function getColorCodp(d) {
-  return d > 32 ? '#800026' :
-         d > 29  ? '#BD0026' :
+  return d > 30 ? '#800026' :
+         d > 28  ? '#BD0026' :
          d > 26  ? '#E31A1C' :
-         d > 23  ? '#FC4E2A' :
-         d > 20   ? '#FD8D3C' :
-         d > 17   ? '#FEB24C' :
-         d > 14   ? '#FED976' :
+         d > 24  ? '#FC4E2A' :
+         d > 22   ? '#FD8D3C' :
+         d > 20   ? '#FEB24C' :
+         d > 18   ? '#FED976' :
                     '#FFEDA0';
 }
 
@@ -147,13 +161,13 @@ function getColorCodp(d) {
 
 //select the color ramp
 function getColorHeart(d) {
-  return d > 62 ? '#800026' :
-         d > 60  ? '#BD0026' :
-         d > 58  ? '#E31A1C' :
-         d > 56  ? '#FC4E2A' :
-         d > 54   ? '#FD8D3C' :
-         d > 52   ? '#FEB24C' :
-         d > 50   ? '#FED976' :
+  return d > 45 ? '#800026' :
+         d > 40  ? '#BD0026' :
+         d > 35  ? '#E31A1C' :
+         d > 30  ? '#FC4E2A' :
+         d > 25   ? '#FD8D3C' :
+         d > 20   ? '#FEB24C' :
+         d > 15   ? '#FED976' :
                     '#FFEDA0';
 }
 
@@ -161,26 +175,26 @@ function getColorHeart(d) {
 
 //select the color ramp
 function getColorKidney(d) {
-  return d > 28 ? '#800026' :
-         d > 26  ? '#BD0026' :
-         d > 24  ? '#E31A1C' :
-         d > 22  ? '#FC4E2A' :
-         d > 20   ? '#FD8D3C' :
-         d > 18   ? '#FEB24C' :
-         d > 16   ? '#FED976' :
+  return d > 12 ? '#800026' :
+         d > 11  ? '#BD0026' :
+         d > 10  ? '#E31A1C' :
+         d > 9  ? '#FC4E2A' :
+         d > 8   ? '#FD8D3C' :
+         d > 7   ? '#FEB24C' :
+         d > 6   ? '#FED976' :
                     '#FFEDA0';
 }
 
 
 //select the color ramp
 function getColorDiabetes(d) {
-  return d > 32 ? '#800026' :
-         d > 30  ? '#BD0026' :
-         d > 28  ? '#E31A1C' :
-         d > 26  ? '#FC4E2A' :
-         d > 24   ? '#FD8D3C' :
-         d > 22   ? '#FEB24C' :
-         d > 20   ? '#FED976' :
+  return d > 18 ? '#800026' :
+         d > 16  ? '#BD0026' :
+         d > 14  ? '#E31A1C' :
+         d > 12  ? '#FC4E2A' :
+         d > 10   ? '#FD8D3C' :
+         d > 8   ? '#FEB24C' :
+         d > 6   ? '#FED976' :
                     '#FFEDA0';
 }
 
@@ -211,6 +225,19 @@ function onEachFeature(feature, layer) {
       layer.bindPopup("<p style = \"text-align:center;\"> " + feature.properties.ZIPNAME + " <br>" + feature.properties.ZIPCODE1 + "<br>  Morgan State University <br> No data</p>");
   }else if (feature.properties.ZIPCODE1 == 21287){
       layer.bindPopup("<p style = \"text-align:center;\"> " + feature.properties.ZIPNAME + " <br>" + feature.properties.ZIPCODE1 + "<br>  Johns Hopkins University <br> No data</p>");
+
+    }else if (feature.properties.ZIPCODE1 == 21234){
+        layer.bindPopup("<p style = \"text-align:center;\"> " + " Zip Code: " + feature.properties.ZIPCODE1 + "<br> No data</p>");
+
+    }else if (feature.properties.ZIPCODE1 == 21208){
+        layer.bindPopup("<p style = \"text-align:center;\"> " + " Zip Code: " + feature.properties.ZIPCODE1 + "<br> No data</p>");
+
+    }else if (feature.properties.ZIPCODE1 == 21228){
+        layer.bindPopup("<p style = \"text-align:center;\"> " + " Zip Code: " + feature.properties.ZIPCODE1 + "<br> No data</p>");
+
+    }else if (feature.properties.ZIPCODE1 == 21236){
+        layer.bindPopup("<p style = \"text-align:center;\"> " + " Zip Code: " + feature.properties.ZIPCODE1 + "<br> No data</p>");
+
   } else
         // Create default pop up. Some math functions here turn the decimals into percents and show up to one decimal in the number
         layer.bindPopup("<p style = \"text-align:center;\">" + "Zip code: " + feature.properties.ZIPCODE1 + " <br> Asthma prevalence: " + parseFloat((feature.properties.Asthma) * 100).toFixed(1) + "% <br> Median temp: "  + parseFloat((feature.properties.temp)).toFixed(1) + "&#8457;</p>");
@@ -232,7 +259,7 @@ geojsonLayer.addTo(healthMap);
 
   asthmaLegend.onAdd = function (map) {
       var div = L.DomUtil.create('div', 'info legend'),
-          grades = [4, 6, 8, 10, 12, 14, 16],
+          grades = [10, 12, 14, 16, 18, 20, 22],
           labels = [];
 
       // loop through our density intervals and generate a label with a colored square for each interval
@@ -250,7 +277,7 @@ geojsonLayer.addTo(healthMap);
 
   copdLegend.onAdd = function (map) {
       var div = L.DomUtil.create('div', 'info legend'),
-          grades = [14, 17, 20, 23, 26, 29, 32],
+          grades = [18, 20, 22, 24, 26, 28, 30],
           labels = [];
 
       // loop through our density intervals and generate a label with a colored square for each interval
@@ -269,7 +296,7 @@ geojsonLayer.addTo(healthMap);
 
   heartLegend.onAdd = function (map) {
       var div = L.DomUtil.create('div', 'info legend'),
-          grades = [50, 52, 54, 56, 58, 60, 62],
+          grades = [15, 20, 25, 30, 35, 40, 45],
           labels = [];
 
       // loop through our density intervals and generate a label with a colored square for each interval
@@ -288,7 +315,7 @@ geojsonLayer.addTo(healthMap);
 
   kidneyLegend.onAdd = function (map) {
       var div = L.DomUtil.create('div', 'info legend'),
-          grades = [16, 18, 20, 22, 24, 26, 28],
+          grades = [6, 7, 8, 9, 10, 11, 12],
           labels = [];
 
       // loop through our density intervals and generate a label with a colored square for each interval
@@ -307,7 +334,7 @@ geojsonLayer.addTo(healthMap);
 
   diabetesLegend.onAdd = function (map) {
       var div = L.DomUtil.create('div', 'info legend'),
-          grades = [20, 22, 24, 26, 28, 30, 32],
+          grades = [6, 8, 10, 12, 14, 16, 18],
           labels = [];
 
       // loop through our density intervals and generate a label with a colored square for each interval
@@ -479,7 +506,21 @@ function onEachFeature2(feature, layer) {
       layer.bindPopup("<p style = \"text-align:center;\"> " + feature.properties.ZIPNAME + " <br>" + feature.properties.ZIPCODE1 + "<br>  Morgan State University <br> No data</p>");
   }else if (feature.properties.ZIPCODE1 == 21287){
       layer.bindPopup("<p style = \"text-align:center;\"> " + feature.properties.ZIPNAME + " <br>" + feature.properties.ZIPCODE1 + "<br>  Johns Hopkins University <br> No data</p>");
-  } else
+  }else if (feature.properties.ZIPCODE1 == 21234){
+      layer.bindPopup("<p style = \"text-align:center;\"> " + " Zip Code: " + feature.properties.ZIPCODE1 + "<br> No data</p>");
+  }else if (feature.properties.ZIPCODE1 == 21208){
+      layer.bindPopup("<p style = \"text-align:center;\"> " + " Zip Code: " + feature.properties.ZIPCODE1 + "<br> No data</p>");
+
+
+  }else if (feature.properties.ZIPCODE1 == 21228){
+      layer.bindPopup("<p style = \"text-align:center;\"> " + " Zip Code: " + feature.properties.ZIPCODE1 + "<br> No data</p>");
+
+  }else if (feature.properties.ZIPCODE1 == 21236){
+      layer.bindPopup("<p style = \"text-align:center;\"> " + " Zip Code: " + feature.properties.ZIPCODE1 + "<br> No data</p>");
+
+
+
+      } else
     // this is the default popup
         layer.bindPopup("<p style = \"text-align:center;\">" + "Zip code: " + feature.properties.ZIPCODE1 + " <br>" + property + " prevalence: " + parseFloat((feature['properties'][property]) * 100).toFixed(1) + "% <br> Median temp: "  + parseFloat((feature.properties.temp)).toFixed(1) + "&#8457;</p>");
 }

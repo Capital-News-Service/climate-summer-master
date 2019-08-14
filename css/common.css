@@ -139,7 +139,7 @@ i.far{
   font-style: italic;
 }
 
-h4 {
+.chart-subtitle, h4 {
   font-family: 'Montserrat', sans-serif;
   font-size: 1em;
 
