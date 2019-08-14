@@ -59,6 +59,12 @@
   text-align: left;
 }
 
+.chapter-title-new{
+  font-family: 'Playfair Display', serif;
+  font-size: 1.7em;
+  text-align: left;
+}
+
 .chapter-author{
   font-family: 'Montserrat', sans-serif;
   font-size: 1em;
