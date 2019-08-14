@@ -132,6 +132,12 @@
   text-align: left;
 }
 
+.dateline{
+  font-family: 'Playfair Display', serif;
+  font-weight: bold;
+  font-size: 1em;
+}
+
 /* WIDER CONTAINER */
 
 .embed-container{
