@@ -29,62 +29,58 @@
 
   // create 2 data_set
   var data1 = [
-     {group: "Asthma", value: 3.29473684210526},
-     {group: "Cardiac arrest", value:4.6256157635468 },
+     {group: "Cardiac arrest", value:5.303867403314917},
      //{group: "CHF", value:13.608 },
-     {group: "COPD", value: 4.695},
-     {group: "Dehydration", value: 30.2903225806452},
-     {group: "Dizziness", value: 4.53623188405797},
+     {group: "COPD", value: 5.614035087719298},
+     {group: "Dehydration", value: 41.73913043478261},
+     {group: "Dizziness", value: 6.233766233766234},
      //{group: "Heat exhaustion", value: 104.3333333333},
-     {group: "Hypertension", value: 10.2065217391304},
-     {group: "Respiratory distress", value: 3 },
-     {group: "Stroke/CVA", value:8.694444444444 },
-     {group: "Unconscious", value:7.0601 }
+     {group: "Hypertension", value: 15.238095238095237},
+     {group: "Respiratory distress", value: 3.3449477351916377 },
+     {group: "Stroke/CVA", value:12.151898734177216},
+     {group: "Unconscious", value:8.97196261682243 }
   ];
 
   var data2 = [
-    {group: "Asthma", value: 4.09042553191489 },
-    {group: "Cardiac arrest", value: 5.96124031007752},
+    {group: "Cardiac arrest", value: 	5.154362416107382},
     //{group: "CHF", value:17.088 },
-    {group: "COPD", value: 6.86607142857143},
-    {group: "Dehydration", value: 15.38},
-    {group: "Dizziness", value: 4.74691358024691},
+    {group: "COPD", value: 	4.923076923076923},
+    {group: "Dehydration", value: 17.86046511627907},
+    {group: "Dizziness", value: 3.8984771573604062},
     //{group: "Heat exhaustion", value: 34.9545454545455},
-    {group: "Hypertension", value: 13.4912280701754},
+    {group: "Hypertension", value: 11.636363636363637},
     //{group: "Hyperthermia", value: 192.25},
-    {group: "Respiratory distress", value: 3.38766519823789},
-    {group: "Stroke/CVA", value: 10.6805555555556},
-    {group: "Unconscious", value:6.2016 }
+    {group: "Respiratory distress", value: 3.3684210526315788},
+    {group: "Stroke/CVA", value: 	9.035294117647059},
+    {group: "Unconscious", value:5.408450704225352}
   ];
 
   var data3 = [
-    {group: "Asthma", value: 3.99099099099099},
-    {group: "Cardiac arrest", value: 5.27380952380952},
+    {group: "Cardiac arrest", value: 4.712765957446808},
     //{group: "CHF", value:15.821 },
-    {group: "COPD", value: 4.43},
-    {group: "Dehydration", value: 7.91071428571429},
-    {group: "Dizziness", value: 4.25961538461539},
+    {group: "COPD", value: 	5.091954022988506},
+    {group: "Dehydration", value: 7.145161290322581},
+    {group: "Dizziness", value: 	3.6611570247933884},
     //{group: "Heat exhaustion", value: 6.32857142857143},
-    {group: "Hypertension", value: 12.6571428571429},
+    {group: "Hypertension", value: 8.358490566037736},
     //{group: "Hyperthermia", value: 147.666666666667},
-    {group: "Respiratory distress", value: 2.71779141104294},
-    {group: "Stroke/CVA", value: 7.91071428571429},
-    {group: "Unconscious", value:5.9066 }
+    {group: "Respiratory distress", value: 	2.5170454545454546},
+    {group: "Stroke/CVA", value: 6.152777777777778},
+    {group: "Unconscious", value:6.068493150684931}
   ];
 
   var data4 = [
-    {group: "Asthma", value: 2.40909090909091},
-    {group: "Cardiac arrest", value: 3.53333333333333},
+    {group: "Cardiac arrest", value: 2.9444444444444446},
     //{group: "CHF", value:17.666 },
-    {group: "COPD", value: 3.3125 },
-    {group: "Dehydration", value: 3.11764705882353},
-    {group: "Dizziness", value: 3.78571428571429},
+    {group: "COPD", value: 3.3125},
+    {group: "Dehydration", value: 2.2083333333333335},
+    {group: "Dizziness", value: 2.9444444444444446},
     //{group: "Heat exhaustion", value: 2.65},
-    {group: "Hypertension", value: 5.3},
+    {group: "Hypertension", value: 5.888888888888889},
     //{group: "Hyperthermia", value: 26.5},
-    {group: "Respiratory distress", value: 3.53333333333333 },
-    {group: "Stroke/CVA", value: 7.57142857142857},
-    {group: "Unconscious", value:8.833 }
+    {group: "Respiratory distress", value: 	2.789473684210526},
+    {group: "Stroke/CVA", value: 7.571428571428571},
+    {group: "Unconscious", value:4.076923076923077}
   ];
 
   // set the dimensions and margins of the graph
