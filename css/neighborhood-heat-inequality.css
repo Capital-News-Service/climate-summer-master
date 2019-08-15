@@ -260,30 +260,6 @@ a {
     text-align: right;
     font-size: 12px;
 }
-/* PULLQUOTE ELEMENTS */
-
-.pullquote{
-  border-bottom: solid #303030;
-  border-top: solid #303030;
-  border-width: 0.5px;
-}
-
-.pullquote-top{
-  padding-top:20px;
-  font-family: 'Montserrat', sans-serif;
-  font-size:2em;
-  color: #F23030;
-  font-weight: bold;
-  text-align: left;
-}
-
-.pullquote-bottom{
-  text-align: left;
-  font-family: 'Montserrat', sans-serif;
-  font-size:1.5em;
-  padding-bottom: 20px;
-  padding-top:10px;
-}
 
 
 /* SCROLLYTELLING */
