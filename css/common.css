@@ -379,10 +379,10 @@ p {
   text-align:center;
   text-transform: uppercase;
   font-family: 'Montserrat', sans-serif;
-  font-size:1.25em;
+  font-size:1.5em;
   font-weight:700;
   text-decoration:underline;
-
+  padding-bottom:20px;
 }
 
 

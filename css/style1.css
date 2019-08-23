@@ -101,6 +101,10 @@
 
 /* SPONSORS ELEMENTS */
 
+#wmar {
+  width:50%;
+}
+
 #cns {
   display: block;
   width: 50%;
@@ -121,9 +125,14 @@
   width: 50%;
 }
 
+.rmf {
+    padding-top:20px;
+}
+
 #ona {
   display: block;
   width: 75%;
+  padding-top:10px;
 }
 
 #merrill {
@@ -135,12 +144,12 @@
 #acf {
   display: block;
   width: 100%;
-  padding-top:20px;
 }
 
 #npr {
   display: block;
-  width: 40%;
+  width: 90%;
+  padding-top:10px;
 }
 
 #way {
