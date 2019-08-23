@@ -177,6 +177,9 @@ i.far{
   float: right;
   max-width: 400px;
   margin: 20px ;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  padding-left: 10px;
 }
 
 .right-inline-img img {
@@ -193,6 +196,9 @@ i.far{
   float: left;
   max-width: 400px;
   margin-right: 20px;
+  padding-bottom: 10px;
+  padding-right: 10px;
+  padding-top: 10px;
 }
 
 .left-inline-img img {
@@ -368,6 +374,17 @@ p {
 .heat-deaths-include {
   padding-top:45%;
 }
+
+.sponsor-head {
+  text-align:center;
+  text-transform: uppercase;
+  font-family: 'Montserrat', sans-serif;
+  font-size:1.25em;
+  font-weight:700;
+  text-decoration:underline;
+
+}
+
 
 @media(max-width:850px) {
 
