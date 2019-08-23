@@ -1,0 +1,44 @@
+
+.embed-container, img {
+  max-width:800px;
+  width:100%;
+}
+
+/* CHART ELEMENTS */
+
+
+.chart-title{
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.5em;
+  text-transform: uppercase;
+}
+
+.chart-description{
+  text-align: left;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1em;
+}
+
+.chart-author{
+  text-align: left;
+  font-family: 'Montserrat', sans-serif;
+  font-size: .7em;
+  font-weight: 100px;
+  padding-bottom: 20px;
+  text-transform:uppercase;
+}
+
+.chart-source{
+  text-align: left;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 13px;
+  font-weight: 100px;
+  font-style: italic;
+}
+
+.chart-subtitle, h4 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1em;
+
+}

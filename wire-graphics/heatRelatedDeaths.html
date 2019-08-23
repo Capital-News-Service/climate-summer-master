@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+
+    <title>
+    	Heat-related deaths in the city of Baltimore and Maryland
+    </title>
+
+
+<!-- css -->
+<link href="graphics.css" rel="stylesheet">
+
+
+<!-- c3.css -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/c3/0.6.13/c3.min.css" rel="stylesheet">
+
+
+<!-- d3.js and c3.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.9.1/d3.min.js" charset="utf-8"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/c3/0.6.13/c3.min.js"></script>
+
+
+<!-- google fonts -->
+<link href="https://fonts.googleapis.com/css?family=Montserrat:400,600,700" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700,900&display=swap" rel="stylesheet">
+
+</head>
+
+
+<body>
+  <!-- START Graphic container-->
+
+  <div class="embed-container">
+    <p class = "chart-title"><b>Heat-related deaths in the city of Baltimore and Maryland</b></p>
+
+      <div class="chart-description">There were 134 heat-related deaths recorded in Maryland between 2012 and 2018. Thirty-seven of those deaths (28%) have occurred in Baltimore City. Maryland recorded 46 heat related deaths in 2012, when the United States was hit with one of the most severe heat waves in modern American history. There were 28 heat-related deaths in Maryland in 2018, 13 of which occurred in Baltimore. Many of those deaths were the result of a heat wave that hit Maryland in July of that year.</div><br>
+
+    <p class = "chart-author">
+        By Amina Lampkin</p>
+
+
+
+            <div id='chart'></div>
+
+
+    <div class="chart-source">
+        <text><a href ="https://preparedness.health.maryland.gov/Pages/Home.aspx"><tspan><p class="chart-source">Source: Maryland Department of Health</p></tspan></a></text>
+    </div>
+
+  </div>
+  <!-- END Graphic container-->
+
+
+        <script type = "text/javascript">
+            var chart = c3.generate(
+                {
+                    data: { x: 'x',
+                    columns: [
+                        ['x', 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019],
+                        ['data1', 13, 2, 3, 1, 5, 0, 13],
+                        ['data2', 46, 17, 8, 6, 24, 5, 28]
+                    ],
+
+                    names: {
+                        data1: 'City of Baltimore',
+                        data2: 'Maryland'
+                    },
+
+                    type: 'bar'
+                    },
+
+                 color: {
+                     pattern: ['#F5A831', '#D9412F']
+                 },
+
+                 bar: {
+                     width: {
+                         ratio: 0.75
+                     }
+                 }
+                });
+
+        </script>
+
+</body>
+
+
+</html>
