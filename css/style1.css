@@ -123,6 +123,7 @@
 #park {
   display: block;
   width: 50%;
+  padding-top:20px;
 }
 
 .rmf {
@@ -143,7 +144,7 @@
 
 #acf {
   display: block;
-  width: 100%;
+  width: 50%;
 }
 
 #npr {
