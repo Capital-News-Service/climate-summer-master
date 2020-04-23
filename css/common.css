@@ -327,6 +327,19 @@ p {
   text-transform: uppercase;
 }
 
+.dateline {
+  font-size:.8em;
+  text-transform:uppercase;
+  font-family: 'Montserrat', sans-serif;
+font-weight:300;
+}
+
+.dateline-behind {
+  font-size:1em;
+  text-transform:uppercase;
+  font-family: 'Montserrat', sans-serif;
+font-weight:300;
+}
 
 .scrolling-text{
   font-family: 'Montserrat', sans-serif;
